@@ -11,7 +11,7 @@
 
 ?>
 
-<footer class="site-footer margin-top-large">
+<footer class="site-footer">
   <div class="container-medium">
     <div class="row no-margin padding-bottom-large wow fadeIn" data-wow-delay=".2s">
       <div class="col s6 m6 l3 xl3">
