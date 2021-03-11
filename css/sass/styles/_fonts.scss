@@ -1,3 +1,8 @@
+@import '../styles/colors';
+
+:root {
+  font-size: 62.5%;
+}
 /**
  * Fonts
 ** ---------------------------------- */
@@ -27,12 +32,14 @@
 }
 
 
+
 html,
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 100%;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
 }
 
 
@@ -40,42 +47,63 @@ body {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 
-h1,
-h2,
-h3 {
-  font-family: "Inter Black", "Montserrat ExtraBold", Helvetica, Arial, sans-serif;
+h1, h2, h3, h4, h5 {
+  font-family: "Inter Black", Arial, Helvetica, sans-serif;
   padding: 0;
   position: relative;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
 h1 {
-  font-size: 2.3em;
+  font-size: 4.43rem;
+  line-height: 4.4rem;
   margin: 24px 0;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 3.51rem;
+  line-height: 3.5rem;
   margin: 24px 0;
 }
 
-h2.decoration::before {
-  content: "";
-  position: absolute;
-  width: 33px;
-  height: 2px;
-  background-color: #b2ca6a;
-  border-radius: 0;
-  top: -10px;
-  left: -10px;
+h3 {
+  font-size: 2.41rem;
+  line-height: 2.7rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
 }
 
 
+h5 {
+  font-size: 1.328rem;
+  line-height: 1.8rem;
+}
+
+h1.decoration::before,
+h2.decoration::before,
+h3.decoration::before,
+h4.decoration::before,
+h5.decoration::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 6px;
+  background-color: $accent-color;
+  border-radius: 0;
+  top: -10px;
+  left: 0px;
+}
+
+
+/* p, span, div, a {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.5rem !important;
+} */
 
 /* Grouping content
 	 ========================================================================== */
@@ -143,10 +171,3 @@ samp {
   font-size: 1em;
 }
 
-
-
-p {
-  font-size: 1rem;
-  line-height: 1.8rem;
-  margin-bottom: 1.5rem !important;
-}

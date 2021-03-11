@@ -344,12 +344,6 @@
   .splash-text {
     padding: 56px 0;
   }
-  .splash-text .splash-text-title {
-    font-size: 2em;
-  }
-  .splash-text .splash-text-subtitle {
-    font-size: 1em;
-  }
 }
 
 @media all and (min-width: 481px) and (max-width: 782px) {
@@ -357,23 +351,11 @@
     margin: 0;
     text-align: left;
   }
-  .splash-text .splash-text-title {
-    font-size: 2em;
-  }
-  .splash-text .splash-text-subtitle {
-    font-size: 1em;
-  }
 }
 
 @media all and (min-width: 783px) and (max-width: 992px) {
   .splash-text {
     text-align: left;
-  }
-  .splash-text .splash-text-title {
-    font-size: 2.1em;
-  }
-  .splash-text .splash-text-subtitle {
-    font-size: 1em;
   }
 }
 
@@ -381,35 +363,17 @@
   .splash-text {
     text-align: left;
   }
-  .splash-text .splash-text-title {
-    font-size: 2.5em;
-  }
-  .splash-text .splash-text-subtitle {
-    font-size: 1em;
-  }
 }
 
 @media all and (min-width: 1366px) and (max-width: 1600px) {
   .splash-text {
     text-align: left;
   }
-  .splash-text .splash-text-title {
-    font-size: 3em;
-  }
-  .splash-text .splash-text-subtitle {
-    font-size: 1em;
-  }
 }
 
 @media all and (min-width: 1601px) {
   .splash-text {
     text-align: left;
-  }
-  .splash-text .splash-text-title {
-    font-size: 3em;
-  }
-  .splash-text .splash-text-subtitle {
-    font-size: 1.1em;
   }
 }
 
