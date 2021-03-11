@@ -1,4 +1,4 @@
-.portfolio-modal {
+.portfolio-content{
     display: none;
     position: fixed;
     top: 0;
@@ -10,7 +10,7 @@
     z-index: 2;
 }
 
-.portfolio-modal__overlay {
+.portfolio-content--overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,25 +21,25 @@
     overflow-x: hidden;
 }
 
-.portfolio-modal__content {
+.portfolio-content--content {
     padding: 24px;
 }
 
-.portfolio-modal__images {
+.portfolio-content--images {
     position: relative;
     overflow: hidden;
     border-radius: 0 25px 0 0;
     z-index: 5;
 }
 
-.portfolio-modal__images img {
+.portfolio-content--images img {
     width: 100%;
     height: auto;
     float: left;
     clear: both;
 }
 
-.portfolio-modal__close {
+.portfolio-content--close {
   position: fixed;
   top: 10px;
   left: 10px;
@@ -54,7 +54,7 @@
 }
 
 
-.portfolio-modal__close:hover {
+.portfolio-content--close:hover {
   background-color: rgb(0 0 0 / 50%);
 }
 
