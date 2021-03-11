@@ -176,8 +176,11 @@ function talento_scripts() {
   
   // CSS Libraries
   wp_enqueue_style( 'animate.css', $__DIR .'/libs/animate.css/animate'. $min .'.css', array(), _S_VERSION );
+  
   wp_enqueue_style( 'helpers.css', $__DIR .'/libs/helpers.css/src/helpers'. $min .'.css', array(), _S_VERSION );
-  wp_enqueue_style( 'materialize', $__DIR .'/libs/materialize-css/dist/css/materialize.min.css', array(), _S_VERSION );
+  
+  // wp_enqueue_style( 'materialize', $__DIR .'/libs/materialize-css/dist/css/materialize.min.css', array(), _S_VERSION );
+  wp_enqueue_style( 'materialize', $__DIR .'/libs/materialize-src/materialize.min.css', array(), _S_VERSION );
   wp_enqueue_style( 'materialize-custom', $__DIR .'/css/custom/materialize.custom'. $min .'.css', array(), _S_VERSION );
   // wp_enqueue_style( 'material-icons', $__DIR .'/fonts/material-icons/material-icons'. $min .'.css', array(), _S_VERSION );
   
@@ -206,7 +209,7 @@ function add_this_script_footer() {
   $min = !$dev_mode ? '.min' : '';
 
   // Footer JS Libraries
-	wp_enqueue_script( 'materialize', $__DIR . '/libs/materialize-css/dist/js/materialize.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'materialize', $__DIR . '/libs/materialize-src/js/bin/materialize.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'wow-js', $__DIR . '/libs/wow.js/dist/wow.min.js', array(), _S_VERSION, true );
   
   // Main JS
