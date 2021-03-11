@@ -174,3 +174,58 @@
     opacity: 1;
   }
 }
+
+
+
+
+$animated: '../img/arte-escritorio-1-talento-animado-compressed.svg';
+$still: '../img/arte-escritorio-1-talento-animado-shadow.svg';
+
+.animated-bg-1 {
+    background-image: url($animated),
+        url($animated),
+        url($still),
+        url($still);
+    background-repeat: no-repeat;
+}
+
+
+@media all and (max-width: 480px) {
+    .animated-bg-1 {
+        background-image: none;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 600px) {
+    .animated-bg-1 {
+        background-image: none;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 782px) {
+    .animated-bg-1 {
+        background-size: auto 86%;
+        background-position: -60% 50%, 160% 50%;
+    }
+}
+
+@media all and (min-width: 783px) and (max-width: 992px) {
+    .animated-bg-1 {
+        background-size: auto 84%;
+        background-position: -29% 50%, 129% 50%;
+    }
+}
+
+@media all and (min-width: 993px) and (max-width: 1365px) {
+    .animated-bg-1 {
+        background-size: auto 82%;
+        background-position: -4% 50%, 104% 50%;
+    }
+}
+
+@media all and (min-width: 1366px) {
+    .animated-bg-1 {
+        background-size: auto 90%;
+        background-position: 5% 50%, 95% 50%;
+    }
+}
