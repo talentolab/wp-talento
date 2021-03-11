@@ -1,0 +1,176 @@
+
+/**
+ * Avoid flickering
+** -----------------------------*/
+
+/* Apply visibility:hidden to Wow.js animations */
+.wow {
+  visibility: hidden;
+}
+
+/* Apply opacity:0 to Animate.css animations */
+.animated {
+  opacity: 0;
+}
+
+
+%timing {
+  animation-duration: .5s;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/**
+ * fadeInUpSmall
+** -----------------------------*/
+.fadeInUpSmall {
+  animation-name: fadeInUpSmall;
+  @extend %timing;
+}
+
+@keyframes fadeInUpSmall {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/**
+ * fadeInDownSmall
+** -----------------------------*/
+.fadeInDownSmall {
+  animation-name: fadeInDownSmall;
+  @extend %timing;
+}
+
+@keyframes fadeInDownSmall {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/**
+ * fadeInRightSmall
+** -----------------------------*/
+.fadeInRightSmall {
+  animation-name: fadeInRightSmall;
+  @extend %timing;
+}
+
+@keyframes fadeInRightSmall {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+/**
+ * fadeInLeftSmall
+** -----------------------------*/
+.fadeInLeftSmall {
+  animation-name: fadeInLeftSmall;
+  @extend %timing;
+}
+
+@keyframes fadeInLeftSmall {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+/**
+ * fadeOutDownSmall
+** -----------------------------*/
+.fadeOutDownSmall {
+  animation-name: fadeOutDownSmall;
+  @extend %timing;
+}
+
+@keyframes fadeOutDownSmall {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+
+
+
+/**
+ * floatingUpDown
+** -----------------------------*/
+.floatingUpDown {
+  animation-name: floatingUpDown;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatingUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/**
+ * starBlink
+** -----------------------------*/
+.starBlink {
+  animation-name: starBlink;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  animation-iteration-count: infinite;
+}
+
+@keyframes starBlink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

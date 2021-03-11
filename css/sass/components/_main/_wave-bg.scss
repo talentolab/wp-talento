@@ -1,0 +1,120 @@
+.wave-bg--1,
+.wave-bg--2,
+.wave-bg--3,
+.wave-bg--4,
+.wave-bg--5,
+.wave-bg--6 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.wave-bg--1 {
+    background-position: 0 0;
+    background-image: url(../img/waves/wave-1.svg);
+}
+
+.wave-bg--2 {
+    background-image: url(../img/waves/wave-2.svg);
+}
+
+.wave-bg--3 {
+    background-image: url(../img/waves/wave-3.svg);
+}
+
+.wave-bg--4 {
+    background-position: 0 100%;
+    background-size: 100% 40%;
+    background-image: url(../img/waves/wave-5.svg);
+}
+
+.wave-bg--5 {
+    background-position: 0 102%;
+    background-size: 100% 42px;
+    background-image: url(../img/waves/wave-7.svg);
+}
+
+.wave-bg--6 {
+    background-position: 0 -1px;
+    background-size: 100%;
+    background-image: url(../img/waves/wave-6.svg);
+}
+
+
+
+@media all and (max-width: 480px) {
+    .wave-bg--1 {
+        background-size: auto;
+        color: #000;
+    }
+
+    .wave-bg--2,
+    .wave-bg--3 {
+        background: none;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 600px) {
+    .wave-bg--1 {
+        background-size: contain;
+        color: #000;
+    }
+
+    .wave-bg--2,
+    .wave-bg--3 {
+        background: none;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width: 782px) {
+    .wave-bg--1 {
+        background-size: contain;
+        color: #fff;
+    }
+
+    .wave-bg--2,
+    .wave-bg--3 {
+        background: none;
+    }
+}
+
+@media all and (min-width: 783px) and (max-width: 992px) {
+    .wave-bg--1 {
+        color: #fff;
+    }
+
+    .wave-bg--2 {
+        background-position: -48vw 0;
+    }
+
+    .wave-bg--3 {
+        background-position: 50vw 0;
+    }
+}
+
+@media all and (min-width: 993px) and (max-width: 1365px) {
+    .wave-bg--1 {
+        color: #fff;
+    }
+
+    .wave-bg--2 {
+        background-position: -44vw 0;
+    }
+
+    .wave-bg--3 {
+        background-position: 44vw 0;
+    }
+}
+
+@media all and (min-width: 1366px) {
+    .wave-bg--1 {
+        color: #fff;
+    }
+
+    .wave-bg--2 {
+        background-position: -44vw 0;
+    }
+
+    .wave-bg--3 {
+        background-position: 44vw 0;
+    }
+}

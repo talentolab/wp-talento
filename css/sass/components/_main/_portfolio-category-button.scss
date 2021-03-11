@@ -1,0 +1,18 @@
+@import '../../styles/colors';
+
+.category-filter-btn {
+    background-color: #E5E5E5;
+    color: #636363;
+    padding: 5px 16px 5px 14px;
+    margin: 5px;
+    box-shadow: none;
+}
+
+.category-filter-btn:hover {
+    box-shadow: none;
+}
+
+.category-filter-btn.active {
+    background-color: $primary-bg;
+    color: #fff;
+}

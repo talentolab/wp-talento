@@ -1,0 +1,166 @@
+@import '../styles/sizes';
+@import '../styles/colors';
+
+/**
+ * Top navbar
+** --------------------------- */
+
+
+/* Add a margin-top to navbar if user is logged in */
+
+@media all and (max-width: 782px) {
+  body.admin-bar>.top-navbar {
+    margin-top: 46px;
+  }
+}
+
+@media all and (min-width: 783px) {
+  body.admin-bar>.top-navbar {
+    margin-top: 32px;
+  }
+}
+
+.top-navbar {
+  will-change: background-color, box-shadow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 56px;
+  line-height: 56px;
+  width: 100%;
+  background-color: transparent;
+  transition: .3s ease-in-out;
+  z-index: 10;
+}
+
+.fixed-nav {
+  background-color: #fff;
+}
+
+.fixed-nav a {
+  color: $primary-color !important;
+}
+
+.fixed-nav .nav-btn a {
+  color: #fff !important;
+}
+
+.top-navbar ul {
+  list-style-type: none;
+  margin: 0 10px 0 0;
+  padding: 0;
+  height: 100%;
+  width: fit-content;
+  font-size: 15px;
+}
+
+@media all and (max-width: 992px) {
+  .top-navbar ul {
+    display: none;
+  }
+}
+
+@media all and (min-width: 993px) {
+  .top-navbar ul {
+    display: flex;
+  }
+}
+
+.top-navbar ul li {
+  position: relative;
+}
+
+.top-navbar ul li.nav-btn {
+  color: #fff;
+  margin: 0 0 0 16px;
+}
+
+.top-navbar ul li.nav-btn::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: $button-bg;
+  border-radius: 30px;
+  transition: .2s ease-in-out;
+  z-index: -1;
+}
+
+.top-navbar ul li.nav-btn:hover::before,
+.top-navbar ul li.nav-btn:focus::before {
+  background-color: $button-bg-hover;
+}
+
+.top-navbar ul li a {
+  height: 100%;
+  color: $text-color;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.top-navbar ul li a:hover {
+  color: $link-color;
+  background-color: transparent;
+}
+
+.top-navbar ul li.nav-btn>a {
+  height: 100%;
+  color: #fff;
+}
+
+
+.nav-logo {
+  will-change: transform, opacity;
+  position: relative;
+  background-image: url(../img/logo/talento-logo.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  margin-top: 5px;
+  height: 46px;
+  max-height: 100%;
+  width: 160px;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 0.2s ease-in-out;
+  z-index: 13;
+}
+
+.logo-link {
+  pointer-events: none;
+}
+
+.nav-logo.fixed-logo,
+.nav-logo.fixed-logo+.logo-link {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mobile-menu-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: $nav-height;
+  height: $nav-height;
+  color: $link-color;
+  line-height: 70px;
+  z-index: 10;
+}
+
+@media all and (max-width: 992px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+}
+
+@media all and (min-width: 993px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+

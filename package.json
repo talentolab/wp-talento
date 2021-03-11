@@ -1,0 +1,17 @@
+{
+  "name": "talento",
+  "version": "1.0.0",
+  "description": "Talento Design",
+  "main": "main.js",
+  "scripts": {
+    "sass-comp": "sass ./css/sass/main.scss ./css/main.css --watch"
+  },
+  "author": "Victor Ribeiro",
+  "license": "MIT",
+  "dependencies": {
+    "is-in-viewport": "^3.0.4"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}

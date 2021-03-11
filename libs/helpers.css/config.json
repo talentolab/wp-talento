@@ -1,0 +1,339 @@
+{
+  "containers": [
+    "container-smaller",
+    "container-small",
+    "container-medium",
+    "container-large",
+    "container-larger"
+  ],
+
+  "elements": {
+    "style": {
+      "size": [
+        "full-width",
+        "full-height",
+        "half-width",
+        "half-height",
+        "fullscreen"
+      ],
+
+      "paddings": {
+        "padding-all": [
+          "padding-smaller",
+          "padding-small",
+          "padding-medium",
+          "padding-large",
+          "padding-larger"
+        ],
+
+        "padding-x": [
+          "padding-x-smaller",
+          "padding-x-small",
+          "padding-x-medium",
+          "padding-x-large",
+          "padding-x-larger"
+        ],
+
+        "padding-y": [
+          "padding-y-smaller",
+          "padding-y-small",
+          "padding-y-medium",
+          "padding-y-large",
+          "padding-y-larger"
+        ],
+
+        "padding-left": [
+          "padding-left-smaller",
+          "padding-left-small",
+          "padding-left-medium",
+          "padding-left-large",
+          "padding-left-larger"
+        ],
+
+        "padding-right": [
+          "padding-right-smaller",
+          "padding-right-small",
+          "padding-right-medium",
+          "padding-right-large",
+          "padding-right-larger"
+        ],
+
+        "padding-top": [
+          "padding-top-smaller",
+          "padding-top-small",
+          "padding-top-medium",
+          "padding-top-large",
+          "padding-top-larger"
+        ],
+
+        "padding-bottom": [
+          "padding-bottom-smaller",
+          "padding-bottom-small",
+          "padding-bottom-medium",
+          "padding-bottom-large",
+          "padding-bottom-larger"
+        ]
+      },
+
+      "rounded-corners": [
+        "ellipsis",
+        "border-radius-smaller",
+        "border-radius-small",
+        "border-radius-medium",
+        "border-radius-large",
+        "border-radius-larger"
+      ],
+
+      "shadows": [
+        "shadow-0",
+        "shadow-1",
+        "shadow-2",
+        "shadow-3",
+        "shadow-4",
+        "shadow-5"
+      ]
+    },
+
+    "positioning": {
+      "behavior": [
+        "position-absolute",
+        "position-relative",
+        "position-fixed",
+        "position-sticky"
+      ],
+
+      "position": [
+        "top-left",
+        "top-middle",
+        "top-right",
+        "center",
+        "bottom-left",
+        "bottom-middle",
+        "bottom-right"
+      ],
+
+      "float": [
+        "float-left",
+        "float-right"
+      ],
+
+      "margins": {
+        "margin-all": [
+          "margin-smaller",
+          "margin-small",
+          "margin-medium",
+          "margin-large",
+          "margin-larger"
+        ],
+
+        "margin-bottom": [
+          "margin-bottom-smaller",
+          "margin-bottom-small",
+          "margin-bottom-medium",
+          "margin-bottom-large",
+          "margin-bottom-larger"
+        ],
+
+        "margin-left": [
+          "margin-left-smaller",
+          "margin-left-small",
+          "margin-left-medium",
+          "margin-left-large",
+          "margin-left-larger"
+        ],
+
+        "margin-right": [
+          "margin-right-smaller",
+          "margin-right-small",
+          "margin-right-medium",
+          "margin-right-large",
+          "margin-right-larger"
+        ],
+
+        "margin-top": [
+          "margin-top-smaller",
+          "margin-top-small",
+          "margin-top-medium",
+          "margin-top-large",
+          "margin-top-larger"
+        ],
+
+        "margin-x": [
+          "margin-x-smaller",
+          "margin-x-small",
+          "margin-x-medium",
+          "margin-x-large",
+          "margin-x-larger"
+        ],
+
+        "margin-y": [
+          "margin-y-smaller",
+          "margin-y-small",
+          "margin-y-medium",
+          "margin-y-large",
+          "margin-y-larger"
+        ]
+      },
+
+      "overlapping": {
+        "overlap-top": [
+          "overlap-top-smaller",
+          "overlap-top-small",
+          "overlap-top-medium",
+          "overlap-top-large",
+          "overlap-top-larger"
+        ],
+
+        "overlap-bottom": [
+          "overlap-bottom-smaller",
+          "overlap-bottom-small",
+          "overlap-bottom-medium",
+          "overlap-bottom-large",
+          "overlap-bottom-larger"
+        ]
+      }
+    },
+
+    "visibility": {
+      "display": [
+        "display-block",
+        "display-flex",
+        "display-grid",
+        "display-inline-block",
+        "display-inline-flex",
+        "display-inline",
+        "display-none",
+        "display-unset"
+      ]
+    },
+
+    "effects": {
+      "blur": [
+        "blur-1",
+        "blur-2",
+        "blur-3"
+      ],
+
+      "frost-glass": [
+        "frost-glass-1",
+        "frost-glass-2",
+        "frost-glass-3"
+      ]
+    }
+  },
+
+  "no-styles": {
+    "float": [
+      "no-float"
+    ],
+
+    "margins": [
+      "no-margin-bottom",
+      "no-margin-left",
+      "no-margin-right",
+      "no-margin-top",
+      "no-margin-x",
+      "no-margin-y",
+      "no-margin"
+    ],
+
+    "mouse-actions": [
+      "no-scroll",
+      "no-scroll-x",
+      "no-scroll-y",
+      "no-select",
+      "no-click"
+    ],
+
+    "paddings": [
+      "no-padding",
+      "no-padding-x",
+      "no-padding-y",
+      "no-padding-left",
+      "no-padding-right",
+      "no-padding-top",
+      "no-padding-bottom"
+    ],
+
+    "visibility": [
+      "no-display",
+      "no-opacity"
+    ]
+  },
+
+  "mouse-actions": {
+    "cursor": [
+      "cursor-cell",
+      "cursor-default",
+      "cursor-grab",
+      "cursor-grabbing",
+      "cursor-move",
+      "cursor-not-allowed",
+      "cursor-pointer",
+      "cursor-progress",
+      "cursor-resize-diagonal-1",
+      "cursor-resize-diagonal-2",
+      "cursor-resize-x",
+      "cursor-resize-y",
+      "cursor-text",
+      "cursor-wait",
+      "cursor-zoom-in",
+      "cursor-zoom-out"
+    ],
+
+    "scroll": [
+      "scroll-all",
+      "scroll-auto",
+      "scroll-x-auto",
+      "scroll-x",
+      "scroll-y-auto",
+      "scroll-y"
+    ]
+  },
+
+
+
+  "text": {
+    "text-align": [
+      "text-left",
+      "text-right",
+      "text-center",
+      "text-justify"
+    ],
+
+    "text-size": [
+      "text-smaller",
+      "text-small",
+      "text-medium",
+      "text-large",
+      "text-larger"
+    ],
+
+    "text-spacing": [
+      "text-spacing-smaller",
+      "text-spacing-small",
+      "text-spacing-medium",
+      "text-spacing-large",
+      "text-spacing-larger"
+    ],
+
+    "text-weight": [
+      "text-lighter",
+      "text-light",
+      "text-strong",
+      "text-stronger"
+    ],
+
+    "text-style": [
+      "text-italic",
+      "text-strike",
+      "text-underline"
+    ],
+
+    "text-transform": [
+      "text-lowercase",
+      "text-uppercase",
+      "text-capitalize"
+    ]
+  }
+}

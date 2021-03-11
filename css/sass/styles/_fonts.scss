@@ -1,0 +1,152 @@
+/**
+ * Fonts
+** ---------------------------------- */
+
+/* Inter */
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/inter/static/Inter-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'Inter Black';
+  src: url(../fonts/inter/static/Inter-Black.woff2);
+}
+
+/* Montserrat */
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat ExtraBold';
+  src: url(../fonts/montserrat/Montserrat-ExtraBold.ttf);
+}
+
+
+html,
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter Black", "Montserrat ExtraBold", Helvetica, Arial, sans-serif;
+  padding: 0;
+  position: relative;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2.3em;
+  margin: 24px 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 24px 0;
+}
+
+h2.decoration::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 2px;
+  background-color: #b2ca6a;
+  border-radius: 0;
+  top: -10px;
+  left: -10px;
+}
+
+
+
+/* Grouping content
+	 ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+a:-webkit-any-link:focus {
+  outline-offset: -4px;
+  outline-color: #179a27;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+
+
+p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.5rem !important;
+}

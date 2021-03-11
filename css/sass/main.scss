@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+/**
+ * Media queries
+ * <= 480
+ * >= 481 <= 782
+ * >= 783 <= 992
+ * >= 993 <= 1366
+ * >= 1367
+** ---------------------------------- */
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+// Fonts
+@import './styles/fonts';
+// Helpers
+@import './styles/helpers';
+// Navbar
+@import './components/Navbar';
+// Header
+@import './components/Header';
+// Main
+@import './components/Main';
+// Footer
+@import './components/Footer';
+// Animations
+@import './styles/animations';

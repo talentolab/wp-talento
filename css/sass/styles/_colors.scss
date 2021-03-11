@@ -1,0 +1,72 @@
+// Backgrounds
+$primary-bg: #2b3661;
+$light-purple-bg: #f4f5ff;
+$light-grey-bg: #f9f9f9;
+$accent-bg: #b9dc74;
+$button-bg: #517fc3;
+$button-bg-hover: #6390d2;
+$link-color: #4b8ff5;
+$gradient-bg: linear-gradient(180deg, #f5ffff 0, #fff 65.23vh);
+// Texts
+$text-color: rgba(0, 0, 0, 0.87);
+$text-color-hover: rgba(0, 0, 0, 0.5);
+$title-color: $primary-bg;
+$subtitle-color: rgba(0, 0, 0, 0.5);
+$primary-color: $primary-bg;
+$accent-color: $accent-bg;
+
+/**
+ * Background classes
+ */
+
+.primary-bg {
+  background-color: $primary-bg;
+}
+
+.accent-bg {
+  background-color: $accent-bg;
+}
+
+.button-bg {
+  background-color: $button-bg;
+}
+
+.button-bg:hover {
+  background-color: $button-bg-hover;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.accent-color {
+  color: $accent-color;
+}
+
+.light-purple-bg {
+  background-color: $light-purple-bg;
+}
+
+.light-grey-bg {
+  background-color: $light-grey-bg;
+}
+
+.link-color {
+  color: $link-color;
+}
+
+.text-color {
+  color: $text-color;
+}
+
+.subtitle-color {
+  color: $subtitle-color;
+}
+
+.card .title-color {
+  color: $title-color;
+}
+
+.gradient-bg {
+  background: $gradient-bg;
+}
