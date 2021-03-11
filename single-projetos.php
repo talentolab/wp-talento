@@ -42,9 +42,9 @@ $videos_length = $videos != '' ? sizeof($videos) : null;
             </div>
 
             <div class="card-content padding-small">
-              <h2 class="text-stronger no-margin-top margin-bottom-medium"style="color: <?= $feat_color; ?>;">
+              <h3 class="no-margin-top margin-bottom-medium" style="color: <?= $feat_color; ?>;">
                 <?= get_the_title(); ?>
-              </h2>
+              </h3>
 
               <div class="chip <?= $branding_images_length == 0 ? 'no-display' : ''; ?>">
                 <i class="fas fa-fingerprint margin-right-smaller" style="color: <?= $feat_color; ?>;"></i>
@@ -89,13 +89,13 @@ $videos_length = $videos != '' ? sizeof($videos) : null;
 
             <div class="row">
               <div class="col s12">
-                <h2 class="card-title margin-bottom-medium text-stronger text-large" style="color: <?= $feat_color; ?>">
+                <h1 class="margin-bottom-medium" style="color: <?= $feat_color; ?>">
                   <?php if ($slogan_icon != '') : ?>
-                  <i class="fas fa-<?= $slogan_icon; ?> text-color"></i>
+                  <i class="fas fa-<?= $slogan_icon; ?> grey-text text-lighten-2"></i>
                   <?php endif; ?>
 
                   <?= $slogan; ?>
-                </h2>
+                </h1>
                 <?= get_the_content(); ?>
               </div>
             </div>
