@@ -77,8 +77,8 @@ get_header();
               <div class="card-content padding-small">
                 <div class="card-icon valor"></div>
 
-                <div class="card-title title-color text-strong text-center margin-y-medium">
-                  Marcas de Valor
+                <div class="title-color text-center margin-y-small">
+                  Marcas <br>de Valor
                 </div>
               </div>
             </a>
@@ -91,8 +91,8 @@ get_header();
               <div class="card-content padding-small">
                 <div class="card-icon web"></div>
 
-                <div class="card-title title-color text-strong text-center margin-y-medium">
-                  Soluções em web
+                <div class="title-color text-center margin-y-small">
+                  Soluções <br>em web
                 </div>
               </div>
             </a>
@@ -105,8 +105,8 @@ get_header();
               <div class="card-content padding-small">
                 <div class="card-icon ambientacao"></div>
 
-                <div class="card-title title-color text-strong text-center margin-y-medium">
-                  Ambientação Funcional
+                <div class="title-color text-center margin-y-small">
+                  Ambientação <br>Funcional
                 </div>
               </div>
             </a>
@@ -119,8 +119,8 @@ get_header();
               <div class="card-content padding-small">
                 <div class="card-icon design"></div>
 
-                <div class="card-title title-color text-strong text-center margin-y-medium">
-                  Design Promocional
+                <div class="title-color text-center margin-y-small">
+                  Design <br>Promocional
                 </div>
               </div>
             </a>
@@ -133,8 +133,8 @@ get_header();
               <div class="card-content padding-small">
                 <div class="card-icon marketing"></div>
 
-                <div class="card-title title-color text-strong text-center margin-y-medium">
-                  Marketing & Multimídia
+                <div class="title-color text-center margin-y-small">
+                  Marketing <br>& Multimídia
                 </div>
               </div>
             </a>
@@ -147,8 +147,8 @@ get_header();
               <div class="card-content padding-small">
                 <div class="card-icon redes-sociais"></div>
 
-                <div class="card-title title-color text-strong text-center margin-y-medium">
-                  Redes Sociais
+                <div class="title-color text-center margin-y-small">
+                  Redes <br>Sociais
                 </div>
               </div>
             </a>
@@ -202,7 +202,7 @@ get_header();
   <div class="block light-purple-bg wave-bg--4">
     <div class="container-medium">
       <div class="row no-margin">
-        <div class="col s8 m6 padding-y-large">
+        <div class="col s8 m6 padding-y-large padding-right-large">
           <h2 class="decoration text-stronger wow fadeInUpSmall" data-wow-delay=".1s">
             Social Media
           </h2>
@@ -305,8 +305,11 @@ get_header();
         <div class="swiper-container white cursor-grab no-select no-shadow wow fadeInUpSmall" data-wow-delay=".1s" style="visibility: hidden;">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
+            <?php
+              for ($i = 0; $i < 3; $i++) :
+            ?>
             <!-- Slides -->
-            <div class="swiper-slide wow fadeIn" data-wow-delay=".8s" style="visibility: hidden;">
+            <div class="swiper-slide" data-slide-id="<?= $i; ?>">
               <div class="row full-height valign-wrapper">
                 <div class="col s12 m5 full-height position-relative hide-on-small-only">
                   <div class="client-pic center" style="background-image: url(<?= get_template_directory_uri(); ?>/img/sample/clients/1.jpg);">
@@ -341,40 +344,9 @@ get_header();
               </div>
             </div>
 
-            <div class="swiper-slide wow fadeIn" data-wow-delay=".8s" style="visibility: hidden;">
-              <div class="row full-height valign-wrapper">
-                <div class="col s12 m5 full-height position-relative hide-on-small-only">
-                  <div class="client-pic center">
-                    <div class="bubbles">
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                    </div>
 
-                    <div class="play-btn bottom-right">
-                      <a href="//www.youtube.com/watch?v=XSGBVzeBUbk" class="btn red white-text" title="Assistir depoimento" data-lity>
-                        <i class="material-icons">play_arrow</i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+            <?php endfor; ?>
 
-                <div class="col s12 m7">
-                  <div class="padding-medium padding-right-large">
-                    <p class="quote">
-                      Precisávamos fazer o redesign da nossa marca para nos adequarmos ao momento de 
-                      expansão da escola. A agência conseguiu traduzir a essência multidisciplinar, 
-                      tornando a nossa marca cada vez mais forte. Estamos muito satisfeitos com todo resultado.
-                    </p>
-    
-                    <p class="text-right grey-text">
-                      — Félix Prieto | Castilla Idiomas
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -412,7 +384,7 @@ get_header();
                     <img src="<?= get_the_post_thumbnail_url(); ?>" alt="<?= the_title(); ?>" />
                   <?php endif; ?>
                   
-                  <button class="gallery-btn btn accent-bg center">
+                  <button class="gallery-btn btn button-bg center">
                     Ver projeto
                   </button>
 
