@@ -249,23 +249,23 @@ get_header();
         <div id="carousel-logos-wrapper" class="carousel-wrapper wow fadeInUpSmall no-click padding-y-medium" data-wow-delay=".5s">
           <div id="carousel-logos" class="carousel">
             <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/1.png" data-skip-lazy />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/1.webp" data-skip-lazy />
             </div>
             
             <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/2.png" data-skip-lazy />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/2.webp" data-skip-lazy />
             </div>
             
             <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/3.png" data-skip-lazy />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/3.webp" data-skip-lazy />
             </div>
             
             <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/4.png" data-skip-lazy />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/4.webp" data-skip-lazy />
             </div>
             
             <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/5.png" data-skip-lazy />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/5.webp" data-skip-lazy />
             </div>
           </div>
         </div>
@@ -312,7 +312,7 @@ get_header();
             <div class="swiper-slide" data-slide-id="<?= $i; ?>">
               <div class="row full-height valign-wrapper">
                 <div class="col s12 m5 full-height position-relative hide-on-small-only">
-                  <div class="client-pic center" style="background-image: url(<?= get_template_directory_uri(); ?>/img/sample/clients/1.jpg);">
+                  <div class="client-pic center" style="background-image: url(<?= get_template_directory_uri(); ?>/img/sample/clients/1.webp);">
                     <div class="bubbles">
                       <div class="bubble"></div>
                       <div class="bubble"></div>

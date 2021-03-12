@@ -11,7 +11,7 @@ get_header();
 <header class="margin-top-large">
   <div class="parallax-container">
     <div class="parallax">
-      <img src="<?= get_template_directory_uri(); ?>/img/portfolio-cover.png">
+      <img src="<?= get_template_directory_uri(); ?>/img/portfolio-cover.webp">
     </div>
   </div>
 </header>
