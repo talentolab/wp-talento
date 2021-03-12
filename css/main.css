@@ -955,8 +955,9 @@ samp {
 }
 
 .wave-bg--6 {
-  background-position: 0 -1px;
-  background-size: 100%;
+  background-position: 50% -10px;
+  background-size: 1280px 40px;
+  background-repeat: repeat-x;
   background-image: url(../img/waves/wave-6.svg);
 }
 
