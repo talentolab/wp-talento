@@ -28,6 +28,7 @@ $videos_length = $videos != '' ? sizeof($videos) : null;
     <a href="<?php bloginfo( 'siteurl' ); ?>/portfolio/">
       <div class="return-to-portfolio-btn" title="Voltar para o portfólio">
         <i class="material-icons center grey-text lighten-5 text-large">chevron_left</i>
+        <a href="<?php bloginfo( 'siteurl' ); ?>/portfolio/" class="tooltipped" data-tooltip="Voltar para o portfólio" data-position="right">
       </div>
     </a>
   </div>
@@ -74,6 +75,7 @@ $videos_length = $videos != '' ? sizeof($videos) : null;
 
             <div class="card-action padding-small">
               <a href="#" class="btn button-bg white-text full-width" style="background-color: <?= $feat_color; ?>;">
+              <a href="#" class="btn button-bg white-text full-width waves-effect waves-light" style="background-color: <?= $feat_color; ?>;">
                 Fazer um orçamento
               </a>
             </div>
