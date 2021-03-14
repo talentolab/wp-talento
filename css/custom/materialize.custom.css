@@ -60,6 +60,10 @@ code {
     line-height: inherit;
 }
 
+/* Autocomplete */
+.autocomplete-content li .highlight {
+    color: #4586e8;
+}
 
 /* Inputs */
 input:not([type]),
@@ -388,9 +392,8 @@ nav i.material-icons {
   line-height: 60px;
 }
 
-.menu-search-btn button i.material-icons {
-  height: 40px;
-  line-height: 40px;
+button i.material-icons {
+  user-select: none;
 }
 
 

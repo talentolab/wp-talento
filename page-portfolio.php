@@ -5,6 +5,9 @@
  */
 
 get_header();
+
+$tag = $_GET[ 'tag' ];
+$search = $_GET[ 'q' ];
 ?>
 
 
@@ -108,6 +111,42 @@ get_header();
 
 
 
+          <div class="col s12 m6 l4 xl4 no-padding">
+            <div class="search-bar-wrapper">
+              <div class="search-bar input-field">
+                <form action="" method="GET">
+                  <input id="mz-portfolio-search" name="q" type="search" class="autocomplete search-bar__input text-small" placeholder="Buscar projeto" autofocus autocomplete="off" />
+                  
+                  <button type="submit" class="search-bar__submit tooltipped" data-tooltip="Pesquisar" data-position="left">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+
+                <script>
+                  let searchArray = {
+                    <?php
+                      $args = array(  
+                        'post_type' => 'projetos',
+                        'post_status' => 'publish',
+                        'posts_per_page' => 9, 
+                        'orderby' => 'title', 
+                        'order' => 'ASC',
+                      );
+
+                      $loop = new WP_Query( $args ); 
+                          
+                      while ( $loop->have_posts() ) {
+                        $loop->the_post(); 
+                        echo '"'. get_the_title() .'": "'. get_the_post_thumbnail_url() .'",';
+                      };
+
+                      wp_reset_postdata();
+                    ?>
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
 
 
 

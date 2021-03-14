@@ -19,6 +19,12 @@ let materialize = {
     M.Parallax.init(document.querySelectorAll('.parallax'), {});
 
     M.Tabs.init(document.querySelectorAll('.tabs'), {});
+
+    if (document.querySelectorAll('.autocomplete').length > 0) {
+      M.Autocomplete.init(document.querySelector('#mz-portfolio-search'), {
+        data: searchArray
+      });
+    }
   },
 
   carouselAutoplay: function (instance, time) {
