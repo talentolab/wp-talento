@@ -83,21 +83,6 @@ h5 {
   line-height: 1.8rem;
 }
 
-h1.decoration::before,
-h2.decoration::before,
-h3.decoration::before,
-h4.decoration::before,
-h5.decoration::before {
-  content: "";
-  position: absolute;
-  width: 45px;
-  height: 6px;
-  background-color: $accent-color;
-  border-radius: 0;
-  top: -10px;
-  left: 0px;
-}
-
 
 /* p, span, div, a {
   font-size: 1.6rem;
