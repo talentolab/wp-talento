@@ -1,21 +1,7 @@
 <?php
 get_header();
 
-$branding_images = CFS()->get( 'branding_images' );
-$package_images = CFS()->get( 'package_images' );
-$signaling_images = CFS()->get( 'signaling_images' );
-$web_images = CFS()->get( 'web_images' );
-$client_logo = CFS()->get( 'client_logo' );
-$videos = CFS()->get( 'videos' );
-$feat_color = CFS()->get( 'feat_color' );
-$slogan_icon = CFS()->get( 'slogan_icon' );
-$slogan = CFS()->get( 'slogan' );
 
-$branding_images_length = $branding_images != '' ? sizeof($branding_images) : null;
-$package_images_length = $package_images != '' ? sizeof($package_images) : null;
-$signaling_images_length = $signaling_images != '' ? sizeof($signaling_images) : null;
-$web_images_length = $web_images != '' ? sizeof($web_images) : null;
-$videos_length = $videos != '' ? sizeof($videos) : null;
 ?>
 
 <header class="light-grey-bg">
@@ -47,30 +33,83 @@ $videos_length = $videos != '' ? sizeof($videos) : null;
                 <?= get_the_title(); ?>
               </h3>
 
-              <div class="chip <?= $branding_images_length == 0 ? 'no-display' : ''; ?>">
-                <i class="fas fa-fingerprint margin-right-smaller" style="color: <?= $feat_color; ?>;"></i>
-                Marca
-              </div>
+              <?php
+                $branding_images = CFS()->get( 'branding_images' ) ?? [];
+                $package_images = CFS()->get( 'package_images' ) ?? [];
+                $signaling_images = CFS()->get( 'signaling_images' ) ?? [];
+                $web_images = CFS()->get( 'web_images' ) ?? [];
+                $videos = CFS()->get( 'videos' ) ?? [];
+                $slogan_icon = CFS()->get( 'slogan_icon' ) ?? [];
+                $slogan = CFS()->get( 'slogan' ) ?? [];
 
-              <div class="chip <?= $package_images_length == 0 ? 'no-display' : ''; ?>">
-                <i class="fas fa-box-open margin-right-smaller" style="color: <?= $feat_color; ?>;"></i>
-                Embalagem
-              </div>
+                class Chip {
+                  public $icon;
+                  public $featured_color;
+                  public $name;
+                  public $counter;
+                }
 
-              <div class="chip <?= $signaling_images_length == 0 ? 'no-display' : ''; ?>">
-                <i class="fas fa-store-alt margin-right-smaller" style="color: <?= $feat_color; ?>;"></i>
-                Sinalização
-              </div>
+                $branding_chip = new Chip();
+                $branding_chip->counter = sizeof($branding_images);
+                $branding_chip->icon = 'fingerprint';
+                $branding_chip->name = 'Marca';
+                $branding_chip->slug = 'branding';
 
-              <div class="chip <?= $web_images_length == 0 ? 'no-display' : ''; ?>">
-                <i class="fas fa-code margin-right-smaller" style="color: <?= $feat_color; ?>;"></i>
-                Web
-              </div>
+                $package_chip = new Chip();
+                $package_chip->counter = sizeof($package_images);
+                $package_chip->icon = 'box-open';
+                $package_chip->name = 'Embalagem';
+                $package_chip->slug = 'package';
 
-              <div class="chip <?= $videos_length == 0 ? 'no-display' : ''; ?>">
-                <i class="fas fa-video margin-right-smaller" style="color: <?= $feat_color; ?>;"></i>
-                Vídeos
-              </div>
+                $signaling_chip = new Chip();
+                $signaling_chip->counter = sizeof($signaling_images);
+                $signaling_chip->icon = 'store-alt';
+                $signaling_chip->name = 'Sinalização';
+                $signaling_chip->slug = 'signaling';
+
+                $web_chip = new Chip();
+                $web_chip->counter = sizeof($web_images);
+                $web_chip->icon = 'code';
+                $web_chip->name = 'Web';
+                $web_chip->slug = 'web';
+
+                $videos_chip = new Chip();
+                $videos_chip->counter = sizeof($videos);
+                $videos_chip->icon = 'video';
+                $videos_chip->name = 'Vídeos';
+                $videos_chip->slug = 'videos';
+
+                $chips = array(
+                  $branding_chip, $package_chip, $signaling_chip, $web_chip, $videos_chip
+                );
+
+                foreach ( $chips as $chip ) :
+                  if ( $chip->counter > 0 ) :
+              ?>
+                <div class="chip no-select">
+                  <i class="fas fa-<?= $chip->icon; ?> margin-right-smaller" style="color: <?= $feat_color; ?>;"></i>
+                  <?= $chip->name; ?>
+                </div>
+              <?php
+                  endif;
+                endforeach;
+              ?>
+
+              <section>
+                <div class="grey-text text-small margin-top-medium">Paleta de cores</div>
+
+                <div class="portfolio-content--color-palette display-flex no-scroll border-radius-large">
+                  <?php
+                    $colors = CFS()->get( 'colors' ) ?? [];
+                    
+                    foreach ( $colors as $color ) :
+                  ?>
+                      <div class="full-width tooltipped" data-tooltip="<?= $color['color_pallete']; ?>" data-position="top" style="background-color: <?= $color['color_pallete']; ?>"></div>
+                  <?php
+                    endforeach;
+                  ?>
+                </div>
+              </section>
             </div>
 
             <div class="card-action padding-small">
