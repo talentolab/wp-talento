@@ -10,14 +10,14 @@ get_header();
 </header>
 
 <main class="light-grey-bg">
-  <div class="return-to-portfolio--wrapper">
-    <a href="<?php bloginfo( 'siteurl' ); ?>/portfolio/">
-      <div class="return-to-portfolio-btn" title="Voltar para o portfólio">
-        <i class="material-icons center grey-text lighten-5 text-large">chevron_left</i>
+    <div class="col s12 m1 hide-on-med-and-down no-margin no-padding">
+      <div class="return-to-portfolio--wrapper position-sticky">
         <a href="<?php bloginfo( 'siteurl' ); ?>/portfolio/" class="tooltipped" data-tooltip="Voltar para o portfólio" data-position="right">
+          <div class="return-to-portfolio-btn" title="Voltar para o portfólio">
+            <i class="fas fa-chevron-left center grey-text lighten-5 text-large"></i>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
 
   <div class="row container-large">
     <aside class="overlap-top-larger position-sticky no-padding-x col s12 m5 l4 xl3" style="top: 72px;">
