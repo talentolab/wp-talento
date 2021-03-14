@@ -104,7 +104,7 @@ get_header();
                     
                     foreach ( $colors as $color ) :
                   ?>
-                      <div class="full-width tooltipped" data-tooltip="<?= $color['color_pallete']; ?>" data-position="top" style="background-color: <?= $color['color_pallete']; ?>"></div>
+                      <div class="full-width tooltipped" data-tooltip="<?= $color['color_palette']; ?>" data-position="top" style="background-color: <?= $color['color_palette']; ?>"></div>
                   <?php
                     endforeach;
                   ?>
