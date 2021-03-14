@@ -601,15 +601,19 @@ i.right {
   min-width: 60px;
 }
 
-.card.fixed-height-1 {
+.fixed-height-1 {
   height: 170px;
 }
 
-.card.fixed-height-2 {
+.fixed-height-2 {
+  height: 250px;
+}
+
+.fixed-height-2 {
   height: 300px;
 }
 
-.card.fixed-height-3 {
+.fixed-height-3 {
   height: 350px;
 }
 
