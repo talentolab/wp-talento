@@ -203,7 +203,7 @@ get_header();
     <div class="container-medium">
       <div class="row no-margin">
         <div class="col s8 m6 padding-y-large padding-right-large">
-          <h2 class="decoration text-stronger wow fadeInUpSmall" data-wow-delay=".1s">
+          <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
             Social Media
           </h2>
 
@@ -240,7 +240,7 @@ get_header();
   
   <div class="block">
     <div class="container-medium padding-x-medium padding-top-larger">
-      <h2 class="decoration text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
+      <h2 class="accent-color text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
         Confiam na gente
       </h2>
       
@@ -356,7 +356,7 @@ get_header();
   <!-- Portfólio -->
   <div class="block light-purple-bg wave-bg--6">
     <div class="container-medium padding-y-large">
-      <h2 class="decoration text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
+      <h2 class="accent-color text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
         Nosso portfólio
       </h2>
 
