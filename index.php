@@ -58,7 +58,7 @@ get_header();
 
 
 
-  <div class="block primary-bg animated-bg-1 padding-y-medium">
+  <div class="block primary-bg animated-bg-1 padding-y-larger">
     <div class="container-small">
       <div class="row">
         <h1 class="accent-color text-stronger text-center margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
