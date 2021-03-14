@@ -101,116 +101,97 @@ $videos_length = $videos != '' ? sizeof($videos) : null;
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="padding-x-medium">
-        <ul class="tabs position-sticky light-grey-bg" style="top: 56px; z-index: 6">
-          <style>
-            .tabs .tab a {
-              color: <?= $feat_color; ?>;
-            }
-
-            .tabs .tab a:hover,
-            .tabs .tab a.active {
-              color: <?= $feat_color; ?>;
-            }
-
-            .tabs .indicator {
-              background-color: <?= $feat_color; ?>;
-            }
-          </style>
-          <li class="tab <?= $branding_images_length == 0 ? 'disabled' : ''; ?>">
-            <a class="active text-stronger" href="#branding">
-              <i class="fas fa-fingerprint margin-right-smaller"></i>
-              Marca
-            </a>
-          </li>
-
-          <li class="tab <?= $package_images_length == 0 ? 'disabled' : ''; ?>">
-            <a class="text-stronger" href="#package">
-              <i class="fas fa-box-open margin-right-smaller"></i>
-              Embalagem
-            </a>
-          </li>
-
-          <li class="tab <?= $signaling_images_length == 0 ? 'disabled' : ''; ?>">
-            <a class="text-stronger" href="signaling">
-              <i class="fas fa-store-alt margin-right-smaller"></i>
-              Sinalização
-            </a>
-          </li>
-
-          <li class="tab <?= $web_images_length == 0 ? 'disabled' : ''; ?>">
-            <a class="text-stronger" href="#web">
-              <i class="fas fa-code margin-right-smaller"></i>
-              Web
-            </a>
-          </li>
-
-          <li class="tab <?= $videos_length == 0 ? 'disabled' : ''; ?>">
-            <a class="text-stronger" href="#videos">
-              <i class="fas fa-video margin-right-smaller"></i>
-              Vídeos
-            </a>
-          </li>
-        </ul>
-
-        <div id="branding">
-          <div class="portfolio-modal__images">
-            <?php
-              $loop = CFS()->get( 'branding_images' ) != '' ? CFS()->get( 'branding_images' ) : [];
-              foreach ( $loop as $row ) {
-                echo '<img src="'. $row['branding_image'] .'" alt="Portfólio '. get_the_title() .'" />';
+        
+        <div class="position-relative">
+          <ul class="tabs position-sticky light-grey-bg" style="top: 56px; z-index: 6">
+            <style>
+              .tabs .tab a {
+                color: <?= $feat_color; ?>;
               }
+              .tabs .tab a:hover,
+              .tabs .tab a.active {
+                color: <?= $feat_color; ?>;
+              }
+              .tabs .indicator {
+                background-color: <?= $feat_color; ?>;
+              }
+            </style>
+
+            <?php
+              foreach ($chips as $chip) :
+                  if ( $chip->counter > 0) :
             ?>
+              <li class="tab">
+                <a class="active text-stronger" href="#<?= $chip->slug; ?>">
+                  <i class="fas fa-<?= $chip->icon; ?> margin-right-smaller"></i>
+                  <?= $chip->name; ?>
+                </a>
+              </li>
+            <?php
+                endif;
+              endforeach;
+            ?>
+          </ul>
+
+          <div id="branding">
+            <div class="portfolio-content--images">
+              <?php
+                $images = CFS()->get( 'branding_images' ) ?? [];
+
+                foreach ( $images as $image ) :
+              ?>
+                <img src="<?= $image['branding_image']; ?>" alt="Portfólio <?= get_the_title(); ?>" />
+              <?php
+                endforeach;
+              ?>
+            </div>
           </div>
-        </div>
 
-        <div id="package">
-          <div class="portfolio-modal__images">
-            <?php
-              $loop = CFS()->get( 'package_images' ) != '' ? CFS()->get( 'package_images' ) : [];
-              foreach ( $loop as $row ) {
-                echo '<img src="'. $row['package_image'] .'" alt="Portfólio '. get_the_title() .'" />';
-              }
-            ?>
+          <div id="package">
+            <div class="portfolio-content--images">
+              <?php
+                $loop = CFS()->get( 'package_images' ) ?? [];
+                foreach ( $loop as $row ) {
+                  echo '<img src="'. $row['package_image'] .'" alt="Portfólio '. get_the_title() .'" />';
+                }
+              ?>
+            </div>
           </div>
-        </div>
 
-        <div id="signaling">
-          <div class="portfolio-modal__images">
-            <?php
-              $loop = CFS()->get( 'signaling_images' ) != '' ? CFS()->get( 'signaling_images' ) : [];
-              foreach ( $loop as $row ) {
-                echo '<img src="'. $row['signaling_image'] .'" alt="Portfólio '. get_the_title() .'" />';
-              }
-            ?>
+          <div id="signaling">
+            <div class="portfolio-content--images">
+              <?php
+                $loop = CFS()->get( 'signaling_images' ) ?? [];
+                foreach ( $loop as $row ) {
+                  echo '<img src="'. $row['signaling_image'] .'" alt="Portfólio '. get_the_title() .'" />';
+                }
+              ?>
+            </div>
           </div>
-        </div>
 
-        <div id="web">
-          <div class="portfolio-modal__images">
-            <?php
-              $loop = CFS()->get( 'web_images' ) != '' ? CFS()->get( 'web_images' ) : [];
-              foreach ( $loop as $row ) {
-                echo '<img src="'. $row['web_image'] .'" alt="Portfólio '. get_the_title() .'" />';
-              }
-            ?>
+          <div id="web">
+            <div class="portfolio-content--images">
+              <?php
+                $loop = CFS()->get( 'web_images' ) ?? [];
+                foreach ( $loop as $row ) {
+                  echo '<img src="'. $row['web_image'] .'" alt="Portfólio '. get_the_title() .'" />';
+                }
+              ?>
+            </div>
           </div>
-        </div>
 
-        <div id="videos">
-          <div class="portfolio-modal__images">
-            <?php
-              $loop = CFS()->get( 'videos' ) != '' ? CFS()->get( 'videos' ) : [];
-              foreach ( $loop as $row ) {
-                echo '<img src="'. $row['video'] .'" alt="Portfólio '. get_the_title() .'" />';
-              }
-            ?>
+          <div id="videos">
+            <div class="portfolio-content--images">
+              <?php
+                $loop = CFS()->get( 'videos' ) ?? [];
+                foreach ( $loop as $row ) {
+                  echo '<img src="'. $row['video'] .'" alt="Portfólio '. get_the_title() .'" />';
+                }
+              ?>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </main>

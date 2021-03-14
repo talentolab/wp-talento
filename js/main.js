@@ -320,5 +320,18 @@ portfolioCloseModal.forEach((el) => {
 
 
 
-const tabs = document.getElementsByClassName('tabs');
-const tabItem = document.getElementsByClassName('tab');
+const tabs = document.querySelector('.tabs');
+const tabItem = document.querySelectorAll('.tab');
+
+if (tabItem.length > 0) {
+  tabItem.forEach((el) => {
+    el.addEventListener('click', function() {
+      const y = tabs.parentElement.getBoundingClientRect().top + window.scrollY - 56;
+
+      window.scroll({
+        top: y,
+        behavior: 'smooth'
+      });
+    })
+  })
+}
