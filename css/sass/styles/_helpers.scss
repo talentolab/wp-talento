@@ -10,3 +10,15 @@
 .medium-shadow {
   box-shadow: 2px 2px 15px rgb(0 0 0 / 30%);
 }
+
+@media all and (max-width: 600px) {
+  .flex-on-med-and-up {
+    display: block;
+  }
+}
+
+@media all and (min-width: 601px) {
+  .flex-on-med-and-up {
+    display: flex;
+  }
+}
