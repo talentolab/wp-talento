@@ -274,6 +274,27 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
+
+
+
+/**
+ * Ajax Load More
+ * Translation of results
+ */
+// Default: Viewing {post_count} of {total_posts} results.
+add_filter('alm_display_results', function(){
+	return 'Exibindo {post_count} de {total_posts} projetos';
+});
+
+
+// Default: No results found.
+add_filter('alm_no_results_text', function(){
+	return 'Não há nada aqui. :(';
+});
+
+
+
+
 require_once get_template_directory() .'/php-libs/class-tgm-plugin-activation.php';
 
 function talento_register_required_plugins() {
