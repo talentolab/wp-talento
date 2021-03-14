@@ -272,3 +272,197 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+require_once get_template_directory() .'/php-libs/class-tgm-plugin-activation.php';
+
+function talento_register_required_plugins() {
+	global $dev_mode;
+
+    /*
+     * Array of plugin arrays. Required keys are name and slug.
+     * If the source is NOT from the .org repo, then source is also required.
+     */
+    $plugins = array(
+		// Essenciais
+		array(
+            'name'      => 'Ajax Load More',
+            'slug'      => 'ajax-load-more',
+            'required'  => true
+        ),
+
+		array(
+            'name'      => 'Custom Field Suite',
+            'slug'      => 'custom-field-suite',
+            'required'  => true
+        ),
+
+		array(
+            'name'      => 'Custom Post Type UI',
+            'slug'      => 'custom-post-type-ui',
+            'required'  => true
+        ),
+
+		array(
+            'name'      => 'Font Awesome',
+            'slug'      => 'font-awesome',
+            'required'  => true
+        ),
+
+		array(
+            'name'      => 'Safe SVG',
+            'slug'      => 'safe-svg',
+            'required'  => true
+        ),
+
+		array(
+            'name'      => 'WP Cerber',
+            'slug'      => 'wp-cerber',
+            'required'  => true,
+			// Force activation on production
+			'force_activation' => $dev_mode ? false : true
+        ),
+
+		array(
+            'name'      => 'Wordfence',
+            'slug'      => 'wordfence',
+            'required'  => true,
+			// Force activation on production
+			'force_activation' => $dev_mode == true ? false : true
+        ),
+
+        array(
+            'name'      => 'Contact Form 7',
+            'slug'      => 'contact-form-7',
+            'required'  => true,
+        ),
+
+        array(
+            'name'      => 'WP Mail SMTP',
+            'slug'      => 'wp-mail-smtp',
+            'required'  => true,
+        ),
+
+		// Opcionais
+        array(
+            'name'      => 'Editor Clássico',
+            'slug'      => 'classic-editor',
+            'required'  => false,
+        ),
+
+        array(
+            'name'      => 'EWWW Image Optimizer',
+            'slug'      => 'ewww-image-optimizer',
+            'required'  => false,
+        ),
+
+		array(
+            'name'      => 'File Renaming on Uoad',
+            'slug'      => 'file-renaming-on-upload',
+            'required'  => false,
+        ),
+
+		array(
+            'name'      => 'Perfect Images + Retina',
+            'slug'      => 'wp-retina-2x',
+            'required'  => false,
+        )
+    );
+
+
+    $config = array(
+        'id'           => 'talento',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+        'default_path' => '',                      // Default absolute path to bundled plugins.
+        'menu'         => 'tgmpa-install-plugins', // Menu slug.
+        'parent_slug'  => 'themes.php',            // Parent menu slug.
+        'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+        'has_notices'  => true,                    // Show admin notices or not.
+        'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+        'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+        'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+        'message'      => '',                      // Message to output right before the plugins table.
+
+
+        'strings'      => array(
+            'page_title'                      => __('Instalar plugins essenciais', 'talento'),
+            'menu_title'                      => __('Instalar plugins', 'talento'),
+            /* translators: %s: plugin name. */
+            'installing'                      => __('Instalando plugin: %s', 'talento'),
+            /* translators: %s: plugin name. */
+            'updating'                        => __('Atualizando plugin: %s', 'talento'),
+            'oops'                            => __('Algo deu errado com a API do plugin.', 'talento'),
+            'notice_can_install_required'     => _n_noop(
+                /* translators: 1: plugin name(s). */
+                'Este plugin é essencial para esse tema: %1$s.',
+                'Estes plugins são essenciais para esse tema: %1$s.',
+                'talento'
+            ),
+            'notice_can_install_recommended'  => _n_noop(
+                /* translators: 1: plugin name(s). */
+                'Este plugin é opcional (mas recomendado) para esse tema: %1$s.',
+                'Estes plugins são opcionais (mas recomendados) para esse tema: %1$s.',
+                'talento'
+            ),
+            'notice_ask_to_update'            => _n_noop(
+                /* translators: 1: plugin name(s). */
+                'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
+                'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
+                'talento'
+            ),
+            'notice_ask_to_update_maybe'      => _n_noop(
+                /* translators: 1: plugin name(s). */
+                'Há uma atualização para: %1$s.',
+                'Há atualizações disponíveis para esses plugins: %1$s.',
+                'talento'
+            ),
+            'notice_can_activate_required'    => _n_noop(
+                /* translators: 1: plugin name(s). */
+                'O seguinte plugin essencial está atualmente inativo: %1$s.',
+                'Os seguintes plugins essenciais estão atualmente inativos: %1$s.',
+                'talento'
+            ),
+            'notice_can_activate_recommended' => _n_noop(
+                /* translators: 1: plugin name(s). */
+                'O seguinte plugin opcional está atualmente inativo: %1$s.',
+                'Os seguintes plugins opcionais estão atualmente inativos: %1$s.',
+                'talento'
+            ),
+            'install_link'                    => _n_noop(
+                'Começar a instalar plugin',
+                'Começar a instalar plugins',
+                'talento'
+            ),
+            'update_link' 					  => _n_noop(
+                'Começar a atualizar plugin',
+                'Começar a atualizar plugins',
+                'talento'
+            ),
+            'activate_link'                   => _n_noop(
+                'Começar a ativar plugin',
+                'Começar a ativar plugins',
+                'talento'
+            ),
+            'return'                          => __('Voltar para o instalador de Plugins Essenciais', 'talento'),
+            'plugin_activated'                => __('Plugin ativado com sucesso.', 'talento'),
+            'activated_successfully'          => __('O seguinte plugin foi ativado com sucesso:', 'talento'),
+            /* translators: 1: plugin name. */
+            'plugin_already_active'           => __('Nenhuma ação feita. O plugin %1$s já está ativo.', 'talento'),
+            /* translators: 1: plugin name. */
+            'plugin_needs_higher_version'     => __('Plugin não ativado. Uma versão mais nova de %s é necessária para este tema. Por favor, atualize o plugin.', 'talento'),
+            /* translators: 1: dashboard link. */
+            'complete'                        => __('Todos os plugins foram instalados e ativados com sucesso. %1$s', 'talento'),
+            'dismiss'                         => __('Ignorar', 'talento'),
+            'notice_cannot_install_activate'  => __('Existem um ou mais plugins essenciais ou opcionais a serem instalados, atualizados ou ativados.', 'talento'),
+            'contact_admin'                   => __('Por favor, contate o administrador do site para obter ajuda.', 'talento'),
+
+            'nag_type'                        => 'notice-info', // Determines admin notice type - can only be one of the typical WP notice classes, such as 'updated', 'update-nag', 'notice-warning', 'notice-info' or 'error'. Some of which may not work as expected in older WP versions.
+        ),
+
+    );
+
+    tgmpa($plugins, $config);
+}
+
+add_action('tgmpa_register', 'talento_register_required_plugins');
+
+
