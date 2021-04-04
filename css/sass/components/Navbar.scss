@@ -5,7 +5,6 @@
  * Top navbar
 ** --------------------------- */
 
-
 /* Add a margin-top to navbar if user is logged in */
 
 @media all and (max-width: 782px) {
@@ -25,8 +24,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 56px;
-  line-height: 56px;
+  height: $nav-height;
+  line-height: $nav-height;
   width: 100%;
   background-color: transparent;
   transition: .3s ease-in-out;
@@ -147,7 +146,7 @@
   width: $nav-height;
   height: $nav-height;
   color: $link-color;
-  line-height: 70px;
+  line-height: $nav-height;
   z-index: 10;
 }
 
