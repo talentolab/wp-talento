@@ -96,7 +96,7 @@ get_header();
               ?>
 
               <section>
-                <div class="grey-text text-small margin-top-medium">Paleta de cores</div>
+                <div class="grey-text text-small margin-top-medium">Paleta</div>
 
                 <div class="portfolio-content--color-palette display-flex no-scroll border-radius-large">
                   <?php
