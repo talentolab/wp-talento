@@ -24,7 +24,10 @@ let materialize = {
 
     if (document.querySelectorAll('.autocomplete').length > 0) {
       M.Autocomplete.init(document.querySelector('#mz-portfolio-search'), {
-        data: searchArray
+        data: searchArray,
+        onAutocomplete: () => {
+          document.querySelector('.search-bar__submit').click();
+        }
       });
     }
   },
