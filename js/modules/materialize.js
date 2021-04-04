@@ -14,7 +14,9 @@ let materialize = {
       numVisible: 5
     });
     
-    M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+    M.Tooltip.init(document.querySelectorAll('.tooltipped'), {
+      enterDelay: 300
+    });
     
     M.Parallax.init(document.querySelectorAll('.parallax'), {});
 
