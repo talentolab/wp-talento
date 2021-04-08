@@ -34,6 +34,7 @@ get_header();
       ?>
       <p>Sorry, no posts matched your criteria.</p>
       <?php endif; ?>
+              <div class="team-pic centered" style="background-image: url(<?= get_template_directory_uri(); ?>/img/sample/clients/1.webp);"></div>
     </div>
   </div>
 </div>
