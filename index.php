@@ -403,7 +403,7 @@ get_header();
 
       <div class="row">
         <div class="text-center">
-          <a href="<?php bloginfo( 'siteurl' ); ?>/portfolio" class="btn button-bg white-text">
+          <a href="<?php bloginfo( 'url' ); ?>/portfolio" class="btn button-bg white-text">
             Ver portfólio completo
           </a>
         </div>

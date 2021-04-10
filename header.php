@@ -38,7 +38,7 @@
 
   <nav class="top-navbar shadow-0 <?php if (!is_front_page()) echo 'fixed-nav'; ?>">
     <div class="container-large full-height">
-      <a class="logo-link" href="<?php bloginfo( 'siteurl' ); ?>" title="<?php bloginfo( 'name' ); ?>">
+      <a class="logo-link" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
         <?php
           $logo = get_theme_mod( 'custom_logo' );
           $image = wp_get_attachment_image_src( $logo , 'full' );
@@ -51,23 +51,23 @@
 
       <ul class="float-right">
         <li>
-          <a href="<?php bloginfo( 'siteurl' ); ?>" class="js-splash-text text-middle text-center">Home</a>
+          <a href="<?php bloginfo( 'url' ); ?>" class="js-splash-text text-middle text-center">Home</a>
         </li>
 
         <li>
-          <a href="<?php bloginfo( 'siteurl' ); ?>/portfolio" class="js-splash-text text-middle text-center">Portfólio</a>
+          <a href="<?php bloginfo( 'url' ); ?>/portfolio" class="js-splash-text text-middle text-center">Portfólio</a>
         </li>
 
         <li>
-          <a href="<?php bloginfo( 'siteurl' ); ?>/sobre" class="js-splash-text text-middle text-center">Quem somos</a>
+          <a href="<?php bloginfo( 'url' ); ?>/sobre" class="js-splash-text text-middle text-center">Quem somos</a>
         </li>
 
         <li>
-          <a href="<?php bloginfo( 'siteurl' ); ?>/404" class="js-splash-text text-middle text-center">Contato</a>
+          <a href="<?php bloginfo( 'url' ); ?>/contato" class="js-splash-text text-middle text-center">Contato</a>
         </li>
 
         <li class="nav-btn">
-          <a href="<?php bloginfo( 'siteurl' ); ?>/contato" class="js-splash-text text-middle text-center white-text">Faça um orçamento</a>
+          <a href="#/orcamento/" class="dropdown-trigger js-splash-text text-middle text-center white-text" data-target="main-menu-dropdown">Faça um orçamento</a>
         </li>
       </ul>
     </div>
