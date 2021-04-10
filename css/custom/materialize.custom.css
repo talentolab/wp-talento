@@ -311,80 +311,6 @@ i.right {
   background-color: rgb(0 0 0 / 5%);
 }
 
-/** ---------------------------------------
- * Negative
- **/
-.negative input,
-.negative textarea,
-.negative input[type=text]:not(.browser-default):focus:not([readonly]),
-.negative input[type=email]:not(.browser-default):focus:not([readonly]),
-.negative input[type=number]:not(.browser-default):focus:not([readonly]),
-.negative input[type=search]:not(.browser-default):focus:not([readonly]) {
-  color: #fff !important;
-  border-color: #fff !important;
-  box-shadow: 0 0 0 2px;
-}
-
-.negative input[type=submit] {
-  color: #fff !important;
-  border-color: transparent !important;
-  box-shadow: none !important;
-}
-
-.negative label {
-  color: #fff !important;
-}
-
-.negative input {
-  color: #fff !important;
-  border-color: #fff !important;
-}
-
-.negative .input-field>label:not(.label-icon).active {
-  color: #fff;
-  background-color: var(--primary-color);
-}
-
-.negative .input-field>label:not(.label-icon) {
-  color: #fff;
-  background-color: var(--primary-color);
-  z-index: 0;
-}
-
-.negative input:not([type]),
-.negative input[type=text]:not(.browser-default),
-.negative input[type=password]:not(.browser-default),
-.negative input[type=email]:not(.browser-default),
-.negative input[type=url]:not(.browser-default),
-.negative input[type=time]:not(.browser-default),
-.negative input[type=date]:not(.browser-default),
-.negative input[type=datetime]:not(.browser-default),
-.negative input[type=datetime-local]:not(.browser-default),
-.negative input[type=tel]:not(.browser-default),
-.negative input[type=number]:not(.browser-default),
-.negative input[type=search]:not(.browser-default),
-.negative textarea.materialize-textarea {
-  box-shadow: 0 0 0 1px #fff;
-  color: #fff;
-}
-
-.negative input:not([type]):focus:not([readonly]),
-.negative input[type=text]:not(.browser-default):focus:not([readonly]),
-.negative input[type=password]:not(.browser-default):focus:not([readonly]),
-.negative input[type=email]:not(.browser-default):focus:not([readonly]),
-.negative input[type=url]:not(.browser-default):focus:not([readonly]),
-.negative input[type=time]:not(.browser-default):focus:not([readonly]),
-.negative input[type=date]:not(.browser-default):focus:not([readonly]),
-.negative input[type=datetime]:not(.browser-default):focus:not([readonly]),
-.negative input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
-.negative input[type=tel]:not(.browser-default):focus:not([readonly]),
-.negative input[type=number]:not(.browser-default):focus:not([readonly]),
-.negative input[type=search]:not(.browser-default):focus:not([readonly]),
-.negative textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 0;
-  -webkit-box-shadow: 0 0 0 2px #ffffff;
-  box-shadow: 0 0 0 2px #ffffff;
-}
 
 /* Carousel */
 .carousel {
@@ -422,7 +348,7 @@ i.right {
   z-index: 2;
 }
 
-.carousel-btn i.material-icons {
+.carousel-btn i {
   color: #989898;
   background-color: #fff;
   position: absolute;
@@ -434,7 +360,7 @@ i.right {
   border-radius: 50%;
 }
 
-.carousel-btn i.material-icons:hover {
+.carousel-btn i:hover {
   background-color: rgba(43, 165, 110, 0.6);
 }
 
