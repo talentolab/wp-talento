@@ -31,8 +31,31 @@
           </li>
           <li>
             <a href="#!">Lorem Ipsum</a>
+
+
+        <ul class="no-margin-x margin-top-medium">
+          <li class="footer-links--title">Siga a Talento</li>
+
+          <li class="display-flex">
+            <a href="#" class="js-splash-text text-center padding-x-smaller text-large tooltipped" data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#" class="js-splash-text text-center padding-x-smaller text-large tooltipped" data-tooltip="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" class="js-splash-text text-center padding-x-smaller text-large tooltipped" data-tooltip="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#" class="js-splash-text text-center padding-x-smaller text-large tooltipped" data-tooltip="Behance">
+              <i class="fab fa-behance"></i>
+            </a>
           </li>
         </ul>
+
+        
       </div>
 
       <div class="col s6 m6 l3 xl3">

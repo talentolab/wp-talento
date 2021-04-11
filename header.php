@@ -69,7 +69,26 @@
         <li class="nav-btn">
           <a href="#/orcamento/" class="dropdown-trigger js-splash-text text-middle text-center white-text" data-target="main-menu-dropdown">Faça um orçamento</a>
         </li>
+
+        <li class="display-flex margin-left-medium">
+          <a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Behance">
+            <i class="fab fa-behance"></i>
+          </a>
+        </li>
       </ul>
+
     </div>
   </nav>
 
