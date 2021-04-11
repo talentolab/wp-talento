@@ -12,7 +12,7 @@
 ?>
 
 <footer class="site-footer padding-top-large">
-  <div class="container-medium">
+  <div class="container-large">
     <div class="row no-margin padding-bottom-large wow fadeIn" data-wow-delay=".2s">
       <div class="col s12 m6 l3 xl3">
         <div class="footer-logo"></div>
@@ -110,7 +110,7 @@
   </div>
 
   <div class="footer-copyright padding-small primary-bg">
-    <div class="container-medium row valign-wrapper">
+    <div class="container-large row valign-wrapper">
       <div class="col s7 m11 no-padding-x">
         <a href="/" class="strong">Talento Design & Marketing</a> ® <?= date('Y'); ?>. Todos os direitos
         reservados.
