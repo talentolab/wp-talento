@@ -14,23 +14,8 @@
 <footer class="site-footer padding-top-large">
   <div class="container-medium">
     <div class="row no-margin padding-bottom-large wow fadeIn" data-wow-delay=".2s">
-      <div class="col s6 m6 l3 xl3">
-        <ul class="no-margin-x no-margin-bottom margin-top-medium">
-          <li class="footer-links--title">Lorem Ipsum</li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
+      <div class="col s12 m6 l3 xl3">
+        <div class="footer-logo"></div>
 
 
         <ul class="no-margin-x margin-top-medium">
