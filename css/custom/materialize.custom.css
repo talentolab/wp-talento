@@ -55,9 +55,13 @@ code {
   border-radius: 20px;
 }
 
-.btn i, .btn-flat i, .btn-floating i, .btn-large i, .btn-small i {
-    font-size: 2rem;
-    line-height: inherit;
+.btn i,
+.btn-flat i,
+.btn-floating i,
+.btn-large i,
+.btn-small i {
+  font-size: 2rem;
+  line-height: inherit;
 }
 
 /* Autocomplete */
@@ -135,8 +139,8 @@ nav {
 }
 
 nav ul a {
-    font-size: inherit;
-    color: #fff;
+  font-size: inherit;
+  color: #fff;
 }
 
 nav ul a:hover,
@@ -427,7 +431,7 @@ i.right {
 
 /* Tabs */
 .tabs .tab {
-    text-transform: inherit;
+  text-transform: inherit;
 }
 
 .tabs .tab a {

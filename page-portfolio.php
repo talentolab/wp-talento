@@ -149,26 +149,26 @@ $search = $_GET[ 'q' ];
         <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/custom/ajax-load-more.custom.css" defer />
 
         <?= do_shortcode('
-            [ajax_load_more
-              tag="'. $tag .'"
-              search="'. $search .'"
-              post_type="projetos"
-              scroll="true"
-              posts_per_page="6"
-              container_type="div"
-              offset="0"
-              pause="false"
-              images_loaded="true"
-              orderby="menu_order"
-              button_loading_label="Carregando..."
-              progress_bar_color="868ff3"
-              button_label="Carregar mais"
-              button_done_label="Isso é tudo :)"
-            ]'); ?>
+          [ajax_load_more
+          tag="'. $tag .'"
+          search="'. $search .'"
+          post_type="projetos"
+          scroll="true"
+          posts_per_page="6"
+          container_type="div"
+          offset="0"
+          pause="false"
+          images_loaded="true"
+          orderby="menu_order"
+          button_loading_label="Carregando..."
+          progress_bar_color="868ff3"
+          button_label="Carregar mais"
+          button_done_label="Isso é tudo :)"
+        ]'); ?>
+
       </div>
     </div>
   </div>
-
 </main>
 
 

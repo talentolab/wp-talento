@@ -264,9 +264,7 @@ function changeSkyColor() {
       cloud.style.opacity = '0.1'
       textWithWave.style.color = ''
     }
-
   }
-
 }
 
 
