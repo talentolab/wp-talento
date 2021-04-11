@@ -112,22 +112,50 @@
 
 
   <ul id="slide-out" class="sidenav">
-    <li><a href="#!" tabindex="-1"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!" tabindex="-1">Second Link</a></li>
     <li>
-      <div class="divider"></div>
+      <a href="<?php bloginfo( 'url' ); ?>" class="text-middle">Home</a>
     </li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!" tabindex="-1">Third Link With Waves</a></li>
+
+    <li>
+      <a href="<?php bloginfo( 'url' ); ?>/portfolio" class="text-middle">Portfólio</a>
+    </li>
+
+    <li>
+      <a href="<?php bloginfo( 'url' ); ?>/sobre" class="text-middle">Quem somos</a>
+    </li>
+
+    <li>
+      <a href="<?php bloginfo( 'url' ); ?>/contato" class="text-middle">Contato</a>
+    </li>
+
+    <li class="button-bg">
+      <a href="#/orcamento/" class="dropdown-trigger text-middle white-text" data-target="main-menu-dropdown">Faça um orçamento</a>
+    </li>
+
+    <li class="display-flex">
+      <a href="#" class="white text-center margin-right-smaller padding-right-smaller text-large tooltipped" data-tooltip="Facebook">
+        <i class="fab fa-facebook no-margin"></i>
+      </a>
+
+      <a href="#" class="white text-center margin-right-smaller no-padding-left padding-right-smaller text-large tooltipped" data-tooltip="Instagram">
+        <i class="fab fa-instagram no-margin"></i>
+      </a>
+
+      <a href="#" class="white text-center margin-right-smaller no-padding-left padding-right-smaller text-large tooltipped" data-tooltip="LinkedIn">
+        <i class="fab fa-linkedin no-margin"></i>
+      </a>
+
+      <a href="#" class="white text-center margin-right-smaller no-padding-left text-large tooltipped" data-tooltip="Behance">
+        <i class="fab fa-behance no-margin"></i>
+      </a>
+    </li>
   </ul>
 
-  <a href="#" data-target="slide-out" class="mobile-menu-btn sidenav-trigger"><i class="material-icons">menu</i></a>
 
-  <div id="js_disabled_message" class="fullscreen gradient-bg" style="z-index: 1000">
-    <div class="center padding-medium text-center">
-      Esse site requer o JavaScript habilitado para funcionar.
-      <br>
-      <a href="https://www.enable-javascript.com/pt/" target="_blank" rel="nofollow noreferrer">Como habilitar?</a>
+  <a href="#" data-target="slide-out" class="mobile-menu-btn sidenav-trigger waves-effect">
+    <i class="fas fa-bars"></i>
+  </a>
+
     </div>
   </div>
   <script>

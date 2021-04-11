@@ -697,4 +697,10 @@ blockquote {
 .page-footer a:hover::before {
   transform: translateX(0%);
   opacity: 1
+
+
+@media screen and (min-width: 768px) {
+  .drag-target.right-aligned {
+    display: none;
+  }
 }
