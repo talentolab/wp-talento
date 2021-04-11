@@ -93,6 +93,23 @@
   </nav>
 
 
+  <!-- Dropdown Structure -->
+  <div class="js-main-menu-dropdown">
+    <ul id="main-menu-dropdown" class="dropdown-content margin-top-smaller">
+      <li>
+        <a href="#!">Design de marca</a>
+      </li>
+      
+      <li>
+        <a href="#!">Criação de site</a>
+      </li>
+      
+      <li>
+        <a href="#!">Social media</a>
+      </li>
+    </ul>
+  </div>
+
 
   <ul id="slide-out" class="sidenav">
     <li><a href="#!" tabindex="-1"><i class="material-icons">cloud</i>First Link With Icon</a></li>

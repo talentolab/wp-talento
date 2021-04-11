@@ -13,6 +13,10 @@ let materialize = {
       shift: 20,
       numVisible: 5
     });
+
+    M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), {
+      container: document.querySelectorAll('.js-main-menu-dropdown')
+    });
     
     M.Tooltip.init(document.querySelectorAll('.tooltipped'), {
       enterDelay: 300
