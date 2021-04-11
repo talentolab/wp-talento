@@ -67,7 +67,7 @@ code {
 
 .dropdown-content {
   z-index: 1001;
-  border-radius: 3px;
+  border-radius: 25px;
 }
 
 .dropdown-content li>a,
