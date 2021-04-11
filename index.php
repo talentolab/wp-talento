@@ -58,7 +58,7 @@ get_header();
 
 
 
-  <div class="block primary-bg animated-bg-1 padding-y-larger">
+  <div class="block primary-bg illustration-lines svg-animation padding-y-larger">
     <div class="container-small">
       <div class="row">
         <h1 class="accent-color text-stronger text-center margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
@@ -173,7 +173,7 @@ get_header();
     <div class="container-medium padding-top-large">
       <div class="row no-margin">
         <div class="col s12 m6">
-          <div class="meet-talento-ilustration"></div>
+          <div class="meet-talento-ilustration svg-animation wow fadeInLeftSmall" data-wow-delay=".2s"></div>
         </div>
 
         <div class="col s10 m6">

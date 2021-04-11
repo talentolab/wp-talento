@@ -228,763 +228,763 @@
     .o_0 {
       stroke-dasharray: 623 625;
       stroke-dashoffset: 624;
-      animation: o_draw_0 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_0 10000ms linear 0ms 1 forwards;
     }
 
     .o_1 {
       stroke-dasharray: 220 222;
       stroke-dashoffset: 221;
-      animation: o_draw_1 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_1 10000ms linear 0ms 1 forwards;
     }
 
     .o_2 {
       stroke-dasharray: 64 66;
       stroke-dashoffset: 65;
-      animation: o_draw_2 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_2 10000ms linear 0ms 1 forwards;
     }
 
     .o_3 {
       stroke-dasharray: 284 286;
       stroke-dashoffset: 285;
-      animation: o_draw_3 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_3 10000ms linear 0ms 1 forwards;
     }
 
     .o_4 {
       stroke-dasharray: 525 527;
       stroke-dashoffset: 526;
-      animation: o_draw_4 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_4 10000ms linear 0ms 1 forwards;
     }
 
     .o_5 {
       stroke-dasharray: 10 12;
       stroke-dashoffset: 11;
-      animation: o_draw_5 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_5 10000ms linear 0ms 1 forwards;
     }
 
     .o_6 {
       stroke-dasharray: 10 12;
       stroke-dashoffset: 11;
-      animation: o_draw_6 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_6 10000ms linear 0ms 1 forwards;
     }
 
     .o_7 {
       stroke-dasharray: 35 37;
       stroke-dashoffset: 36;
-      animation: o_draw_7 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_7 10000ms linear 0ms 1 forwards;
     }
 
     .o_8 {
       stroke-dasharray: 41 43;
       stroke-dashoffset: 42;
-      animation: o_draw_8 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_8 10000ms linear 0ms 1 forwards;
     }
 
     .o_9 {
       stroke-dasharray: 41 43;
       stroke-dashoffset: 42;
-      animation: o_draw_9 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_9 10000ms linear 0ms 1 forwards;
     }
 
     .o_10 {
       stroke-dasharray: 9 11;
       stroke-dashoffset: 10;
-      animation: o_draw_10 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_10 10000ms linear 0ms 1 forwards;
     }
 
     .o_11 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_11 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_11 10000ms linear 0ms 1 forwards;
     }
 
     .o_12 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_12 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_12 10000ms linear 0ms 1 forwards;
     }
 
     .o_13 {
       stroke-dasharray: 14 16;
       stroke-dashoffset: 15;
-      animation: o_draw_13 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_13 10000ms linear 0ms 1 forwards;
     }
 
     .o_14 {
       stroke-dasharray: 14 16;
       stroke-dashoffset: 15;
-      animation: o_draw_14 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_14 10000ms linear 0ms 1 forwards;
     }
 
     .o_15 {
       stroke-dasharray: 688 690;
       stroke-dashoffset: 689;
-      animation: o_draw_15 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_15 10000ms linear 0ms 1 forwards;
     }
 
     .o_16 {
       stroke-dasharray: 6 8;
       stroke-dashoffset: 7;
-      animation: o_draw_16 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_16 10000ms linear 0ms 1 forwards;
     }
 
     .o_17 {
       stroke-dasharray: 15 17;
       stroke-dashoffset: 16;
-      animation: o_draw_17 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_17 10000ms linear 0ms 1 forwards;
     }
 
     .o_18 {
       stroke-dasharray: 203 205;
       stroke-dashoffset: 204;
-      animation: o_draw_18 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_18 10000ms linear 0ms 1 forwards;
     }
 
     .o_19 {
       stroke-dasharray: 60 62;
       stroke-dashoffset: 61;
-      animation: o_draw_19 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_19 10000ms linear 0ms 1 forwards;
     }
 
     .o_20 {
       stroke-dasharray: 60 62;
       stroke-dashoffset: 61;
-      animation: o_draw_20 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_20 10000ms linear 0ms 1 forwards;
     }
 
     .o_21 {
       stroke-dasharray: 34 36;
       stroke-dashoffset: 35;
-      animation: o_draw_21 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_21 10000ms linear 0ms 1 forwards;
     }
 
     .o_22 {
       stroke-dasharray: 128 130;
       stroke-dashoffset: 129;
-      animation: o_draw_22 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_22 10000ms linear 0ms 1 forwards;
     }
 
     .o_23 {
       stroke-dasharray: 9 11;
       stroke-dashoffset: 10;
-      animation: o_draw_23 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_23 10000ms linear 0ms 1 forwards;
     }
 
     .o_24 {
       stroke-dasharray: 8 10;
       stroke-dashoffset: 9;
-      animation: o_draw_24 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_24 10000ms linear 0ms 1 forwards;
     }
 
     .o_25 {
       stroke-dasharray: 43 45;
       stroke-dashoffset: 44;
-      animation: o_draw_25 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_25 10000ms linear 0ms 1 forwards;
     }
 
     .o_26 {
       stroke-dasharray: 3 5;
       stroke-dashoffset: 4;
-      animation: o_draw_26 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_26 10000ms linear 0ms 1 forwards;
     }
 
     .o_27 {
       stroke-dasharray: 153 155;
       stroke-dashoffset: 154;
-      animation: o_draw_27 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_27 10000ms linear 0ms 1 forwards;
     }
 
     .o_28 {
       stroke-dasharray: 127 129;
       stroke-dashoffset: 128;
-      animation: o_draw_28 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_28 10000ms linear 0ms 1 forwards;
     }
 
     .o_29 {
       stroke-dasharray: 177 179;
       stroke-dashoffset: 178;
-      animation: o_draw_29 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_29 10000ms linear 0ms 1 forwards;
     }
 
     .o_30 {
       stroke-dasharray: 67 69;
       stroke-dashoffset: 68;
-      animation: o_draw_30 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_30 10000ms linear 0ms 1 forwards;
     }
 
     .o_31 {
       stroke-dasharray: 67 69;
       stroke-dashoffset: 68;
-      animation: o_draw_31 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_31 10000ms linear 0ms 1 forwards;
     }
 
     .o_32 {
       stroke-dasharray: 63 65;
       stroke-dashoffset: 64;
-      animation: o_draw_32 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_32 10000ms linear 0ms 1 forwards;
     }
 
     .o_33 {
       stroke-dasharray: 53 55;
       stroke-dashoffset: 54;
-      animation: o_draw_33 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_33 10000ms linear 0ms 1 forwards;
     }
 
     .o_34 {
       stroke-dasharray: 16 18;
       stroke-dashoffset: 17;
-      animation: o_draw_34 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_34 10000ms linear 0ms 1 forwards;
     }
 
     .o_35 {
       stroke-dasharray: 37 39;
       stroke-dashoffset: 38;
-      animation: o_draw_35 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_35 10000ms linear 0ms 1 forwards;
     }
 
     .o_36 {
       stroke-dasharray: 62 64;
       stroke-dashoffset: 63;
-      animation: o_draw_36 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_36 10000ms linear 0ms 1 forwards;
     }
 
     .o_37 {
       stroke-dasharray: 110 112;
       stroke-dashoffset: 111;
-      animation: o_draw_37 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_37 10000ms linear 0ms 1 forwards;
     }
 
     .o_38 {
       stroke-dasharray: 53 55;
       stroke-dashoffset: 54;
-      animation: o_draw_38 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_38 10000ms linear 0ms 1 forwards;
     }
 
     .o_39 {
       stroke-dasharray: 90 92;
       stroke-dashoffset: 91;
-      animation: o_draw_39 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_39 10000ms linear 0ms 1 forwards;
     }
 
     .o_40 {
       stroke-dasharray: 44 46;
       stroke-dashoffset: 45;
-      animation: o_draw_40 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_40 10000ms linear 0ms 1 forwards;
     }
 
     .o_41 {
       stroke-dasharray: 53 55;
       stroke-dashoffset: 54;
-      animation: o_draw_41 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_41 10000ms linear 0ms 1 forwards;
     }
 
     .o_42 {
       stroke-dasharray: 16 18;
       stroke-dashoffset: 17;
-      animation: o_draw_42 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_42 10000ms linear 0ms 1 forwards;
     }
 
     .o_43 {
       stroke-dasharray: 364 366;
       stroke-dashoffset: 365;
-      animation: o_draw_43 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_43 10000ms linear 0ms 1 forwards;
     }
 
     .o_44 {
       stroke-dasharray: 22 24;
       stroke-dashoffset: 23;
-      animation: o_draw_44 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_44 10000ms linear 0ms 1 forwards;
     }
 
     .o_45 {
       stroke-dasharray: 38 40;
       stroke-dashoffset: 39;
-      animation: o_draw_45 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_45 10000ms linear 0ms 1 forwards;
     }
 
     .o_46 {
       stroke-dasharray: 22 24;
       stroke-dashoffset: 23;
-      animation: o_draw_46 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_46 10000ms linear 0ms 1 forwards;
     }
 
     .o_47 {
       stroke-dasharray: 6 8;
       stroke-dashoffset: 7;
-      animation: o_draw_47 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_47 10000ms linear 0ms 1 forwards;
     }
 
     .o_48 {
       stroke-dasharray: 8 10;
       stroke-dashoffset: 9;
-      animation: o_draw_48 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_48 10000ms linear 0ms 1 forwards;
     }
 
     .o_49 {
       stroke-dasharray: 30 32;
       stroke-dashoffset: 31;
-      animation: o_draw_49 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_49 10000ms linear 0ms 1 forwards;
     }
 
     .o_50 {
       stroke-dasharray: 304 306;
       stroke-dashoffset: 305;
-      animation: o_draw_50 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_50 10000ms linear 0ms 1 forwards;
     }
 
     .o_51 {
       stroke-dasharray: 27 29;
       stroke-dashoffset: 28;
-      animation: o_draw_51 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_51 10000ms linear 0ms 1 forwards;
     }
 
     .o_52 {
       stroke-dasharray: 10 12;
       stroke-dashoffset: 11;
-      animation: o_draw_52 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_52 10000ms linear 0ms 1 forwards;
     }
 
     .o_53 {
       stroke-dasharray: 14 16;
       stroke-dashoffset: 15;
-      animation: o_draw_53 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_53 10000ms linear 0ms 1 forwards;
     }
 
     .o_54 {
       stroke-dasharray: 16 18;
       stroke-dashoffset: 17;
-      animation: o_draw_54 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_54 10000ms linear 0ms 1 forwards;
     }
 
     .o_55 {
       stroke-dasharray: 110 112;
       stroke-dashoffset: 111;
-      animation: o_draw_55 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_55 10000ms linear 0ms 1 forwards;
     }
 
     .o_56 {
       stroke-dasharray: 53 55;
       stroke-dashoffset: 54;
-      animation: o_draw_56 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_56 10000ms linear 0ms 1 forwards;
     }
 
     .o_57 {
       stroke-dasharray: 139 141;
       stroke-dashoffset: 140;
-      animation: o_draw_57 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_57 10000ms linear 0ms 1 forwards;
     }
 
     .o_58 {
       stroke-dasharray: 63 65;
       stroke-dashoffset: 64;
-      animation: o_draw_58 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_58 10000ms linear 0ms 1 forwards;
     }
 
     .o_59 {
       stroke-dasharray: 53 55;
       stroke-dashoffset: 54;
-      animation: o_draw_59 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_59 10000ms linear 0ms 1 forwards;
     }
 
     .o_60 {
       stroke-dasharray: 162 164;
       stroke-dashoffset: 163;
-      animation: o_draw_60 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_60 10000ms linear 0ms 1 forwards;
     }
 
     .o_61 {
       stroke-dasharray: 67 69;
       stroke-dashoffset: 68;
-      animation: o_draw_61 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_61 10000ms linear 0ms 1 forwards;
     }
 
     .o_62 {
       stroke-dasharray: 191 193;
       stroke-dashoffset: 192;
-      animation: o_draw_62 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_62 10000ms linear 0ms 1 forwards;
     }
 
     .o_63 {
       stroke-dasharray: 75 77;
       stroke-dashoffset: 76;
-      animation: o_draw_63 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_63 10000ms linear 0ms 1 forwards;
     }
 
     .o_64 {
       stroke-dasharray: 110 112;
       stroke-dashoffset: 111;
-      animation: o_draw_64 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_64 10000ms linear 0ms 1 forwards;
     }
 
     .o_65 {
       stroke-dasharray: 53 55;
       stroke-dashoffset: 54;
-      animation: o_draw_65 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_65 10000ms linear 0ms 1 forwards;
     }
 
     .o_66 {
       stroke-dasharray: 69 71;
       stroke-dashoffset: 70;
-      animation: o_draw_66 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_66 10000ms linear 0ms 1 forwards;
     }
 
     .o_67 {
       stroke-dasharray: 69 71;
       stroke-dashoffset: 70;
-      animation: o_draw_67 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_67 10000ms linear 0ms 1 forwards;
     }
 
     .o_68 {
       stroke-dasharray: 35 37;
       stroke-dashoffset: 36;
-      animation: o_draw_68 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_68 10000ms linear 0ms 1 forwards;
     }
 
     .o_69 {
       stroke-dasharray: 35 37;
       stroke-dashoffset: 36;
-      animation: o_draw_69 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_69 10000ms linear 0ms 1 forwards;
     }
 
     .o_70 {
       stroke-dasharray: 22 24;
       stroke-dashoffset: 23;
-      animation: o_draw_70 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_70 10000ms linear 0ms 1 forwards;
     }
 
     .o_71 {
       stroke-dasharray: 35 37;
       stroke-dashoffset: 36;
-      animation: o_draw_71 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_71 10000ms linear 0ms 1 forwards;
     }
 
     .o_72 {
       stroke-dasharray: 76 78;
       stroke-dashoffset: 77;
-      animation: o_draw_72 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_72 10000ms linear 0ms 1 forwards;
     }
 
     .o_73 {
       stroke-dasharray: 27 29;
       stroke-dashoffset: 28;
-      animation: o_draw_73 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_73 10000ms linear 0ms 1 forwards;
     }
 
     .o_74 {
       stroke-dasharray: 21 23;
       stroke-dashoffset: 22;
-      animation: o_draw_74 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_74 10000ms linear 0ms 1 forwards;
     }
 
     .o_75 {
       stroke-dasharray: 107 109;
       stroke-dashoffset: 108;
-      animation: o_draw_75 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_75 10000ms linear 0ms 1 forwards;
     }
 
     .o_76 {
       stroke-dasharray: 43 45;
       stroke-dashoffset: 44;
-      animation: o_draw_76 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_76 10000ms linear 0ms 1 forwards;
     }
 
     .o_77 {
       stroke-dasharray: 62 64;
       stroke-dashoffset: 63;
-      animation: o_draw_77 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_77 10000ms linear 0ms 1 forwards;
     }
 
     .o_78 {
       stroke-dasharray: 242 244;
       stroke-dashoffset: 243;
-      animation: o_draw_78 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_78 10000ms linear 0ms 1 forwards;
     }
 
     .o_79 {
       stroke-dasharray: 24 26;
       stroke-dashoffset: 25;
-      animation: o_draw_79 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_79 10000ms linear 0ms 1 forwards;
     }
 
     .o_80 {
       stroke-dasharray: 24 26;
       stroke-dashoffset: 25;
-      animation: o_draw_80 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_80 10000ms linear 0ms 1 forwards;
     }
 
     .o_81 {
       stroke-dasharray: 51 53;
       stroke-dashoffset: 52;
-      animation: o_draw_81 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_81 10000ms linear 0ms 1 forwards;
     }
 
     .o_82 {
       stroke-dasharray: 110 112;
       stroke-dashoffset: 111;
-      animation: o_draw_82 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_82 10000ms linear 0ms 1 forwards;
     }
 
     .o_83 {
       stroke-dasharray: 42 44;
       stroke-dashoffset: 43;
-      animation: o_draw_83 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_83 10000ms linear 0ms 1 forwards;
     }
 
     .o_84 {
       stroke-dasharray: 90 92;
       stroke-dashoffset: 91;
-      animation: o_draw_84 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_84 10000ms linear 0ms 1 forwards;
     }
 
     .o_85 {
       stroke-dasharray: 44 46;
       stroke-dashoffset: 45;
-      animation: o_draw_85 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_85 10000ms linear 0ms 1 forwards;
     }
 
     .o_86 {
       stroke-dasharray: 63 65;
       stroke-dashoffset: 64;
-      animation: o_draw_86 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_86 10000ms linear 0ms 1 forwards;
     }
 
     .o_87 {
       stroke-dasharray: 53 55;
       stroke-dashoffset: 54;
-      animation: o_draw_87 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_87 10000ms linear 0ms 1 forwards;
     }
 
     .o_88 {
       stroke-dasharray: 16 18;
       stroke-dashoffset: 17;
-      animation: o_draw_88 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_88 10000ms linear 0ms 1 forwards;
     }
 
     .o_89 {
       stroke-dasharray: 22 24;
       stroke-dashoffset: 23;
-      animation: o_draw_89 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_89 10000ms linear 0ms 1 forwards;
     }
 
     .o_90 {
       stroke-dasharray: 580 582;
       stroke-dashoffset: 581;
-      animation: o_draw_90 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_90 10000ms linear 0ms 1 forwards;
     }
 
     .o_91 {
       stroke-dasharray: 110 112;
       stroke-dashoffset: 111;
-      animation: o_draw_91 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_91 10000ms linear 0ms 1 forwards;
     }
 
     .o_92 {
       stroke-dasharray: 53 55;
       stroke-dashoffset: 54;
-      animation: o_draw_92 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_92 10000ms linear 0ms 1 forwards;
     }
 
     .o_93 {
       stroke-dasharray: 138 140;
       stroke-dashoffset: 139;
-      animation: o_draw_93 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_93 10000ms linear 0ms 1 forwards;
     }
 
     .o_94 {
       stroke-dasharray: 63 65;
       stroke-dashoffset: 64;
-      animation: o_draw_94 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_94 10000ms linear 0ms 1 forwards;
     }
 
     .o_95 {
       stroke-dasharray: 16 18;
       stroke-dashoffset: 17;
-      animation: o_draw_95 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_95 10000ms linear 0ms 1 forwards;
     }
 
     .o_96 {
       stroke-dasharray: 288 290;
       stroke-dashoffset: 289;
-      animation: o_draw_96 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_96 10000ms linear 0ms 1 forwards;
     }
 
     .o_97 {
       stroke-dasharray: 76 78;
       stroke-dashoffset: 77;
-      animation: o_draw_97 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_97 10000ms linear 0ms 1 forwards;
     }
 
     .o_98 {
       stroke-dasharray: 128 130;
       stroke-dashoffset: 129;
-      animation: o_draw_98 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_98 10000ms linear 0ms 1 forwards;
     }
 
     .o_99 {
       stroke-dasharray: 136 138;
       stroke-dashoffset: 137;
-      animation: o_draw_99 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_99 10000ms linear 0ms 1 forwards;
     }
 
     .o_100 {
       stroke-dasharray: 16 18;
       stroke-dashoffset: 17;
-      animation: o_draw_100 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_100 10000ms linear 0ms 1 forwards;
     }
 
     .o_101 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_101 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_101 10000ms linear 0ms 1 forwards;
     }
 
     .o_102 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_102 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_102 10000ms linear 0ms 1 forwards;
     }
 
     .o_103 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_103 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_103 10000ms linear 0ms 1 forwards;
     }
 
     .o_104 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_104 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_104 10000ms linear 0ms 1 forwards;
     }
 
     .o_105 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_105 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_105 10000ms linear 0ms 1 forwards;
     }
 
     .o_106 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_106 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_106 10000ms linear 0ms 1 forwards;
     }
 
     .o_107 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_107 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_107 10000ms linear 0ms 1 forwards;
     }
 
     .o_108 {
       stroke-dasharray: 877 879;
       stroke-dashoffset: 878;
-      animation: o_draw_108 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_108 10000ms linear 0ms 1 forwards;
     }
 
     .o_109 {
       stroke-dasharray: 2 4;
       stroke-dashoffset: 3;
-      animation: o_draw_109 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_109 10000ms linear 0ms 1 forwards;
     }
 
     .o_110 {
       stroke-dasharray: 131 133;
       stroke-dashoffset: 132;
-      animation: o_draw_110 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_110 10000ms linear 0ms 1 forwards;
     }
 
     .o_111 {
       stroke-dasharray: 83 85;
       stroke-dashoffset: 84;
-      animation: o_draw_111 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_111 10000ms linear 0ms 1 forwards;
     }
 
     .o_112 {
       stroke-dasharray: 386 388;
       stroke-dashoffset: 387;
-      animation: o_draw_112 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_112 10000ms linear 0ms 1 forwards;
     }
 
     .o_113 {
       stroke-dasharray: 41 43;
       stroke-dashoffset: 42;
-      animation: o_draw_113 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_113 10000ms linear 0ms 1 forwards;
     }
 
     .o_114 {
       stroke-dasharray: 21 23;
       stroke-dashoffset: 22;
-      animation: o_draw_114 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_114 10000ms linear 0ms 1 forwards;
     }
 
     .o_115 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_115 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_115 10000ms linear 0ms 1 forwards;
     }
 
     .o_116 {
       stroke-dasharray: 16 18;
       stroke-dashoffset: 17;
-      animation: o_draw_116 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_116 10000ms linear 0ms 1 forwards;
     }
 
     .o_117 {
       stroke-dasharray: 8 10;
       stroke-dashoffset: 9;
-      animation: o_draw_117 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_117 10000ms linear 0ms 1 forwards;
     }
 
     .o_118 {
       stroke-dasharray: 10 12;
       stroke-dashoffset: 11;
-      animation: o_draw_118 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_118 10000ms linear 0ms 1 forwards;
     }
 
     .o_119 {
       stroke-dasharray: 32 34;
       stroke-dashoffset: 33;
-      animation: o_draw_119 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_119 10000ms linear 0ms 1 forwards;
     }
 
     .o_120 {
       stroke-dasharray: 10 12;
       stroke-dashoffset: 11;
-      animation: o_draw_120 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_120 10000ms linear 0ms 1 forwards;
     }
 
     .o_121 {
       stroke-dasharray: 24 26;
       stroke-dashoffset: 25;
-      animation: o_draw_121 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_121 10000ms linear 0ms 1 forwards;
     }
 
     .o_122 {
       stroke-dasharray: 32 34;
       stroke-dashoffset: 33;
-      animation: o_draw_122 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_122 10000ms linear 0ms 1 forwards;
     }
 
     .o_123 {
       stroke-dasharray: 22 24;
       stroke-dashoffset: 23;
-      animation: o_draw_123 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_123 10000ms linear 0ms 1 forwards;
     }
 
     .o_124 {
       stroke-dasharray: 6 8;
       stroke-dashoffset: 7;
-      animation: o_draw_124 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_124 10000ms linear 0ms 1 forwards;
     }
 
     .o_125 {
       stroke-dasharray: 11 13;
       stroke-dashoffset: 12;
-      animation: o_draw_125 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_125 10000ms linear 0ms 1 forwards;
     }
 
     .o_126 {
       stroke-dasharray: 7 9;
       stroke-dashoffset: 8;
-      animation: o_draw_126 19000ms linear 0ms infinite, o_fade 19000ms linear 0ms infinite;
+      animation: o_draw_126 10000ms linear 0ms 1 forwards;
     }
 
     @keyframes o_draw {

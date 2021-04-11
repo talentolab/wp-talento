@@ -172,55 +172,80 @@
 
 
 
+.meet-talento-ilustration {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/illustrations/meet-talento-illustration.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
 
-$animated: '../img/arte-escritorio-1-talento-animado-compressed.svg';
-$still: '../img/arte-escritorio-1-talento-animado-shadow.svg';
+.meet-talento-ilustration.svg-animation {
+  background-image: url(../img/animations/meet-talento-illustration-animated.svg);
+}
 
-.animated-bg-1 {
-    background-image: url($animated),
-        url($animated),
-        url($still),
-        url($still);
-    background-repeat: no-repeat;
+
+
+.illustration-lines {
+  background-image: url('../img/animations/arte-escritorio-1-talento-static.svg'),
+    url('../img/animations/arte-escritorio-2-talento-static.svg');
+  background-repeat: no-repeat;
+}
+
+.illustration-lines.svg-animation {
+  background-image: url('../img/animations/arte-escritorio-1-talento-animated.svg'),
+    url('../img/animations/arte-escritorio-2-talento-animated.svg');
+  background-repeat: no-repeat;
 }
 
 
 @media all and (max-width: 480px) {
-    .animated-bg-1 {
-        background-image: none;
-    }
+  .illustration-lines {
+    background-image: none !important;
+  }
+
+  .meet-talento-ilustration.svg-animation {
+    background-image: url(../img/illustrations/meet-talento-illustration.svg);
+  }
 }
 
 @media all and (min-width: 481px) and (max-width: 600px) {
-    .animated-bg-1 {
-        background-image: none;
-    }
+  .illustration-lines {
+    background-image: none !important;
+  }
+
+  .meet-talento-ilustration.svg-animation {
+    background-image: url(../img/illustrations/meet-talento-illustration.svg);
+  }
 }
 
 @media all and (min-width: 600px) and (max-width: 782px) {
-    .animated-bg-1 {
-        background-size: auto 86%;
-        background-position: -60% 50%, 160% 50%;
-    }
+  .illustration-lines {
+    background-image: none !important;
+  }
+
+  .meet-talento-ilustration.svg-animation {
+    background-image: url(../img/illustrations/meet-talento-illustration.svg);
+  }
 }
 
 @media all and (min-width: 783px) and (max-width: 992px) {
-    .animated-bg-1 {
-        background-size: auto 84%;
-        background-position: -29% 50%, 129% 50%;
-    }
+  .illustration-lines {
+    background-image: none !important;
+  }
 }
 
 @media all and (min-width: 993px) and (max-width: 1365px) {
-    .animated-bg-1 {
-        background-size: auto 82%;
-        background-position: -4% 50%, 104% 50%;
-    }
+  .illustration-lines {
+    background-size: auto 82%, auto 70%;
+    background-position: -4% 50%, 110% 50%;
+  }
 }
 
 @media all and (min-width: 1366px) {
-    .animated-bg-1 {
-        background-size: auto 90%;
-        background-position: 5% 50%, 95% 50%;
-    }
+  .illustration-lines {
+    background-size: auto 90%, auto 74%;
+    background-position: 5% 50%, 95% 50%;
+  }
 }
