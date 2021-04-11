@@ -8,11 +8,11 @@ a {
 }
 
 footer a {
-  color: var(--accent-color);
+  color: #99c2ff;
 }
 
 footer a:hover {
-  color: var(--accent-color--hover);
+  color: #c5dcff;
 }
 
 /* Code */
