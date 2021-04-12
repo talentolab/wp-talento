@@ -230,20 +230,27 @@
   }
 }
 
-@media all and (min-width: 783px) and (max-width: 992px) {
+@media all and (min-width: 783px) and (max-width: 1249px) {
   .illustration-lines {
     background-image: none !important;
   }
 }
 
-@media all and (min-width: 993px) and (max-width: 1365px) {
+@media all and (min-width: 1250px) and (max-width: 1365px) {
   .illustration-lines {
-    background-size: auto 82%, auto 70%;
-    background-position: -4% 50%, 110% 50%;
+    background-size: auto 50%, auto 50%;
+    background-position: 5% 50%, 98% 50%;
   }
 }
 
-@media all and (min-width: 1366px) {
+@media all and (min-width: 1366px) and (max-width: 1599px) {
+  .illustration-lines {
+    background-size: auto 60%, auto 50%;
+    background-position: 3% 50%, 97% 50%;
+  }
+}
+
+@media all and (min-width: 1600px) {
   .illustration-lines {
     background-size: auto 90%, auto 74%;
     background-position: 5% 50%, 95% 50%;
