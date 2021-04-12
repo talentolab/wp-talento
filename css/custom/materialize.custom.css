@@ -94,7 +94,6 @@ code {
 }
 
 textarea.materialize-textarea {
-  padding: 16px 10px;
   min-height: 6rem;
   width: 100% !important;
 }
