@@ -312,6 +312,12 @@ function talento_register_required_plugins() {
             'required'  => true
         ),
 
+        array(
+            'name'      => 'Allow Webp Image',
+            'slug'      => 'allow-webp-image',
+            'required'  => true
+        ),
+
 		array(
             'name'      => 'Custom Field Suite',
             'slug'      => 'custom-field-suite',
