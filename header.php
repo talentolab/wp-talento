@@ -156,8 +156,15 @@
     <i class="fas fa-bars"></i>
   </a>
 
+  <noscript id="js_disabled_message">
+    <div class="fullscreen gradient-bg" style="z-index: 1000">
+      <div class="center padding-medium text-center">
+        Esse site requer o JavaScript habilitado para funcionar.
+        <br>
+        <a href="https://www.enable-javascript.com/pt/" target="_blank" rel="nofollow noreferrer">Como habilitar?</a>
+      </div>
     </div>
-  </div>
-  <script>
-  document.getElementById('js_disabled_message').style.display = 'none';
-  </script>
+    <script>
+    document.querySelector('#js_disabled_message').style.display = 'none';
+    </script>
+  </noscript>
