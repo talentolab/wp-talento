@@ -85,23 +85,21 @@
         </ul>
       </div>
 
-      <div class="col s6 m6 l3 xl3">
+      <div class="col s12 m6 l3 xl3">
         <ul class="no-margin-x no-margin-bottom margin-top-medium">
-          <li class="footer-links--title">Lorem Ipsum</li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
+          <li class="margin-bottom-small display-flex text-middle">
+            <i class="fas fa-envelope-open margin-right-smaller accent-color"></i> contato@talentodesign.com.br
           </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
+
+          <li class="margin-bottom-small display-flex text-middle">
+            <i class="fas fa-phone-alt margin-right-smaller accent-color"></i>
+            (91) 98885-3173
+            <span class="grey-text margin-x-smaller">|</span>
+            (91) 3248-3173
           </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
+
+          <li class="margin-bottom-small display-flex">
+            <i class="fas fa-map-marker-alt margin-right-smaller accent-color"></i> Conjunto Maguari, Al. 03, 35B - Coqueiro, Belém-PA
           </li>
         </ul>
       </div>
