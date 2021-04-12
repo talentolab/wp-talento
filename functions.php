@@ -9,12 +9,13 @@
 
 
 $dev_mode = true;
+$CURRENT_COMMIT = 'd3adbe4';
 
 $__DIR = get_template_directory_uri();
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', $CURRENT_COMMIT );
 }
 
 if ( ! function_exists( 'talento_setup' ) ) :
@@ -175,14 +176,12 @@ function talento_scripts() {
   $min = !$dev_mode ? '.min' : '';
   
   // CSS Libraries
-  wp_enqueue_style( 'animate.css', $__DIR .'/libs/animate.css/animate'. $min .'.css', array(), _S_VERSION );
+  wp_enqueue_style( 'animate.css', $__DIR .'/libs/animate.css/animate'. $min .'.css', array(), '3.7.2' );
   
-  wp_enqueue_style( 'helpers.css', $__DIR .'/libs/helpers.css/src/helpers'. $min .'.css', array(), _S_VERSION );
+  wp_enqueue_style( 'helpers.css', $__DIR .'/libs/helpers.css/src/helpers'. $min .'.css', array(), '1.0.0' );
   
-  // wp_enqueue_style( 'materialize', $__DIR .'/libs/materialize-css/dist/css/materialize.min.css', array(), _S_VERSION );
-  wp_enqueue_style( 'materialize', $__DIR .'/libs/materialize-src/materialize.min.css', array(), _S_VERSION );
+  wp_enqueue_style( 'materialize', $__DIR .'/libs/materialize-src/materialize.min.css', array(), '1.0.0' );
   wp_enqueue_style( 'materialize-custom', $__DIR .'/css/custom/materialize.custom'. $min .'.css', array(), _S_VERSION );
-  // wp_enqueue_style( 'material-icons', $__DIR .'/fonts/material-icons/material-icons'. $min .'.css', array(), _S_VERSION );
   
   // Main CSS
   wp_enqueue_style( 'talento-style', get_stylesheet_uri(), array(), _S_VERSION );
@@ -191,7 +190,7 @@ function talento_scripts() {
 
   
   // Head JS Libraries
-	wp_enqueue_script( 'jquery', $__DIR . '/libs/jquery/3.4.1/jquery.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'jquery', $__DIR . '/libs/jquery/3.4.1/jquery.min.js', array(), '3.4.1', true );
 	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -209,8 +208,8 @@ function add_this_script_footer() {
   $min = !$dev_mode ? '.min' : '';
 
   // Footer JS Libraries
-	wp_enqueue_script( 'materialize', $__DIR . '/libs/materialize-src/js/bin/materialize.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'wow-js', $__DIR . '/libs/wow.js/dist/wow.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'materialize', $__DIR . '/libs/materialize-src/js/bin/materialize.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'wow-js', $__DIR . '/libs/wow.js/dist/wow.min.js', array(), '1.3.0', true );
   
   // Main JS
 	wp_enqueue_script( 'talento-navigation', $__DIR . '/js/navigation.js', array(), _S_VERSION, true );
@@ -222,11 +221,6 @@ add_action('wp_footer', 'add_this_script_footer');
 
 add_filter('script_loader_tag', 'add_type_attribute' , 10, 3);
 function add_type_attribute($tag, $handle, $src) {
-	global $dev_mode;
-	global $__DIR;
-	
-	$min = !$dev_mode ? '.min' : '';
-
 	// if not your script, do nothing and return original $tag
 	if ( 'talento-main' !== $handle ) {
 			return $tag;
