@@ -119,7 +119,9 @@
       <div class="valign-wrapper col s5 m1">
         <a href="https://talentodesign.com.br" class="tooltipped right" data-tooltip="Talento Design &amp; Marketing"
           data-position="left" target="_blank" rel="nofollow">
-          <div class="attribution-logo"></div>
+          <div class="attribution-logo">
+            <span class="no-display">Talento Design</span>
+          </div>
         </a>
       </div>
 
