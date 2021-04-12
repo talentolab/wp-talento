@@ -366,12 +366,6 @@ function talento_register_required_plugins() {
 
 		// Opcionais
         array(
-            'name'      => 'Editor Clássico',
-            'slug'      => 'classic-editor',
-            'required'  => false,
-        ),
-
-        array(
             'name'      => 'EWWW Image Optimizer',
             'slug'      => 'ewww-image-optimizer',
             'required'  => false,
