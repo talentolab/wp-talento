@@ -7,11 +7,28 @@
 get_header();
 ?>
 
-<div class="parallax-container large wow fadeIn" data-wow-delay=".2s">
-  <div class="parallax">
-    <img src="<?= get_template_directory_uri() .'/img/Portfolio_talento-2.jpg'; ?>" />
+<header class="margin-top-large">
+  <div class="block">
+    <div class="row no-padding valign-wrapper no-margin">
+      <div class="col s12 m2 l3 hide-on-small-only"></div>
+
+      <div class="col s12 m8 l6">
+        <h1 class="padding-top-large padding-bottom-medium text-stronger text-center no-margin wow fadeInUpSmall accent-color">
+          Completa e inovadora
+        </h1>
+
+        <div class="grey-text text-center padding-bottom-large wow fadeInUpSmall" data-wow-delay=".2s">
+          A TALENTO desperta
+          a sua motivação e criatividade!
+        </div>
+      </div>
+
+      <div class="col s12 m2 l3 hide-on-small-only"></div>
+    </div>
   </div>
-</div>
+</header>
+
+  </div>
 
 <div id="content" class="site-content gradient-bg">
   <div class="block">
