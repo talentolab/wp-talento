@@ -4,7 +4,7 @@ const modalContent = document.querySelector('.portfolio-modal__content');
 
 
 let modal = {
-    open: (id, options) => {
+    open: () => {
         modalWrapper.style.display = 'block';
 
         //modalOverlay.classList.add('animated','fadeIn');
