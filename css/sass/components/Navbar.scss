@@ -32,6 +32,14 @@
   z-index: 10;
 }
 
+.top-navbar a {
+  opacity: 1;
+}
+
+.top-navbar a:hover {
+  opacity: 0.8;
+}
+
 .fixed-nav {
   background-color: #fff;
 }
