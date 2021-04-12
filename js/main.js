@@ -295,24 +295,18 @@ function checkScroll() {
 }
 
 
-const portfolioOpenModal = document.querySelectorAll('.js-open-modal')
-const portfolioCloseModal = document.querySelectorAll('.js-close-modal')
-
-portfolioOpenModal.forEach((el) => {
-  el.addEventListener('click', function() {
-    const modalId = parseInt(this.getAttribute('data-modal-id'))
-
-    console.log(modalId)
-
-    modal.open(modalId, {})
-  })
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('js-open-modal')) {
+    modal.open()
+  }
+  else if (e.target.classList.contains('js-close-modal')) {
+    modal.close()
+  }
 })
 
-portfolioCloseModal.forEach((el) => {
-  el.addEventListener('click', function() {
-    modal.close()
-  })
-});
+
+
+
 
 
 
