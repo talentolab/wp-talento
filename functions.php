@@ -378,7 +378,7 @@ function talento_register_required_plugins() {
         ),
 
 		array(
-            'name'      => 'File Renaming on Uoad',
+            'name'      => 'File Renaming on Upload',
             'slug'      => 'file-renaming-on-upload',
             'required'  => false,
         ),
