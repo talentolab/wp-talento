@@ -51,10 +51,40 @@ get_header();
       ?>
       <p>Sorry, no posts matched your criteria.</p>
       <?php endif; ?>
+    <div class="row">
+      <div class="col s12 m1 l2 xl3"></div>
+
+      <div class="col s12 m10 l8 xl6">
+        <h2 class="primary-color text-stronger text-center margin-y-larger wow fadeInUpSmall" data-wow-delay=".2s">
+          Conheça nossa equipe
+        </h2>
+
+        <div class="row">
+          <?php
+            for ($i = 0; $i < 9; $i++) :
+          ?>
+          <div class="col s12 m6 l4">
+            <div class="padding-y-medium padding-x-small">
               <div class="team-pic centered" style="background-image: url(<?= get_template_directory_uri(); ?>/img/sample/clients/1.webp);"></div>
+
+              <h3 class="text-center">Fulando de Tal</h3>
+              <div class="text-center grey-text">Diretor comercial</div>
+            </div>
+          </div>
+          <?php
+            endfor;
+          ?>
+        </div>
+      </div>
+
+      <div class="col s12 m1 l2 xl3"></div>
     </div>
   </div>
-</div>
+
+
+
+
+  
 
 <?php
 get_footer();
