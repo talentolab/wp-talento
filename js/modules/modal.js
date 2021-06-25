@@ -1,6 +1,6 @@
-const modalWrapper = document.querySelector('.portfolio-modal');
-const modalOverlay = document.querySelector('.portfolio-modal__overlay');
-const modalContent = document.querySelector('.portfolio-modal__content');
+const modalWrapper = document.querySelector('.modal');
+const modalOverlay = document.querySelector('.modal--overlay');
+const modalContent = document.querySelector('.modal--content section.content');
 
 
 let modal = {

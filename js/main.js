@@ -308,6 +308,8 @@ document.addEventListener('click', function(e) {
 
 
 
+const overlay = document.querySelector('.modal--overlay');
+  const popUp = document.querySelector('.modal--content section.content');
 
 const tabs = document.querySelector('.tabs');
 const tabItem = document.querySelectorAll('.tab');

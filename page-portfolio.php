@@ -13,6 +13,12 @@ $search = $_GET[ 'q' ];
 
 <header class="margin-top-large">
 </header>
+<div class="modal">
+  <div class="modal--overlay"></div>
+  <div class="modal--content">
+    <section class="content"></section>
+  </div>
+</div>
 
 <main class="background-blob">
   <!-- Portfólio -->
