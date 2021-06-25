@@ -281,15 +281,12 @@ function checkScroll() {
 
     if (y > window.innerHeight - h / 2 && y + h >= 115) {
       video.pause()
-      // console.log('pause');
     }
     else if (y + h < 115 && y <= window.innerHeight - h / 2) {
       video.pause()
-      // console.log('pause');
     }
     else {
       if (globals.isMobile() === false) video.play()
-      // console.log('play');
     }
   }
 }
