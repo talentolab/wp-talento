@@ -7,8 +7,9 @@
 get_header();
 ?>
 
-
+<main id="primary">
   <div class="block site-splash">
+    <div class="site-splash__decoration wave-bg--small-sigmoid wow fadeInUp" data-wow-delay=".4s">
       <div class="clouds">
         <div class="cloud cloud--1" data-skip-lazy></div>
         <div class="cloud cloud--2" data-skip-lazy></div>
@@ -312,6 +313,14 @@ get_header();
             width: 100%;
             overflow: inherit;
             transition: .5s ease-in-out;
+          }
+
+          .swiper-slide {
+            opacity: 0.2;
+          }
+
+          .swiper-slide-active {
+            opacity: 1;
           }
 
           .swiper-slide-duplicate-prev,
