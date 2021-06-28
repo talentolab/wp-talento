@@ -7,14 +7,14 @@
 get_header();
 ?>
 
-<main id="primary" class="wow fadeIn">
 
   <div class="block site-splash">
-    <div class="site-splash__decoration wave-bg--5">
       <div class="clouds">
         <div class="cloud cloud--1"></div>
         <div class="cloud cloud--2"></div>
         <div class="cloud cloud--3"></div>
+<main id="primary">
+    <div class="site-splash__decoration wave-bg--small-sigmoid wow fadeInUp" data-wow-delay=".4s" data-skip-lazy>
       </div>
     </div>
     
@@ -70,7 +70,7 @@ get_header();
           Soluções criativas
         </h1>
 
-        <p class="grey-text text-lighten-2 text-center">
+        <p class="grey-text text-lighten-2 text-center wow fadeInUpSmall" data-wow-delay=".4s">
           Descubra como inovar o seu negócio
         </p>
       </div>
@@ -181,16 +181,17 @@ get_header();
           <div class="meet-talento-ilustration svg-animation wow fadeInLeftSmall" data-wow-delay=".2s"></div>
         </div>
 
-        <div class="col s10 m6">
-          <h2 class="accent-color text-stronger">
-            Conheça a Talento Design
-          </h2>
+        <div class="col s12 m4">
+          <div class="padding-x-small">
+            <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+              Conheça a Talento Design
+            </h2>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
-            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor 
-            rhoncus dolor purus non enim praesent elementum facilisis
-          </p>
+            <p class="wow fadeInUpSmall" data-wow-delay=".4s">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+              purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor 
+              rhoncus dolor purus non enim praesent elementum facilisis
+            </p>
 
             <a href="/contato" class="btn button-bg white-text shadow-3">
               Saiba mais sobre nós
