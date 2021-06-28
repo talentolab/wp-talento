@@ -323,6 +323,8 @@ export default function updateTabs() {
   $('.tabs').tabs();
   $('.tooltipped').tooltip();
 
+  document.querySelector('#js_disabled_message').style.display = 'none';
+}
 
 
 
