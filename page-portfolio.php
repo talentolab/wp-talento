@@ -41,27 +41,27 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
           Todos
         </a>
 
-        <a href="#" class="category-filter-btn btn text-small">
+        <a href="?tag=marca" class="category-filter-btn btn text-small <?= active( 'marca' ); ?>">
           <i class="fas fa-fingerprint margin-right-smaller text-small"></i>
           Marca
         </a>
 
-        <a href="#" class="category-filter-btn btn text-small">
+        <a href="?tag=embalagem" class="category-filter-btn btn text-small <?= active( 'embalagem' ); ?>">
           <i class="fas fa-box-open margin-right-smaller text-small"></i>
           Embalagem
         </a>
 
-        <a href="#" class="category-filter-btn btn text-small">
+        <a href="?tag=sinalizacao" class="category-filter-btn btn text-small <?= active( 'sinalizacao' ); ?>">
           <i class="fas fa-store-alt margin-right-smaller text-small"></i>
           Sinalização
         </a>
 
-        <a href="#" class="category-filter-btn btn text-small">
+        <a href="?tag=web" class="category-filter-btn btn text-small <?= active( 'web' ); ?>">
           <i class="fas fa-code margin-right-smaller text-small"></i>
           Web
         </a>
 
-        <a href="#" class="category-filter-btn btn text-small">
+        <a href="?tag=videos" class="category-filter-btn btn text-small <?= active( 'videos' ); ?>">
           <i class="fas fa-video margin-right-smaller text-small"></i>
           Vídeos
         </a>
