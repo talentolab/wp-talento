@@ -347,6 +347,12 @@ $title-font: 'Inter Black', 'Montserrat ExtraBold', Arial, Helvetica, sans-serif
   width: 100%;
   height: auto;
   transition: .2s ease-in-out;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
 .gallery-item:hover img {
