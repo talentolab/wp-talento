@@ -302,7 +302,26 @@ document.addEventListener('click', function(e) {
 })
 
 
+export default function updateTabs() {
+  const content = document.querySelector('.modal--content');
+  const tabs = document.querySelector('.tabs');
+  const tabItem = document.querySelectorAll('.tab');
 
+  if (tabItem.length > 0) {
+    tabItem.forEach((el) => {
+      el.addEventListener('click', function() {
+        const y = tabs.parentElement.getBoundingClientRect().top + content.scrollY - 56;
+
+        content.scroll({
+          top: y,
+          behavior: 'smooth'
+        });
+      })
+    })
+  }
+
+  $('.tabs').tabs();
+  $('.tooltipped').tooltip();
 
 
 
@@ -311,24 +330,12 @@ document.addEventListener('click', function(e) {
 const overlay = document.querySelector('.modal--overlay');
   const popUp = document.querySelector('.modal--content section.content');
 
-const tabs = document.querySelector('.tabs');
-const tabItem = document.querySelectorAll('.tab');
-
-if (tabItem.length > 0) {
-  tabItem.forEach((el) => {
-    el.addEventListener('click', function() {
-      const y = tabs.parentElement.getBoundingClientRect().top + window.scrollY - 56;
-
-      window.scroll({
-        top: y,
-        behavior: 'smooth'
-      });
-    })
   document.body.addEventListener('click', function(e) {
     if (e.target.classList.contains('js-open-project-modal')) {
       loadPost(e.target.getAttribute('data-url'))
     }
   })
+
   function loadPost(url) {
     overlay.innerHTML = `
       <div class="center white padding-smaller shadow-2 circle text-middle">
