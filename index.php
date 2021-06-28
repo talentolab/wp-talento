@@ -36,7 +36,7 @@ get_header();
           <p class="text-left wow fadeInUpSmall" data-wow-delay=".4s">
             <a href="/contato" class="btn button-bg white-text shadow-3">
               Solicitar um orçamento
-              <i class="material-icons right">chevron_right</i>
+              <i class="fas fa-chevron-right right text-small"></i>
             </a>
           </p>
         </div>
@@ -187,10 +187,11 @@ get_header();
             rhoncus dolor purus non enim praesent elementum facilisis
           </p>
 
-          <a href="/contato" class="btn button-bg white-text shadow-3">
-            Saiba mais sobre nós
-            <i class="material-icons right">chevron_right</i>
-          </a>
+            <a href="/contato" class="btn button-bg white-text shadow-3">
+              Saiba mais sobre nós
+              <i class="fas fa-chevron-right right text-small"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -215,7 +216,7 @@ get_header();
 
           <a href="/contato" class="btn button-bg white-text shadow-3 wow fadeInUpSmall" data-wow-delay=".5s">
             Mais trabalhos
-            <i class="material-icons right">chevron_right</i>
+            <i class="fas fa-chevron-right right text-small"></i>
           </a>
         </div>
 
@@ -280,11 +281,11 @@ get_header();
     <div class="container-medium padding-y-medium">
       <div class="carousel-wrapper">
         <div class="carousel-btn prev js-swiper-carousel-prev no-select" tabindex="-1">
-          <i class="material-icons no-click shadow-2">chevron_left</i>
+          <i class="fas fa-chevron-left no-click shadow-2"></i>
         </div>
 
         <div class="carousel-btn next js-swiper-carousel-next no-select" tabindex="-1">
-          <i class="material-icons no-click shadow-2">chevron_right</i>
+          <i class="fas fa-chevron-right no-click shadow-2"></i>
         </div>
 
 
@@ -321,8 +322,8 @@ get_header();
                     </div>
 
                     <div class="play-btn bottom-right">
-                      <a href="//www.youtube.com/watch?v=XSGBVzeBUbk" class="btn red white-text" title="Assistir depoimento" data-lity>
-                        <i class="material-icons">play_arrow</i>
+                      <a href="//www.youtube.com/watch?v=XSGBVzeBUbk" class="btn red white-text waves-effect waves-light" title="Assistir depoimento" data-lity>
+                        <i class="fas fa-play"></i>
                       </a>
                     </div>
                   </div>
