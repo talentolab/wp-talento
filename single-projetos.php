@@ -1,31 +1,44 @@
 <?php
-get_header();
 
+$originationURL = $_POST['url'];
+
+// Is not embeded
+if ( $originationURL == '' ) {
+  get_header();
+  $background = 'light-grey-bg';
+  $returnAction = 'location.href=\'/portfolio/\'';
+}
+else {
+  $background = 'frost-glass-2 dark';
+  $returnAction = '';
+}
+
+// Return an empty array if not set
+$feat_color = CFS()->get( 'feat_color' ) ?? [];
 
 ?>
 
-<header class="light-grey-bg">
-  <div class="project-cover margin-top-large" style="background-color: <?= $feat_color; ?>; background-image: url(<?= CFS()->get( 'project_cover' ); ?>">
+<header>
+  <div class="project-cover margin-top-large animated fadeInDownSmall" style="background-color: <?= $feat_color; ?>; background-image: url(<?= CFS()->get( 'project_cover' ); ?>)">
   </div>
 </header>
 
-<main class="light-grey-bg">
-    <div class="col s12 m1 hide-on-med-and-down no-margin no-padding">
-      <div class="return-to-portfolio--wrapper position-sticky">
-        <a href="<?php bloginfo( 'siteurl' ); ?>/portfolio/" class="tooltipped" data-tooltip="Voltar para o portfólio" data-position="right">
-          <div class="return-to-portfolio-btn" title="Voltar para o portfólio">
-            <i class="fas fa-chevron-left center grey-text lighten-5 text-large"></i>
-          </div>
-        </a>
+<main class="padding-bottom-large <?= $background; ?> animated fadeIn">
+  <div class="row no-margin no-padding flex-on-med-and-up animated fadeInLeftSmall js-close-modal">
+    <div class="col s12 m1 hide-on-med-and-down no-margin no-padding js-close-modal">
+      <div class="return-to-portfolio--wrapper position-sticky" onclick="<?= $returnAction; ?>">
+        <div class="return-to-portfolio-btn js-close-modal" title="Voltar">
+          <i class="fas fa-chevron-left center grey-text lighten-5"></i>
+        </div>
       </div>
+    </div>
 
-  <div class="row container-large">
-    <aside class="overlap-top-larger position-sticky no-padding-x col s12 m5 l4 xl3" style="top: 72px;">
-      <div class="row">
-        <div class="col s8 m12 padding-x-medium">
-          <div class="card low-shadow border-radius-large">
-            <div class="card-image">
-              <img src="<?= $client_logo; ?>">
+    <div class="col s12 m5 l4 xl3 js-close-modal">
+      <aside class="overlap-top-larger position-sticky no-padding-x margin-bottom-small right" style="top: 72px;">
+        <div class="padding-x-medium">
+          <div class="card low-shadow portfolio-content--card border-radius-larger animated fadeInUpSmall">
+            <div class="card-image animated fadeIn" style="background-image: url(<?= CFS()->get( 'client_logo' ); ?>)">
+              <img src="<?= CFS()->get( 'client_logo' ); ?>" alt="Logo <?= the_title(); ?>" data-skip-lazy>
             </div>
 
             <div class="card-content padding-small">
@@ -113,37 +126,60 @@ get_header();
             </div>
 
             <div class="card-action padding-small">
-              <a href="#" class="btn button-bg white-text full-width" style="background-color: <?= $feat_color; ?>;">
               <a href="#" class="btn button-bg white-text full-width waves-effect waves-light" style="background-color: <?= $feat_color; ?>;">
+                <i class="fas fa-check left"></i>
                 Fazer um orçamento
               </a>
             </div>
           </div>
         </div>
-      </div>
-    </aside>
+      </aside>
+    </div>
 
-    <div class="no-padding-x col s12 m7 l8 xl7 margin-top-small no-padding position-sticky light-grey-bg">
-      <div class="row">
-        <div class="no-padding-x col s12">
-          <div class="padding-medium padding-bottom-medium">
-
+    <div class="col s12 m7 l8 xl6 no-margin-x js-close-modal">
+      <div class="margin-top-small no-padding position-sticky">
+        <div class="no-padding-x">
+          <div class="card low-shadow border-radius-large no-padding animated fadeInUpSmall">
             <div class="row">
-              <div class="col s12">
-                <h1 class="margin-bottom-medium" style="color: <?= $feat_color; ?>">
-                  <?php if ($slogan_icon != '') : ?>
-                  <i class="fas fa-<?= $slogan_icon; ?> grey-text text-lighten-2"></i>
+              <div class="col s12 padding-large no-padding-bottom">
+                <h1 class="margin-bottom-medium no-margin-top" style="color: <?= $feat_color; ?>">
+                  <?php if ( isset( $slogan_icon ) ) : ?>
+                    <i class="fas fa-<?= $slogan_icon; ?> grey-text text-lighten-2"></i>
                   <?php endif; ?>
 
                   <?= $slogan; ?>
                 </h1>
-                <?= get_the_content(); ?>
+
+                <div class="row">
+                  <div class="col s12">
+                    <?= get_the_content(); ?>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            <div class="card-action padding-medium valign-wrapper">
+              <a href="" class="btn button-bg margin-right-medium" style="background-color: <?= $feat_color; ?>;">
+                Website
+              </a>
+
+              <a href="" class="text-large" style="color: <?= $feat_color; ?>;">
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a href="" class="text-large" style="color: <?= $feat_color; ?>;">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a href="" class="text-large" style="color: <?= $feat_color; ?>;">
+                <i class="fab fa-twitter"></i>
+              </a>
+
             </div>
           </div>
         </div>
         
-        <div class="position-relative">
+        <div class="position-relative animated fadeInUpSmall">
           <ul class="tabs position-sticky light-grey-bg" style="top: 56px; z-index: 6">
             <style>
               .tabs .tab a {
@@ -175,7 +211,7 @@ get_header();
           </ul>
 
           <div id="branding">
-            <div class="portfolio-content--images">
+            <div class="portfolio-content--images overlap-bottom-small">
               <?php
                 $images = CFS()->get( 'branding_images' ) ?? [];
 
@@ -231,17 +267,34 @@ get_header();
               ?>
             </div>
           </div>
+
+          <div class="card low-shadow portfolio-content--related no-margin border-radius-large">
+            <div class="card-content">
+              
+            </div>
+            <div class="card-action">
+              <?php
+                $posttags = get_the_tags();
+
+                if ($posttags) {
+                  foreach($posttags as $tag) {
+                    echo '<div class="chip">'. $tag->name . '</div>'; 
+                  }
+                }
+              ?>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="col s12 m1 hide-on-med-and-down no-padding js-close-modal"></div>
   </div>
 </main>
 
-
-<script>
-  document.body.style.overflow = 'unset';
-</script>
-
-
 <?php
-get_footer();
+
+  if ( $originationURL == '' ) {
+    get_footer();
+  }
+?>
