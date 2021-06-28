@@ -43,13 +43,18 @@ get_header();
       </div>
 
       <div class="site-splash__item">
-        <div class="splash-image wow fadeIn" data-wow-delay=".5s">
-          <div class="splash-illustration _stars _1 starBlink"></div>
-          <div class="splash-illustration _stars _2 starBlink"></div>
-          <div class="splash-illustration _stars _3 starBlink"></div>
-          <div class="splash-illustration _window floatingUpDown"></div>
-          <div class="splash-illustration _characters"></div>
-          <div class="splash-illustration _bulb floatingUpDown"></div>
+        <div class="splash-image">
+          <div class="stars wow fadeIn" data-wow-delay="3s">
+            <div class="splash-illustration _stars _1 starBlink"></div>
+            <div class="splash-illustration _stars _2 starBlink"></div>
+            <div class="splash-illustration _stars _3 starBlink"></div>
+          </div>
+
+          <div class="designers wow fadeIn" data-wow-delay="1s">
+            <div class="splash-illustration _window floatingUpDown"></div>
+            <div class="splash-illustration _characters"></div>
+            <div class="splash-illustration _bulb floatingUpDown"></div>
+          </div>
         </div>
       </div>
     </div>
