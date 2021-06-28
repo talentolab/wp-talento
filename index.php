@@ -10,11 +10,9 @@ get_header();
 
   <div class="block site-splash">
       <div class="clouds">
-        <div class="cloud cloud--1"></div>
-        <div class="cloud cloud--2"></div>
-        <div class="cloud cloud--3"></div>
-<main id="primary">
-    <div class="site-splash__decoration wave-bg--small-sigmoid wow fadeInUp" data-wow-delay=".4s" data-skip-lazy>
+        <div class="cloud cloud--1" data-skip-lazy></div>
+        <div class="cloud cloud--2" data-skip-lazy></div>
+        <div class="cloud cloud--3" data-skip-lazy></div>
       </div>
     </div>
     
