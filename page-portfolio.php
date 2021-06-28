@@ -68,13 +68,10 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
       </div>
 
       <div class="row">
-        <span>
-          Exibindo <strong>12</strong> resultados de <strong>todas as categorias</strong>
-        </span>
-      </div>
-
-
-
+        <div class="row valign-wrapper wow fadeInUpSmall" data-wow-delay=".4s">
+          <div class="col s12 m6 l8 xl8 no-padding-x">
+            <div class="grey-text alm-results-text"></div>
+          </div>
 
           <div class="col s12 m6 l4 xl4 no-padding">
             <div class="search-bar-wrapper">
