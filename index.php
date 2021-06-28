@@ -172,10 +172,12 @@ get_header();
 
 
 
-  <div class="block wave-bg--1 overlap-top-small light-purple-bg padding-bottom-large">
-    <div class="container-medium padding-top-large">
+  <div class="block wave-bg--sine overlap-top-small light-purple-bg padding-bottom-large">
+    <div class="padding-top-large">
       <div class="row no-margin">
-        <div class="col s12 m6">
+        <div class="col m2 hide-on-small-and-down"></div>
+
+        <div class="col s12 m4">
           <div class="meet-talento-ilustration svg-animation wow fadeInLeftSmall" data-wow-delay=".2s"></div>
         </div>
 
@@ -197,6 +199,8 @@ get_header();
             </a>
           </div>
         </div>
+
+        <div class="col m2 hide-on-small-and-down"></div>
       </div>
     </div>
   </div>
@@ -205,9 +209,11 @@ get_header();
 
 
   <div class="block light-purple-bg wave-bg--4">
-    <div class="container-medium">
+    <section>
       <div class="row no-margin">
-        <div class="col s8 m6 padding-y-large padding-right-large">
+        <div class="col m2 hide-on-small-and-down"></div>
+
+        <div class="col s9 m4 padding-right-small padding-left-medium">
           <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
             Social Media
           </h2>
@@ -224,7 +230,7 @@ get_header();
           </a>
         </div>
 
-        <div class="col s4 m6">
+        <div class="col s3 m4">
           <div class="wow fadeInUpSmall" data-wow-delay="1s">
             <div class="social-media-phone overlap-top-medium margin-left-medium">
               <div class="phone-screen">
@@ -235,8 +241,10 @@ get_header();
             </div>
           </div>
         </div>
+
+        <div class="col m2 hide-on-small-and-down"></div>
       </div>
-    </div>
+    </section>
   </div>
 
 
@@ -244,37 +252,43 @@ get_header();
   
   
   <div class="block">
-    <div class="container-medium padding-x-medium padding-top-larger">
-      <h2 class="accent-color text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
-        Confiam na gente
-      </h2>
-      
-      <!-- Slide de logos -->
-      <div class="no-margin">
-        <div id="carousel-logos-wrapper" class="carousel-wrapper wow fadeInUpSmall no-click padding-y-medium" data-wow-delay=".5s">
-          <div id="carousel-logos" class="carousel">
-            <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/1.webp" data-skip-lazy />
-            </div>
-            
-            <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/2.webp" data-skip-lazy />
-            </div>
-            
-            <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/3.webp" data-skip-lazy />
-            </div>
-            
-            <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/4.webp" data-skip-lazy />
-            </div>
-            
-            <div class="carousel-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/5.webp" data-skip-lazy />
+    <div class="row padding-top-larger">
+      <div class="col m1 xl2 hide-on-small-and-down"></div>
+
+      <div class="col s12 m10 xl8 no-padding">
+        <h2 class="text-center margin-top-larger padding-x-medium accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+          Confiam na gente
+        </h2>
+        
+        <!-- Slide de logos -->
+        <div class="no-margin padding-y-medium">
+          <div id="carousel-logos-wrapper" class="carousel-wrapper wow fadeInUpSmall no-click padding-y-medium" data-wow-delay=".5s">
+            <div id="carousel-logos" class="carousel">
+              <div class="carousel-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/1.webp" data-skip-lazy />
+              </div>
+              
+              <div class="carousel-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/2.webp" data-skip-lazy />
+              </div>
+              
+              <div class="carousel-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/3.webp" data-skip-lazy />
+              </div>
+              
+              <div class="carousel-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/4.webp" data-skip-lazy />
+              </div>
+              
+              <div class="carousel-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/5.webp" data-skip-lazy />
+              </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
+
+      <div class="col m1 xl2 hide-on-small-and-down"></div>
     </div>
   </div>
 
