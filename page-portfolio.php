@@ -6,8 +6,8 @@
 
 get_header();
 
-$tag = $_GET[ 'tag' ];
-$search = $_GET[ 'q' ];
+$tag = isset($_GET[ 'tag' ]) ?? $_GET[ 'tag' ];
+$search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
 ?>
 
 
