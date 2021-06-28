@@ -379,6 +379,13 @@ get_header();
         Nosso portfólio
       </h2>
 
+      <div class="modal">
+        <div class="modal--overlay"></div>
+        <div class="modal--content">
+          <section class="content"></section>
+        </div>
+      </div>
+
       <div class="row gallery-wrapper margin-top-large">
         <?php
           $args = array(  
@@ -394,24 +401,22 @@ get_header();
           while ( $loop->have_posts() ) :
             $loop->the_post(); 
           ?>
-            <div class="gallery-item--wrapper col s6 m4 no-padding no-margin">
-              <a href="<?= get_post_permalink(); ?>">
-                <div class="gallery-item">
-                  <?php
-                    if (has_post_thumbnail()) :
-                  ?>
-                    <img src="<?= get_the_post_thumbnail_url(); ?>" alt="<?= the_title(); ?>" />
-                  <?php endif; ?>
-                  
-                  <button class="gallery-btn btn button-bg center">
-                    Ver projeto
-                  </button>
+            <div class="gallery-item--wrapper col s6 m6 l4 no-padding no-margin">
+              <div class="gallery-item js-open-project-modal js-open-modal no-select" data-url="<?= get_post_permalink(); ?>" data-post-id="<?= get_the_ID(); ?>">
+                <?php
+                if (has_post_thumbnail()) :
+                ?>
+                <img src="<?= get_the_post_thumbnail_url(); ?>" alt="<?= the_title(); ?>" />
+                <?php endif; ?>
 
-                  <div class="gallery-item--title text-center text-middle text-stronger padding-small">
-                    <?= the_title(); ?>
-                  </div>
+                <button class="gallery-btn btn button-bg center no-click">
+                  Ver projeto
+                </button>
+
+                <div class="gallery-item--title text-center text-middle text-stronger padding-small no-click">
+                <?= the_title(); ?>
                 </div>
-              </a>
+              </div>
             </div>
           <?php
           endwhile;
