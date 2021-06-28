@@ -38,6 +38,21 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
   </div>
 </header>
 
+<main class="wow fadeInUpSmall" data-wow-delay=".6s" style="visibility: hidden">
+  
+  <div class="block light-purple-bg wave-bg--convex-1 padding-top-large">
+    <div class="container-medium">
+      <div class="margin-y-medium wow fadeInUpSmall" data-wow-delay=".6s">
+        <?php
+          function active ( $button ) {
+            global $tag;
+            
+            return $tag == $button ? 'active' : '';
+          }
+        ?>
+
+        <a href="/portfolio/" class="category-filter-btn btn text-small <?= active( '' ); ?>">
+          <i class="fas fa-th margin-right-smaller text-small"></i>
           Todos
         </a>
 
@@ -84,37 +99,43 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
                   </button>
                 </form>
 
+                <?php
+                  $args = array(  
+                    'post_type' => 'projetos',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 9, 
+                    'orderby' => 'title', 
+                    'order' => 'ASC'
+                  );
+
+                  $loop = new WP_Query( $args ); 
+                ?>
+
                 <script>
                   let searchArray = {
                     <?php
-                      $args = array(  
-                        'post_type' => 'projetos',
-                        'post_status' => 'publish',
-                        'posts_per_page' => 9, 
-                        'orderby' => 'title', 
-                        'order' => 'ASC',
-                      );
-
-                      $loop = new WP_Query( $args ); 
-                          
-                      while ( $loop->have_posts() ) {
-                        $loop->the_post(); 
-                        echo '"'. get_the_title() .'": "'. get_the_post_thumbnail_url() .'",';
-                      };
-
-                      wp_reset_postdata();
+                      while ( $loop->have_posts() ) : 
+                        $loop->the_post();
                     ?>
+                        "<?= get_the_title(); ?>":"<?= get_the_post_thumbnail_url(); ?>",
+                    <?php endwhile; ?>
                   }
                 </script>
+
+                <?php
+                  wp_reset_postdata();
+                ?>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
 
 
       <div class="row gallery-wrapper margin-top-large no-margin-y wow fadeInUpSmall" data-wow-delay=".8s">
         <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/custom/ajax-load-more.custom.css" defer />
-
+        <!-- Portfólio -->
         <?= do_shortcode('
           [ajax_load_more
           tag="'. $tag .'"
