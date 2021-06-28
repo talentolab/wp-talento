@@ -11,8 +11,6 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
 ?>
 
 
-<header class="margin-top-large">
-</header>
 <div class="modal">
   <div class="modal--overlay"></div>
   <div class="modal--content">
@@ -20,60 +18,26 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
   </div>
 </div>
 
-<main class="background-blob">
-  <!-- Portfólio -->
+<header class="margin-top-large">
   <div class="block">
-    <div class="container-medium padding-y-large">
+    <div class="row no-padding valign-wrapper">
+      <div class="col s12 m2 l3 hide-on-small-only"></div>
 
+      <div class="col s12 m8 l6">
+        <h1 class="primary-color padding-top-large padding-bottom-medium text-stronger text-center no-margin wow fadeInUpSmall accent-color">
+          Soluções criativas para o seu negócio
+        </h1>
 
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-      <div class="row">
-        <div class="col s12 m6 l8 xl9 no-padding-x">
-          <h2 class="decoration text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
-            Nossos trabalhos
-          </h2>
-
-
-        </div>
-
-        <div class="col s12 m6 l4 xl3 no-padding">
-          <div class="search-bar-wrapper">
-            <div class="search-bar">
-              <input type="search" class="search-bar__input text-small" placeholder="Buscar projeto" />
-
-              <button type="button" class="search-bar__submit">
-                <i class="material-icons">search</i>
-              </button>
-            </div>
-          </div>
+        <div class="grey-text text-center padding-bottom-large wow fadeInUpSmall" data-wow-delay=".2s">
+          Confira alguns de nossos projetos
         </div>
       </div>
 
-      <div class="row">
+      <div class="col s12 m2 l3 hide-on-small-only"></div>
+    </div>
+  </div>
+</header>
 
-    
-
-
-
-
-        <a href="#" class="category-filter-btn btn text-small active">
-          <i class="material-icons left">border_all</i>
           Todos
         </a>
 
