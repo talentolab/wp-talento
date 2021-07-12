@@ -167,9 +167,8 @@ remove_action('admin_print_styles', 'print_emoji_styles');
  * Load latest version of jQuery
  */
 function fix_jquery() {
-  
   wp_deregister_script('jquery');
-  wp_register_script('jquery', ($__DIR .'/libs/jquery/3.4.1/jquery.min.js'), false, '3.4.1');
+  wp_register_script('jquery', (__DIR .'/libs/jquery/3.4.1/jquery.min.js'), false, '3.4.1');
 }
 add_action('wp_enqueue_scripts', 'fix_jquery', 1, 1);
 
@@ -189,6 +188,8 @@ function talento_scripts() {
   
   wp_enqueue_style( 'materialize', __DIR .'/libs/materialize-src/materialize.min.css', array(), '1.0.0' );
   wp_enqueue_style( 'materialize-custom', __DIR .'/css/custom/materialize.custom'. $min .'.css', array(), _S_VERSION );
+  wp_enqueue_style( 'bootstrap-grid', __MODULES .'/bootstrap/dist/css/bootstrap-grid'. $min .'.css', array(), _S_VERSION );
+  wp_enqueue_style( 'bootstrap-utilities', __MODULES .'/bootstrap/dist/css/bootstrap-utilities'. $min .'.css', array(), _S_VERSION );
   
   // Main CSS
   wp_enqueue_style( 'talento-style', get_stylesheet_uri(), array(), _S_VERSION );
