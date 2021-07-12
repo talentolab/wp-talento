@@ -134,7 +134,7 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
 
 
       <div class="row gallery-wrapper margin-top-large no-margin-y wow fadeInUpSmall" data-wow-delay=".8s">
-        <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/custom/ajax-load-more.custom.css" defer />
+        <link rel="stylesheet" href="<?= __DIR; ?>/css/custom/ajax-load-more.custom.css" defer />
         <!-- Portfólio -->
         <?= do_shortcode('
           [ajax_load_more

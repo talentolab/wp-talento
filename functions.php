@@ -11,11 +11,20 @@
 $dev_mode = true;
 $CURRENT_COMMIT = 'd3adbe4';
 
-$__DIR = get_template_directory_uri();
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', $CURRENT_COMMIT );
+}
+
+if ( ! defined( '__DIR' ) ) {
+	// Replace the version number of the theme on each release.
+	define( '__DIR', get_template_directory_uri() );
+}
+
+if ( ! defined( '__MODULES' ) ) {
+	// Replace the version number of the theme on each release.
+	define( '__MODULES', get_template_directory_uri() .'/node_modules' );
 }
 
 if ( ! function_exists( 'talento_setup' ) ) :
@@ -158,7 +167,6 @@ remove_action('admin_print_styles', 'print_emoji_styles');
  * Load latest version of jQuery
  */
 function fix_jquery() {
-  global $__DIR;
   
   wp_deregister_script('jquery');
   wp_register_script('jquery', ($__DIR .'/libs/jquery/3.4.1/jquery.min.js'), false, '3.4.1');
@@ -171,26 +179,25 @@ add_action('wp_enqueue_scripts', 'fix_jquery', 1, 1);
  */
 function talento_scripts() {
   global $dev_mode;
-  global $__DIR;
 
   $min = !$dev_mode ? '.min' : '';
   
   // CSS Libraries
-  wp_enqueue_style( 'animate.css', $__DIR .'/libs/animate.css/animate'. $min .'.css', array(), '3.7.2' );
+  wp_enqueue_style( 'animate.css', __DIR .'/libs/animate.css/animate'. $min .'.css', array(), '3.7.2' );
   
-  wp_enqueue_style( 'helpers.css', $__DIR .'/libs/helpers.css/src/helpers'. $min .'.css', array(), '1.0.0' );
+  wp_enqueue_style( 'helpers.css', __DIR .'/libs/helpers.css/src/helpers'. $min .'.css', array(), '1.0.0' );
   
-  wp_enqueue_style( 'materialize', $__DIR .'/libs/materialize-src/materialize.min.css', array(), '1.0.0' );
-  wp_enqueue_style( 'materialize-custom', $__DIR .'/css/custom/materialize.custom'. $min .'.css', array(), _S_VERSION );
+  wp_enqueue_style( 'materialize', __DIR .'/libs/materialize-src/materialize.min.css', array(), '1.0.0' );
+  wp_enqueue_style( 'materialize-custom', __DIR .'/css/custom/materialize.custom'. $min .'.css', array(), _S_VERSION );
   
   // Main CSS
   wp_enqueue_style( 'talento-style', get_stylesheet_uri(), array(), _S_VERSION );
   wp_style_add_data( 'talento-style', 'rtl', 'replace' );
-  wp_enqueue_style( 'main', $__DIR .'/css/main'. $min .'.css', array(), _S_VERSION );
+  wp_enqueue_style( 'main', __DIR .'/css/main'. $min .'.css', array(), _S_VERSION );
 
   
   // Head JS Libraries
-	wp_enqueue_script( 'jquery', $__DIR . '/libs/jquery/3.4.1/jquery.min.js', array(), '3.4.1', true );
+	wp_enqueue_script( 'jquery', __DIR . '/libs/jquery/3.4.1/jquery.min.js', array(), '3.4.1', true );
 	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -203,17 +210,16 @@ add_action( 'wp_enqueue_scripts', 'talento_scripts' );
 
 function add_this_script_footer() {
   global $dev_mode;
-  global $__DIR;
 
   $min = !$dev_mode ? '.min' : '';
 
   // Footer JS Libraries
-	wp_enqueue_script( 'materialize', $__DIR . '/libs/materialize-src/js/bin/materialize.min.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'wow-js', $__DIR . '/libs/wow.js/dist/wow.min.js', array(), '1.3.0', true );
+	wp_enqueue_script( 'materialize', __DIR . '/libs/materialize-src/js/bin/materialize.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'wow-js', __DIR . '/libs/wow.js/dist/wow.min.js', array(), '1.3.0', true );
   
   // Main JS
-	wp_enqueue_script( 'talento-navigation', $__DIR . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'talento-main', $__DIR . '/js/main'. $min .'.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'talento-navigation', __DIR . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'talento-main', __DIR . '/js/main'. $min .'.js', array(), _S_VERSION, true );
 }  
 add_action('wp_footer', 'add_this_script_footer');
 

@@ -236,7 +236,7 @@ get_header();
             <div class="social-media-phone overlap-top-medium margin-left-medium">
               <div class="phone-screen">
                 <video autoplay loop>
-                  <source src="<?= get_template_directory_uri(); ?>/video/home/home-mobile-video.webm" type="video/mp4">
+                  <source src="<?= __DIR; ?>/video/home/home-mobile-video.webm" type="video/mp4">
                 </video>
               </div>
             </div>
@@ -266,23 +266,23 @@ get_header();
           <div id="carousel-logos-wrapper" class="carousel-wrapper wow fadeInUpSmall no-click padding-y-medium" data-wow-delay=".5s">
             <div id="carousel-logos" class="carousel">
               <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/1.webp" data-skip-lazy />
+                <img src="<?= __DIR; ?>/img/sample/logos/1.webp" data-skip-lazy />
               </div>
               
               <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/2.webp" data-skip-lazy />
+                <img src="<?= __DIR; ?>/img/sample/logos/2.webp" data-skip-lazy />
               </div>
               
               <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/3.webp" data-skip-lazy />
+                <img src="<?= __DIR; ?>/img/sample/logos/3.webp" data-skip-lazy />
               </div>
               
               <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/4.webp" data-skip-lazy />
+                <img src="<?= __DIR; ?>/img/sample/logos/4.webp" data-skip-lazy />
               </div>
               
               <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/sample/logos/5.webp" data-skip-lazy />
+                <img src="<?= __DIR; ?>/img/sample/logos/5.webp" data-skip-lazy />
               </div>
             </div>
           </div>

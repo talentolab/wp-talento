@@ -205,7 +205,7 @@ get_header();
           ?>
           <div class="col s12 m6 l4">
             <div class="padding-y-medium padding-x-small">
-              <div class="team-pic centered" style="background-image: url(<?= get_template_directory_uri(); ?>/img/sample/clients/1.webp);"></div>
+              <div class="team-pic centered" style="background-image: url(<?= __DIR; ?>/img/sample/clients/1.webp);"></div>
 
               <h3 class="text-center">Fulando de Tal</h3>
               <div class="text-center grey-text">Diretor comercial</div>

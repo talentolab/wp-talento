@@ -29,8 +29,8 @@
 
   <?php wp_head(); ?>
   
-  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/libs/swiper/swiper-bundle.min.css" defer />
-  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/libs/lity/dist/lity.css" defer />
+  <link rel="stylesheet" href="<?= __DIR; ?>/libs/swiper/swiper-bundle.min.css" defer />
+  <link rel="stylesheet" href="<?= __DIR; ?>/libs/lity/dist/lity.css" defer />
 </head>
 
 <body <?php body_class(); ?>>
