@@ -78,84 +78,84 @@ get_header();
       </div>
 
       <div class="row">
-        <div class="col-sm-6 col-md-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".1s">
             <a href="#">
               <div class="card-content padding-small">
                 <div class="card-icon valor"></div>
 
                 <div class="title-color text-center margin-y-small">
-                  Marcas <br>de Valor
+                  Marcas<br>de Valor
                 </div>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".2s">
             <a href="#">
               <div class="card-content padding-small">
                 <div class="card-icon web"></div>
 
                 <div class="title-color text-center margin-y-small">
-                  Soluções <br>em web
+                  Soluções<br>em web
                 </div>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".3s">
             <a href="#">
               <div class="card-content padding-small">
                 <div class="card-icon ambientacao"></div>
 
                 <div class="title-color text-center margin-y-small">
-                  Ambientação <br>Funcional
+                  Ambientação<br>Funcional
                 </div>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".2s">
             <a href="#">
               <div class="card-content padding-small">
                 <div class="card-icon design"></div>
 
                 <div class="title-color text-center margin-y-small">
-                  Design <br>Promocional
+                  Design<br>Promocional
                 </div>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".3s">
             <a href="#">
               <div class="card-content padding-small">
                 <div class="card-icon marketing"></div>
 
                 <div class="title-color text-center margin-y-small">
-                  Marketing <br>& Multimídia
+                  Marketing<br>& Multimídia
                 </div>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".4s">
             <a href="#">
               <div class="card-content padding-small">
                 <div class="card-icon redes-sociais"></div>
 
                 <div class="title-color text-center margin-y-small">
-                  Redes <br>Sociais
+                  Redes<br>Sociais
                 </div>
               </div>
             </a>
