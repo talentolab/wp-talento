@@ -17,39 +17,42 @@ get_header();
       </div>
     </div>
     
-    <div class="site-splash__wrapper">
-      <div class="site-splash__item padding-top-medium padding-bottom-large">
-        <div class="home-logo wow fadeInUpSmall"></div>
-
-        <div class="splash-text">
-          <h1 class="splash-text-title margin-bottom-medium wow fadeInUpSmall js-splash-text" data-wow-delay=".2s">
-          Transformamos sonhos
-          em <span class="link-color text-sine-wave position-relative">inovação</span>
-          </h1>
-
-          <h4 class="splash-text-subtitle margin-bottom-medium wow fadeInUpSmall js-splash-text" data-wow-delay=".3s">
-            Sit sagittis in mi ut habitasse at massa viverra et
-            sodales consequat volutpat lacus vel
-          </h4>
-
-          <p class="text-left wow fadeInUpSmall" data-wow-delay=".4s">
-            <a href="/contato" class="btn button-bg white-text shadow-3">
-              Solicitar um orçamento
-              <i class="fas fa-chevron-right right text-small"></i>
-            </a>
-          </p>
+    <div class="site-splash__wrapper row g-0 px-4 px-md-5 px-lg-0">
+      <div class="col-12 col-sm-8 col-md-6 col-lg-6 col-xl-5 col-xxl-4 offset-lg-1 offset-xxl-2 text-middle">
+        <div class="pe-lg-4">
+          <div class="home-logo wow fadeInUpSmall"></div>
+  
+          <div class="splash-text">
+            <h1 class="splash-text-title text-largest margin-bottom-medium wow fadeInUpSmall js-splash-text" data-wow-delay=".2s">
+            Transformamos<br>
+            sonhos<br>
+            em <span class="link-color text-sine-wave position-relative">inovação</span>
+            </h1>
+  
+            <h5 class="splash-text-subtitle margin-bottom-medium wow fadeInUpSmall js-splash-text" data-wow-delay=".3s">
+              Sit sagittis in mi ut habitasse at massa viverra et
+              sodales consequat volutpat lacus vel
+            </h5>
+  
+            <p class="text-left wow fadeInUpSmall" data-wow-delay=".4s">
+              <a href="/contato" class="btn button-bg white-text shadow-3">
+                Solicitar um orçamento
+                <i class="fas fa-chevron-right right text-small"></i>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
-
-      <div class="site-splash__item">
-        <div class="splash-image">
-          <div class="stars wow fadeIn" data-wow-delay="3s">
+  
+      <div class="col-sm-4 col-md-6 col-lg-5 col-xl-6 col-xxl-5 d-none d-sm-block">
+        <div class="splash-image h-100">
+          <div class="w-100 h-100 position-absolute wow fadeIn" data-wow-delay="3s">
             <div class="splash-illustration _stars _1 starBlink"></div>
             <div class="splash-illustration _stars _2 starBlink"></div>
             <div class="splash-illustration _stars _3 starBlink"></div>
           </div>
 
-          <div class="designers wow fadeIn" data-wow-delay="1s">
+          <div class="w-100 h-100 position-absolute wow fadeIn" data-wow-delay="1s">
             <div class="splash-illustration _window floatingUpDown"></div>
             <div class="splash-illustration _characters"></div>
             <div class="splash-illustration _bulb floatingUpDown"></div>
