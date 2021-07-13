@@ -21,9 +21,9 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
 <header class="margin-top-large">
   <div class="block">
     <div class="row no-padding valign-wrapper">
-      <div class="col s12 m2 l3 hide-on-small-only"></div>
+      <div class="col-sm-12 col-md-2 col-lg-3 d-none d-md-block"></div>
 
-      <div class="col s12 m8 l6">
+      <div class="col-sm-12 col-md-8 col-lg-6">
         <h1 class="primary-color padding-top-large padding-bottom-medium text-stronger text-center no-margin wow fadeInUpSmall accent-color">
           Soluções criativas para o seu negócio
         </h1>
@@ -33,7 +33,7 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
         </div>
       </div>
 
-      <div class="col s12 m2 l3 hide-on-small-only"></div>
+      <div class="col-sm-12 col-md-2 col-lg-3 d-none d-md-block"></div>
     </div>
   </div>
 </header>
@@ -84,11 +84,11 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
 
       <div class="row">
         <div class="row valign-wrapper wow fadeInUpSmall" data-wow-delay=".4s">
-          <div class="col s12 m6 l8 xl8 no-padding-x">
+          <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8 no-padding-x">
             <div class="grey-text alm-results-text"></div>
           </div>
 
-          <div class="col s12 m6 l4 xl4 no-padding">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 no-padding">
             <div class="search-bar-wrapper">
               <div class="search-bar input-field">
                 <form action="" method="GET">

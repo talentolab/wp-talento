@@ -14,7 +14,7 @@
 <footer class="site-footer padding-top-large">
   <div class="container-large">
     <div class="row no-margin padding-bottom-large wow fadeIn" data-wow-delay=".2s">
-      <div class="col s12 m6 l3 xl3">
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
         <div class="footer-logo"></div>
 
 
@@ -43,7 +43,7 @@
         
       </div>
 
-      <div class="col s6 m6 l3 xl3">
+      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
         <ul class="no-margin-x no-margin-bottom margin-top-medium">
           <li class="footer-links--title">Lorem Ipsum</li>
           <li>
@@ -64,7 +64,7 @@
         </ul>
       </div>
 
-      <div class="col s6 m6 l3 xl3">
+      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
         <ul class="no-margin-x no-margin-bottom margin-top-medium">
           <li class="footer-links--title">Lorem Ipsum</li>
           <li>
@@ -85,7 +85,7 @@
         </ul>
       </div>
 
-      <div class="col s12 m6 l3 xl3">
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
         <ul class="no-margin-x no-margin-bottom margin-top-medium">
           <li class="margin-bottom-small display-flex text-middle">
             <i class="fas fa-envelope-open margin-right-smaller accent-color"></i> contato@talentodesign.com.br
@@ -109,12 +109,12 @@
 
   <div class="footer-copyright padding-small primary-bg">
     <div class="container-large row valign-wrapper">
-      <div class="col s7 m11 no-padding-x">
+      <div class="col-sm-7 col-md-11 no-padding-x">
         <a href="/" class="strong">Talento Design & Marketing</a> ® <?= date('Y'); ?>. Todos os direitos
         reservados.
       </div>
 
-      <div class="valign-wrapper col s5 m1">
+      <div class="valign-wrapper col-sm-5 col-md-1">
         <a href="https://talentodesign.com.br" class="tooltipped right" data-tooltip="Talento Design &amp; Marketing"
           data-position="left" target="_blank" rel="nofollow">
           <div class="attribution-logo">

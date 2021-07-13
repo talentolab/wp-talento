@@ -75,7 +75,7 @@ get_header();
       </div>
 
       <div class="row">
-        <div class="col s6 m4 no-padding">
+        <div class="col-sm-6 col-md-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".1s">
             <a href="#">
               <div class="card-content padding-small">
@@ -89,7 +89,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col s6 m4 no-padding">
+        <div class="col-sm-6 col-md-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".2s">
             <a href="#">
               <div class="card-content padding-small">
@@ -103,7 +103,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col s6 m4 no-padding">
+        <div class="col-sm-6 col-md-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".3s">
             <a href="#">
               <div class="card-content padding-small">
@@ -117,7 +117,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col s6 m4 no-padding">
+        <div class="col-sm-6 col-md-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".2s">
             <a href="#">
               <div class="card-content padding-small">
@@ -131,7 +131,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col s6 m4 no-padding">
+        <div class="col-sm-6 col-md-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".3s">
             <a href="#">
               <div class="card-content padding-small">
@@ -145,7 +145,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col s6 m4 no-padding">
+        <div class="col-sm-6 col-md-4 no-padding">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".4s">
             <a href="#">
               <div class="card-content padding-small">
@@ -176,13 +176,13 @@ get_header();
   <div class="block wave-bg--sine overlap-top-small light-purple-bg padding-bottom-large">
     <div class="padding-top-large">
       <div class="row no-margin">
-        <div class="col m2 hide-on-small-and-down"></div>
+        <div class="col-md-2 d-none d-md-block"></div>
 
-        <div class="col s12 m4">
+        <div class="col-sm-12 col-md-4">
           <div class="meet-talento-ilustration svg-animation wow fadeInLeftSmall" data-wow-delay=".2s"></div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col-sm-12 col-md-4">
           <div class="padding-x-small">
             <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
               Conheça a Talento Design
@@ -201,7 +201,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col m2 hide-on-small-and-down"></div>
+        <div class="col-md-2 d-none d-md-block"></div>
       </div>
     </div>
   </div>
@@ -212,9 +212,9 @@ get_header();
   <div class="block light-purple-bg wave-bg--4">
     <section>
       <div class="row no-margin">
-        <div class="col m2 hide-on-small-and-down"></div>
+        <div class="col-md-2 d-none d-md-block"></div>
 
-        <div class="col s9 m4 padding-right-small padding-left-medium">
+        <div class="col-sm-9 col-md-4 padding-right-small padding-left-medium">
           <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
             Social Media
           </h2>
@@ -231,9 +231,9 @@ get_header();
           </a>
         </div>
 
-        <div class="col s3 m4">
+        <div class="col-sm-3 col-md-4">
           <div class="wow fadeInUpSmall" data-wow-delay="1s">
-            <div class="social-media-phone overlap-top-medium margin-left-medium">
+            <div class="social-media-phone margin-left-medium">
               <div class="phone-screen">
                 <video autoplay loop>
                   <source src="<?= __DIR; ?>/video/home/home-mobile-video.webm" type="video/mp4">
@@ -243,7 +243,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col m2 hide-on-small-and-down"></div>
+        <div class="col-md-2 d-none d-md-block"></div>
       </div>
     </section>
   </div>
@@ -254,9 +254,9 @@ get_header();
   
   <div class="block">
     <div class="row padding-top-larger">
-      <div class="col m1 xl2 hide-on-small-and-down"></div>
+      <div class="col-md-1 col-xl-2 d-none d-md-block"></div>
 
-      <div class="col s12 m10 xl8 no-padding">
+      <div class="col-sm-12 col-md-10 col-xl-8 no-padding">
         <h2 class="text-center margin-top-larger padding-x-medium accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
           Confiam na gente
         </h2>
@@ -289,7 +289,7 @@ get_header();
         </div>
       </div>
 
-      <div class="col m1 xl2 hide-on-small-and-down"></div>
+      <div class="col-md-1 col-xl-2 d-none d-md-block"></div>
     </div>
   </div>
 
@@ -339,7 +339,7 @@ get_header();
             <!-- Slides -->
             <div class="swiper-slide" data-slide-id="<?= $i; ?>">
               <div class="row full-height valign-wrapper">
-                <div class="col s12 m5 full-height position-relative hide-on-small-only">
+                <div class="col-sm-12 col-md-5 full-height position-relative d-none d-md-block">
                   <div class="client-pic center" style="background-image: url(<?= get_template_directory_uri(); ?>/img/sample/clients/1.webp);">
                     <div class="bubbles">
                       <div class="bubble"></div>
@@ -356,7 +356,7 @@ get_header();
                   </div>
                 </div>
 
-                <div class="col s12 m7">
+                <div class="col-sm-12 col-md-7">
                   <div class="padding-medium padding-right-large">
                     <p class="quote">
                       Precisávamos fazer o redesign da nossa marca para nos adequarmos ao momento de 
@@ -410,7 +410,7 @@ get_header();
           while ( $loop->have_posts() ) :
             $loop->the_post(); 
           ?>
-            <div class="gallery-item--wrapper col s6 m6 l4 no-padding no-margin">
+            <div class="gallery-item--wrapper col-sm-6 col-md-6 col-lg-4 no-padding no-margin">
               <div class="gallery-item js-open-project-modal js-open-modal no-select" data-url="<?= get_post_permalink(); ?>" data-post-id="<?= get_the_ID(); ?>">
                 <?php
                 if (has_post_thumbnail()) :

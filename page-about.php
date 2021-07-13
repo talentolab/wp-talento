@@ -10,10 +10,8 @@ get_header();
 <header class="margin-top-large">
   <div class="block">
     <div class="row no-padding valign-wrapper no-margin">
-      <div class="col s12 m2 l3 hide-on-small-only"></div>
-
-      <div class="col s12 m8 l6">
-        <h1 class="padding-top-large padding-bottom-medium text-stronger text-center no-margin wow fadeInUpSmall accent-color">
+      <div class="col-sm-12 col-md-8 col-lg-10 offset-lg-1 offset-xxl-2">
+        <h1 class="padding-top-large padding-bottom-medium text-center no-margin wow fadeInUpSmall accent-color">
           Completa e inovadora
         </h1>
 
@@ -22,8 +20,6 @@ get_header();
           a sua motivação e criatividade!
         </div>
       </div>
-
-      <div class="col s12 m2 l3 hide-on-small-only"></div>
     </div>
   </div>
 </header>
@@ -31,7 +27,7 @@ get_header();
 <main>
   <div class="block text-color padding-y-larger primary-bg wave-bg--sine-2">
     <div class="container-large row valign-wrapper flex-on-med-and-up">
-      <div class="col s12 m4">
+      <div class="col-sm-12 col-md-4">
         <div class="card text-middle border-radius-large low-shadow">
           <div class="card-content padding-large">
             <ul class="no-margin">
@@ -55,7 +51,7 @@ get_header();
         </div>
       </div>
 
-      <div class="col s12 m4">
+      <div class="col-sm-12 col-md-4">
         <div class="card text-middle border-radius-large low-shadow">
           <div class="card-content padding-large">
             <h2 class="no-margin-top">Design Empresarial</h2>
@@ -88,7 +84,7 @@ get_header();
         </div>
       </div>
 
-      <div class="col s12 m4">
+      <div class="col-sm-12 col-md-4">
         <div class="card padding-large text-middle border-radius-large low-shadow">
           <p>Ao longo desses anos, foram muitos desafios. Participamos de grandes 
             eventos e premiações de marcas que nos dão muito orgulho.</p>
@@ -99,9 +95,9 @@ get_header();
   
   <div class="block primary-bg padding-y-large">
     <div class="row valign-wrapper flex-on-med-and-up no-margin padding-x-medium">
-      <div class="col s12 m1 l2"></div>
+      <div class="col-sm-12 col-md-1 col-lg-2"></div>
 
-      <div class="col s12 m6 l3 text-middle no-padding">
+      <div class="col-sm-12 col-md-6 col-lg-3 text-middle no-padding">
         <div>
           <h2 class="white-text">Anos de mercado</h2>
             <p class="white-text">Atuamos no mercado há <strong>treze anos</strong> oferecendo e implantando projetos que valorizam o design e a inovação.</p>
@@ -113,7 +109,7 @@ get_header();
         </div>
       </div>
 
-      <div class="col s12 m6 l9 padding-medium">
+      <div class="col-sm-12 col-md-6 col-lg-9 padding-medium">
         <div class="card no-padding text-middle hoverable border-radius-larger">
           <div class="video-container">
             <iframe width="853" height="460" src="//www.youtube.com/embed/6Mn3gaHr_Fc?rel=0" frameborder="0"
@@ -126,9 +122,9 @@ get_header();
 
   <div class="block light-purple-bg padding-top-large wave-bg--sine text-color" style="z-index: 1;">
     <div class="row valign-wrapper flex-on-med-and-up no-margin">
-      <div class="col s12 m1 l2"></div>
+      <div class="col-sm-12 col-md-1 col-lg-2"></div>
 
-      <div class="col s12 m5 l4 padding-x-medium">
+      <div class="col-sm-12 col-md-5 col-lg-4 padding-x-medium">
         <div class="card text-middle border-radius-large low-shadow">
           <div class="card-content padding-medium">
             <h2 class="primary-color">Reconhecimento</h2>
@@ -145,11 +141,11 @@ get_header();
         </div>
       </div>
 
-      <div class="col s12 m5 l4">
-        <div class="meet-talento-ilustration wow fadeInLeftSmall overlap-bottom-larger hide-on-med-and-down" data-wow-delay=".2s"></div>
+      <div class="col-sm-12 col-md-5 col-lg-4">
+        <div class="meet-talento-ilustration wow fadeInLeftSmall overlap-bottom-larger d-none d-lg-block" data-wow-delay=".2s"></div>
       </div>
 
-      <div class="col s12 m1 l2"></div>
+      <div class="col-sm-12 col-md-1 col-lg-2"></div>
     </div>
   </div>
 
@@ -157,13 +153,13 @@ get_header();
 
   <div class="block light-purple-bg padding-y-large wave-bg--8">
     <div class="row valign-wrapper flex-on-med-and-up">
-      <div class="col s12 m1 l2"></div>
+      <div class="col-sm-12 col-md-1 col-lg-2"></div>
 
-      <div class="col s12 m5 l4">
+      <div class="col-sm-12 col-md-5 col-lg-4">
         <div class="meet-talento-ilustration wow fadeInLeftSmall" data-wow-delay=".2s"></div>
       </div>
 
-      <div class="col s12 m5 l4 padding-x-medium">
+      <div class="col-sm-12 col-md-5 col-lg-4 padding-x-medium">
         <div class="card text-middle border-radius-large low-shadow">
           <div class="card-content padding-medium">
             <h2 class="primary-color">Das micro às grandes</h2>
@@ -183,7 +179,7 @@ get_header();
         </div>
       </div>
 
-      <div class="col s12 m1 l2"></div>
+      <div class="col-sm-12 col-md-1 col-lg-2"></div>
     </div>
   </div>
 
@@ -192,9 +188,9 @@ get_header();
 
   <div class="block">
     <div class="row">
-      <div class="col s12 m1 l2 xl3"></div>
+      <div class="col-sm-12 col-md-1 col-lg-2 col-xl-3"></div>
 
-      <div class="col s12 m10 l8 xl6">
+      <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
         <h2 class="primary-color text-stronger text-center margin-y-larger wow fadeInUpSmall" data-wow-delay=".2s">
           Conheça nossa equipe
         </h2>
@@ -203,7 +199,7 @@ get_header();
           <?php
             for ($i = 0; $i < 9; $i++) :
           ?>
-          <div class="col s12 m6 l4">
+          <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="padding-y-medium padding-x-small">
               <div class="team-pic centered" style="background-image: url(<?= __DIR; ?>/img/sample/clients/1.webp);"></div>
 
@@ -217,7 +213,7 @@ get_header();
         </div>
       </div>
 
-      <div class="col s12 m1 l2 xl3"></div>
+      <div class="col-sm-12 col-md-1 col-lg-2 col-xl-3"></div>
     </div>
   </div>
 
