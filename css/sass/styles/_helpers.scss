@@ -15,6 +15,13 @@
   box-shadow: 2px 2px 15px rgb(0 0 0 / 30%);
 }
 
+.text-truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media all and (max-width: 600px) {
   .flex-on-med-and-up {
     display: block;
