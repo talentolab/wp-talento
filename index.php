@@ -177,35 +177,31 @@ get_header();
 
 
   <div class="block wave-bg--sine overlap-top-small light-purple-bg padding-bottom-large">
-    <div class="padding-top-large">
-      <div class="row no-margin">
-        <div class="col-md-2 d-none d-md-block"></div>
-
-        <div class="col-sm-12 col-md-4">
-          <div class="meet-talento-ilustration svg-animation wow fadeInLeftSmall" data-wow-delay=".2s"></div>
-        </div>
-
-        <div class="col-sm-12 col-md-4">
-          <div class="padding-x-small">
-            <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
-              Conheça a Talento Design
-            </h2>
-
-            <p class="wow fadeInUpSmall" data-wow-delay=".4s">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
-              purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor 
-              rhoncus dolor purus non enim praesent elementum facilisis
-            </p>
-
-            <a href="/contato" class="btn button-bg white-text shadow-3">
-              Saiba mais sobre nós
-              <i class="fas fa-chevron-right right text-small"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-2 d-none d-md-block"></div>
+    <div class="row g-0 px-4 px-lg-0">
+      <div class="col-12 col-sm-4 col-md-5 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2">
+        <div class="meet-talento-ilustration svg-animation wow fadeInLeftSmall" data-wow-delay=".2s"></div>
       </div>
+
+      <div class="col-12 col-sm-8 col-md-7 col-lg-5 col-xxl-4">
+        <div class="padding-x-small">
+          <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+            Conheça a Talento Design
+          </h2>
+
+          <p class="wow fadeInUpSmall" data-wow-delay=".4s">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor 
+            rhoncus dolor purus non enim praesent elementum facilisis
+          </p>
+
+          <a href="/contato" class="btn button-bg white-text shadow-3">
+            Saiba mais sobre nós
+            <i class="fas fa-chevron-right right text-small"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-2 d-none d-md-block"></div>
     </div>
   </div>
 
