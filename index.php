@@ -72,7 +72,7 @@ get_header();
           Soluções criativas
         </h1>
 
-        <p class="grey-text text-lighten-2 text-center wow fadeInUpSmall" data-wow-delay=".4s">
+        <p class="text-medium grey-text text-lighten-2 text-center wow fadeInUpSmall" data-wow-delay=".4s">
           Descubra como inovar o seu negócio
         </p>
       </div>
