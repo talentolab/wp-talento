@@ -7,32 +7,59 @@
 /* Inter */
 
 @font-face {
-  font-family: 'Inter';
-  src: url(../fonts/inter/static/Inter-Regular.woff2);
+  font-family: 'Poppins';
+  src: url(../fonts/poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Inter Black';
-  src: url(../fonts/inter/static/Inter-Black.woff2);
-}
-
-/* Montserrat */
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+  font-family: 'Poppins Black';
+  src: url(../fonts/poppins/Poppins-Black.ttf);
 }
 
 @font-face {
-  font-family: 'Montserrat ExtraBold';
-  src: url(../fonts/montserrat/Montserrat-ExtraBold.ttf);
+  font-family: 'Poppins Bold';
+  src: url(../fonts/poppins/Poppins-Bold.ttf);
 }
 
+@font-face {
+  font-family: 'Poppins ExtraBold';
+  src: url(../fonts/poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins ExtraLight';
+  src: url(../fonts/poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Light';
+  src: url(../fonts/poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Italic';
+  src: url(../fonts/poppins/Poppins-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url(../fonts/poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url(../fonts/poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Thin';
+  src: url(../fonts/poppins/Poppins-Thin.ttf);
+}
 
 
 html,
 body {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
   line-height: 2.5rem;
@@ -45,12 +72,16 @@ body {
  */
 
 h1, h2, h3, h4, h5 {
-  font-family: "Inter Black", Arial, Helvetica, sans-serif;
+  font-family: "Poppins",
+  Arial,
+  Helvetica,
+  sans-serif;
   padding: 0;
   position: relative;
 }
 
 h1, h2 {
+  font-family: "Poppins ExtraBold";
   margin: 24px 0;
 }
 
