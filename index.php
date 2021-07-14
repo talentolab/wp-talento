@@ -232,13 +232,7 @@ get_header();
 
         <div class="col-sm-3 col-md-4">
           <div class="wow fadeInUpSmall" data-wow-delay="1s">
-            <div class="social-media-phone margin-left-medium">
-              <div class="phone-screen">
-                <video autoplay loop>
-                  <source src="<?= __DIR; ?>/video/home/home-mobile-video.webm" type="video/mp4">
-                </video>
-              </div>
-            </div>
+            <div class="social-media-phone margin-left-medium align-center w-100"></div>
           </div>
         </div>
 
