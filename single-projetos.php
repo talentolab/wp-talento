@@ -24,8 +24,8 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
 </header>
 
 <main class="padding-bottom-large <?= $background; ?> animated fadeIn">
-  <div class="row no-margin no-padding flex-on-med-and-up animated fadeInLeftSmall js-close-modal">
-    <div class="col s12 m1 hide-on-med-and-down no-margin no-padding js-close-modal">
+  <div class="row g-0 no-padding flex-on-med-and-up animated fadeInLeftSmall js-close-modal">
+    <div class="col-sm-12 col-md-1 d-none d-lg-block no-margin no-padding js-close-modal">
       <div class="return-to-portfolio--wrapper position-sticky" onclick="<?= $returnAction; ?>">
         <div class="return-to-portfolio-btn js-close-modal" title="Voltar">
           <i class="fas fa-chevron-left center grey-text lighten-5"></i>
@@ -33,7 +33,7 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
       </div>
     </div>
 
-    <div class="col s12 m5 l4 xl3 js-close-modal">
+    <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 js-close-modal">
       <aside class="overlap-top-larger position-sticky no-padding-x margin-bottom-small right" style="top: 72px;">
         <div class="padding-x-medium">
           <div class="card low-shadow portfolio-content--card border-radius-larger animated fadeInUpSmall">
@@ -136,12 +136,12 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
       </aside>
     </div>
 
-    <div class="col s12 m7 l8 xl6 no-margin-x js-close-modal">
+    <div class="col-sm-12 col-md-7 col-lg-8 col-xl-6 no-margin-x js-close-modal">
       <div class="margin-top-small no-padding position-sticky">
         <div class="no-padding-x">
           <div class="card low-shadow border-radius-large no-padding animated fadeInUpSmall">
-            <div class="row">
-              <div class="col s12 padding-large no-padding-bottom">
+            <div class="row g-0">
+              <div class="col-sm-12 padding-large no-padding-bottom">
                 <h1 class="margin-bottom-medium no-margin-top" style="color: <?= $feat_color; ?>">
                   <?php if ( isset( $slogan_icon ) ) : ?>
                     <i class="fas fa-<?= $slogan_icon; ?> grey-text text-lighten-2"></i>
@@ -150,8 +150,8 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
                   <?= $slogan; ?>
                 </h1>
 
-                <div class="row">
-                  <div class="col s12">
+                <div class="row g-0">
+                  <div class="col-sm-12">
                     <?= get_the_content(); ?>
                   </div>
                 </div>
@@ -288,7 +288,7 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
       </div>
     </div>
 
-    <div class="col s12 m1 hide-on-med-and-down no-padding js-close-modal"></div>
+    <div class="col-sm-12 col-md-1 d-none d-lg-block no-padding js-close-modal"></div>
   </div>
 </main>
 
