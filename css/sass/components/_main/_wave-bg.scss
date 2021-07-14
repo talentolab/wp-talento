@@ -76,20 +76,22 @@
 @media all and (min-width: 481px) and (max-width: 575px) {
     .wave-bg--sine {
         background-size: contain;
-        color: #000;
     }
 }
 
 @media all and (min-width: 576px) and (max-width: 767px) {
     .wave-bg--sine {
-        background-size: contain;
-        color: #fff;
+      background-size: 1280px 100%;
+      background-position: 40% 0;
+      color: #fff;
     }
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
     .wave-bg--sine {
-        color: #fff;
+      background-size: 130% 100%;
+      background-position: 66% 0;
+      color: #fff;
     }
 }
 
