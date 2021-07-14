@@ -210,10 +210,8 @@ get_header();
 
   <div class="block light-purple-bg wave-bg--4">
     <section>
-      <div class="row no-margin">
-        <div class="col-md-2 d-none d-md-block"></div>
-
-        <div class="col-sm-9 col-md-4 padding-right-small padding-left-medium">
+      <div class="row g-0 px-4 px-lg-0">
+        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2 px-2">
           <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
             Social Media
           </h2>
@@ -230,13 +228,11 @@ get_header();
           </a>
         </div>
 
-        <div class="col-sm-3 col-md-4">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xxl-4">
           <div class="wow fadeInUpSmall" data-wow-delay="1s">
             <div class="social-media-phone margin-left-medium align-center w-100"></div>
           </div>
         </div>
-
-        <div class="col-md-2 d-none d-md-block"></div>
       </div>
     </section>
   </div>
@@ -247,9 +243,7 @@ get_header();
   
   <div class="block">
     <div class="row padding-top-larger">
-      <div class="col-md-1 col-xl-2 d-none d-md-block"></div>
-
-      <div class="col-sm-12 col-md-10 col-xl-8 no-padding">
+      <div class="col-12 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2 no-padding">
         <h2 class="text-center margin-top-larger padding-x-medium accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
           Confiam na gente
         </h2>
@@ -281,8 +275,6 @@ get_header();
           </div>
         </div>
       </div>
-
-      <div class="col-md-1 col-xl-2 d-none d-md-block"></div>
     </div>
   </div>
 
