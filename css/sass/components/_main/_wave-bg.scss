@@ -73,21 +73,21 @@
     }
 }
 
-@media all and (min-width: 481px) and (max-width: 600px) {
+@media all and (min-width: 481px) and (max-width: 575px) {
     .wave-bg--sine {
         background-size: contain;
         color: #000;
     }
 }
 
-@media all and (min-width: 601px) and (max-width: 782px) {
+@media all and (min-width: 576px) and (max-width: 767px) {
     .wave-bg--sine {
         background-size: contain;
         color: #fff;
     }
 }
 
-@media all and (min-width: 783px) and (max-width: 992px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
     .wave-bg--sine {
         color: #fff;
     }
