@@ -1,32 +1,114 @@
 @import '../styles/colors';
 
-.site-footer {
+footer {
   background-color: $primary-bg;
   color: #fff;
   position: relative;
-}
 
-.footer-links--title {
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 10px;
-}
+  .footer-logo {
+    background-image: url(../img/logo/talento-logo-white.svg);
+    background-size: 100% auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 200px;
+  }
 
-.footer-logo {
-  background-image: url(../img/logo/talento-logo-white.svg);
-  background-size: 100% auto;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  height: 75px;
-  width: 200px;
-}
+  .attribution {
+    background-color: $bg--blue-dark;
 
-.attribution-logo {
-  background-image: url(../img/attribution/logo.svg);
-  background-size: auto 100%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  height: 32px;
-  width: 65px;
-  cursor: pointer;
-  float: right;
+    .talento-logo {
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/attribution/logo.svg);
+      background-size: 100%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+
+  .info-section {
+    text-align: left;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        a {
+          padding-left: 0;
+          padding-right: 0;
+
+          &:last-of-type {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      ul {
+        text-align: unset;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      ul {
+        text-align: right;
+      }
+    }
+
+    .footer-menu {
+      margin-top: 2.4rem;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          a {
+            padding-left: 0;
+            padding-right: 0;
+
+            &:last-of-type {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        ul {
+          float: unset;
+
+          li {
+            margin-right: 0;
+          }
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        ul {
+          float: right;
+
+          li {
+            margin-right: 2.4rem;
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .info-section {
+      text-align: right;
+    }
+  }
 }

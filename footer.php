@@ -11,122 +11,106 @@
 
 ?>
 
-<footer class="site-footer padding-top-large">
-  <div class="container-large">
-    <div class="row no-margin padding-bottom-large wow fadeIn" data-wow-delay=".2s">
-      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-        <div class="footer-logo"></div>
-
+<footer class="site-footer">
+	<div class="row no-margin h-100 padding-y-large px-5 px-lg-0">
+		<div class="col-12 col-sm-5 col-md-4 col-lg-4 col-xxl-4 offset-lg-1 offset-xxl-2 padding-bottom-medium">
+			<div class="h-100 align-middle">
+				<div class="footer-logo"></div>
 
         <ul class="no-margin-x margin-top-medium">
-          <li class="footer-links--title">Siga a Talento</li>
+          <li class="margin-bottom-small">Siga a Talento</li>
 
           <li class="display-flex">
-            <a href="#" class="js-splash-text text-center padding-x-smaller text-large tooltipped" data-tooltip="Facebook">
+            <a href="#" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="Facebook">
               <i class="fab fa-facebook"></i>
             </a>
 
-            <a href="#" class="js-splash-text text-center padding-x-smaller text-large tooltipped" data-tooltip="Instagram">
+            <a href="#" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
 
-            <a href="#" class="js-splash-text text-center padding-x-smaller text-large tooltipped" data-tooltip="LinkedIn">
+            <a href="#" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="LinkedIn">
               <i class="fab fa-linkedin"></i>
             </a>
 
-            <a href="#" class="js-splash-text text-center padding-x-smaller text-large tooltipped" data-tooltip="Behance">
+            <a href="#" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="Behance">
               <i class="fab fa-behance"></i>
             </a>
           </li>
         </ul>
 
-        
-      </div>
-
-      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
         <ul class="no-margin-x no-margin-bottom margin-top-medium">
-          <li class="footer-links--title">Lorem Ipsum</li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-        <ul class="no-margin-x no-margin-bottom margin-top-medium">
-          <li class="footer-links--title">Lorem Ipsum</li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-          <li>
-            <a href="#!">Lorem Ipsum</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-        <ul class="no-margin-x no-margin-bottom margin-top-medium">
-          <li class="margin-bottom-small display-flex text-middle">
-            <i class="fas fa-envelope-open margin-right-smaller accent-color"></i> contato@talentodesign.com.br
+          <li class="margin-bottom-small text-truncate">
+            <i class="fas fa-envelope-open margin-right-smaller accent-color"></i>
+            contato@talentodesign.com.br
           </li>
 
-          <li class="margin-bottom-small display-flex text-middle">
+          <li class="margin-bottom-small">
             <i class="fas fa-phone-alt margin-right-smaller accent-color"></i>
             (91) 98885-3173
             <span class="grey-text margin-x-smaller">|</span>
             (91) 3248-3173
           </li>
-
-          <li class="margin-bottom-small display-flex">
-            <i class="fas fa-map-marker-alt margin-right-smaller accent-color"></i> Conjunto Maguari, Al. 03, 35B - Coqueiro, Belém-PA
-          </li>
         </ul>
-      </div>
+			</div>
+		</div>
 
-    </div>
-  </div>
+		<div class="col-12 col-sm-7 col-md-8 col-lg-6 col-xxl-4">
+			<div class="info-section h-100 text-middle">
+				<div class="text--grey">
+          
+          <ul class="no-margin-x no-margin-bottom margin-top-medium">
+            <li class="margin-bottom-small">
+              Conjunto Maguari, Al. 03, 35B - Coqueiro - Belém/PA
+            </li>
+          </ul>
+					
+					<div class="footer-menu">
 
-  <div class="footer-copyright padding-small primary-bg">
-    <div class="container-large row valign-wrapper">
-      <div class="col-sm-7 col-md-11 no-padding-x">
-        <a href="/" class="strong">Talento Design & Marketing</a> ® <?= date('Y'); ?>. Todos os direitos
-        reservados.
-      </div>
+						<?php
+							wp_nav_menu(
+								array(
+									'menu' => 'Main Menu',
+									'container_class' => '',
+									'menu_class' => 'd-md-flex',
+								)
+							);
+						?>
+					</div>
+				</div>
+				
+				<div>
+					<a href="#" class="text--yellow">
+						Voltar ao topo
+						<i class="far fa-arrow-alt-circle-up"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-      <div class="valign-wrapper col-sm-5 col-md-1">
-        <a href="https://talentodesign.com.br" class="tooltipped right" data-tooltip="Talento Design &amp; Marketing"
-          data-position="left" target="_blank" rel="nofollow">
-          <div class="attribution-logo">
-            <span class="no-display">Talento Design</span>
-          </div>
-        </a>
-      </div>
+	<div class="attribution bg--blue-dark">
+		<div class="row no-margin h-100 px-5 px-lg-0">	
+			<div class="col-12 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2">
+				<div class="row g-0 h-100">
+					<div class="col-10 text-middle">
+						<div class="text--white">
+							<a href="<?php bloginfo( 'url' ); ?>">Talento Design & Marketing</a> <sub class="text-large text-lighter no-select">®</sub> <?= date('Y'); ?>. Todos os direitos reservados.
+						</div>
+					</div>
 
-    </div>
-  </div>
-</footer><!-- #colophon -->
-</div><!-- #page -->
+					<div class="col-2 text-middle">
+						<a href="https://talentodesign.com.br" target="_blank" rel="nofollow noreferrer">
+							<div class="talento-logo float-end" data-tippy-content="Talento Design & Marketing" data-tippy-placement="left"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
 
 <?php wp_footer(); ?>
 

@@ -1,5 +1,6 @@
 // Backgrounds
 $primary-bg: #2b3661;
+$bg--blue-dark: #182146;
 $light-purple-bg: #f4f5ff;
 $light-grey-bg: #f9f9f9;
 $accent-bg: #a8cb63;
@@ -21,6 +22,10 @@ $accent-color: $accent-bg;
 
 .primary-bg {
   background-color: $primary-bg;
+}
+
+.bg--blue-dark {
+  background-color: $bg--blue-dark;
 }
 
 .accent-bg {
