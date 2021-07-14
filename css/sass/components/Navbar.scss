@@ -30,35 +30,86 @@
   background-color: transparent;
   transition: .3s ease-in-out;
   z-index: 10;
+	
+	ul {
+		list-style-type: none;
+		margin: 0 10px 0 0;
+		padding: 0;
+		height: 100%;
+		width: fit-content;
+		
+		li {
+			position: relative;
+			
+			&.nav-btn {
+				color: #fff;
+				margin: 0 0 0 16px;
+				
+				&::before {
+					content: "";
+					position: absolute;
+					top: 8px;
+					left: -10px;
+					height: 40px;
+					width: calc(100% + 20px);
+					background-color: $button-bg;
+					border-radius: 30px;
+					transition: .2s ease-in-out;
+					z-index: -1;
+
+				}
+				&:hover::before,
+				&:focus::before {
+					background-color: $button-bg-hover;
+				}
+
+				&:hover {
+					a {
+						color: #fff;
+					}
+				}
+
+				&>a {
+					height: 100%;
+					color: #fff;
+				}
+			}
+			
+			a {
+				height: 100%;
+				color: $text-color;
+				text-decoration: none;
+				padding: 0 10px;
+				transition: .3s ease-in-out;
+				
+				&:hover {
+					color: $link-color;
+					background-color: transparent;
+				}
+			}
+		}
+	}
 }
 
-.top-navbar a {
-  opacity: 1;
-}
 
-.top-navbar a:hover {
-  opacity: 0.8;
-}
+
 
 .fixed-nav {
   background-color: #fff;
+	
+	a {
+		color: $primary-color !important;
+	}
+	
+	.nav-btn {
+		a {
+			color: #fff !important;
+		}
+	}
 }
 
-.fixed-nav a {
-  color: $primary-color !important;
-}
 
-.fixed-nav .nav-btn a {
-  color: #fff !important;
-}
 
-.top-navbar ul {
-  list-style-type: none;
-  margin: 0 10px 0 0;
-  padding: 0;
-  height: 100%;
-  width: fit-content;
-}
 
 @media all and (max-width: 992px) {
   .top-navbar ul {
@@ -67,55 +118,28 @@
 }
 
 @media all and (min-width: 993px) {
-  .top-navbar ul {
-    display: flex;
-  }
+  .top-navbar {
+		ul {
+			display: flex;
+			
+			a {
+				font-size: 1.4rem;
+			}
+		}
+	}
 }
 
-.top-navbar ul li {
-  position: relative;
+@media all and (min-width: 1200px) {
+	.top-navbar {
+		ul {
+			a {
+				font-size: 1.6rem;
+			}
+		}
+	}
 }
 
-.top-navbar ul li.nav-btn {
-  color: #fff;
-  margin: 0 0 0 16px;
-}
 
-.top-navbar ul li.nav-btn::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  height: 40px;
-  width: 100%;
-  background-color: $button-bg;
-  border-radius: 30px;
-  transition: .2s ease-in-out;
-  z-index: -1;
-}
-
-.top-navbar ul li.nav-btn:hover::before,
-.top-navbar ul li.nav-btn:focus::before {
-  background-color: $button-bg-hover;
-}
-
-.top-navbar ul li a {
-  height: 100%;
-  color: $text-color;
-  text-decoration: none;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.top-navbar ul li a:hover {
-  color: $link-color;
-  background-color: transparent;
-}
-
-.top-navbar ul li.nav-btn>a {
-  height: 100%;
-  color: #fff;
-}
 
 
 .nav-logo {
@@ -144,6 +168,15 @@
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+.nav-logo {
+	&.fixed-logo,
+	&.fixed-logo + .logo-link {
+		opacity: 1;
+		transform: translateY(0);
+		pointer-events: auto;
+	}
 }
 
 .mobile-menu-btn {

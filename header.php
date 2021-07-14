@@ -36,59 +36,61 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <nav class="top-navbar shadow-0 <?php if (!is_front_page()) echo 'fixed-nav'; ?>">
-    <div class="container-large full-height">
-      <a class="logo-link" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
-        <?php
-          $logo = get_theme_mod( 'custom_logo' );
-          $image = wp_get_attachment_image_src( $logo , 'full' );
-          $image_url = $image[0];
-        ?>
+  <nav class="top-navbar px-4 px-lg-0 shadow-0 <?php if (!is_front_page()) echo 'fixed-nav'; ?>">
+    <div class="row g-0 h-100">
+			<div class="col-sm-6 col-md-6 col-lg-2 col-xxl-2 offset-lg-1 offset-xxl-2 d-none d-sm-block h-100">
+				<a class="logo-link" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
+					<?php
+						$logo = get_theme_mod( 'custom_logo' );
+						$image = wp_get_attachment_image_src( $logo , 'full' );
+						$image_url = $image[0];
+					?>
 
-        <div class="nav-logo float-left <?php if (!is_front_page()) echo 'fixed-logo'; ?>"></div>
-      </a>
+					<div class="nav-logo float-left <?php if ( !is_front_page() ) echo 'fixed-logo'; ?>"></div>
+				</a>
+			</div>
+		
+			<div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xxl-6 h-100">
+				<ul class="nav-menu float-right">
+					<li class="nav-link">
+						<a href="<?php bloginfo( 'url' ); ?>" class="js-splash-text text-middle text-center">Home</a>
+					</li>
 
+					<li class="nav-link">
+						<a href="<?php bloginfo( 'url' ); ?>/portfolio" class="js-splash-text text-middle text-center">Portfólio</a>
+					</li>
 
-      <ul class="float-right">
-        <li>
-          <a href="<?php bloginfo( 'url' ); ?>" class="js-splash-text text-middle text-center">Home</a>
-        </li>
+					<li class="nav-link">
+						<a href="<?php bloginfo( 'url' ); ?>/sobre" class="js-splash-text text-middle text-center">Quem somos</a>
+					</li>
 
-        <li>
-          <a href="<?php bloginfo( 'url' ); ?>/portfolio" class="js-splash-text text-middle text-center">Portfólio</a>
-        </li>
+					<li class="nav-link">
+						<a href="<?php bloginfo( 'url' ); ?>/contato" class="js-splash-text text-middle text-center">Contato</a>
+					</li>
 
-        <li>
-          <a href="<?php bloginfo( 'url' ); ?>/sobre" class="js-splash-text text-middle text-center">Quem somos</a>
-        </li>
+					<li class="nav-btn">
+						<a href="#/orcamento/" class="dropdown-trigger js-splash-text text-middle text-center white-text" data-target="main-menu-dropdown">Fazer orçamento</a>
+					</li>
 
-        <li>
-          <a href="<?php bloginfo( 'url' ); ?>/contato" class="js-splash-text text-middle text-center">Contato</a>
-        </li>
+					<li class="display-flex margin-left-medium">
+						<a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Facebook">
+							<i class="fab fa-facebook"></i>
+						</a>
 
-        <li class="nav-btn">
-          <a href="#/orcamento/" class="dropdown-trigger js-splash-text text-middle text-center white-text" data-target="main-menu-dropdown">Faça um orçamento</a>
-        </li>
+						<a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
 
-        <li class="display-flex margin-left-medium">
-          <a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Facebook">
-            <i class="fab fa-facebook"></i>
-          </a>
+						<a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="LinkedIn">
+							<i class="fab fa-linkedin"></i>
+						</a>
 
-          <a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-
-          <a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Behance">
-            <i class="fab fa-behance"></i>
-          </a>
-        </li>
-      </ul>
-
+						<a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Behance">
+							<i class="fab fa-behance"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
     </div>
   </nav>
 
