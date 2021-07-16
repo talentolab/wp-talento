@@ -1,18 +1,33 @@
 @import '../../styles/colors';
 
 .category-filter-btn {
-    background-color: rgb(0 0 0 / 5%);
-    color: #737373;
-    padding: 5px 16px 5px 14px;
-    margin: 5px;
-    box-shadow: none;
-}
+  display: inline-flex;
+  background-color: rgb(0 0 0 / 5%);
+  width: fit-content;
+  height: 46px;
+  color: #737373;
+  margin: 5px;
+  padding: 5px 20px;
+  box-shadow: none;
+  text-transform: none;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
 
-.category-filter-btn:hover {
+  i {
+    line-height: inherit;
+  }
+  
+  &:hover {
     box-shadow: none;
-}
-
-.category-filter-btn.active {
-    background-color: $primary-bg;
+  }
+  
+  &.active {
+    background-color: $blue-dark;
     color: #fff;
+  }
 }
+

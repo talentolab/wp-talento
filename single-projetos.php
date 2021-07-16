@@ -5,7 +5,7 @@ $originationURL = $_POST['url'];
 // Is not embeded
 if ( $originationURL == '' ) {
   get_header();
-  $background = 'light-grey-bg';
+  $background = 'bg--light-grey';
   $returnAction = 'location.href=\'/portfolio/\'';
 }
 else {

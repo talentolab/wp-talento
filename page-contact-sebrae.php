@@ -23,7 +23,7 @@
 </head>
 <body>
   <main>
-    <div class="block margin-top-large padding-y-larger primary-bg wave-bg--sine-2">
+    <div class="block margin-top-large padding-y-larger bg--blue-darker wave-bg--sine-2">
       <div class="container-medium">
         <div class="no-padding-x">
           <div class="row no-margin">
@@ -74,7 +74,7 @@
 
                     <div class="row no-margin">
                       <div class="input-field col-sm-12 no-margin no-padding">
-                        <input type="submit" value="Enviar" class="btn primary-bg shadow-0">
+                        <input type="submit" value="Enviar" class="btn bg--blue-darker shadow-0">
                       </div>
                     </div>
                   </form>

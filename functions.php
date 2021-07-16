@@ -184,13 +184,13 @@ function talento_scripts() {
   // CSS Libraries
   wp_enqueue_style( 'animate.css', __DIR .'/libs/animate.css/animate'. $min .'.css', array(), '3.7.2' );
   
-  wp_enqueue_style( 'helpers.css', __DIR .'/libs/helpers.css/src/helpers'. $min .'.css', array(), '1.0.0' );
-  
   wp_enqueue_style( 'materialize', __DIR .'/libs/materialize-src/materialize.min.css', array(), '1.0.0' );
   wp_enqueue_style( 'materialize-custom', __DIR .'/css/custom/materialize.custom'. $min .'.css', array(), _S_VERSION );
   wp_enqueue_style( 'bootstrap-grid', __MODULES .'/bootstrap/dist/css/bootstrap-grid'. $min .'.css', array(), _S_VERSION );
   wp_enqueue_style( 'bootstrap-utilities', __MODULES .'/bootstrap/dist/css/bootstrap-utilities'. $min .'.css', array(), _S_VERSION );
+  // wp_enqueue_style( 'bootstrap', __MODULES .'/bootstrap/dist/css/bootstrap'. $min .'.css', array(), _S_VERSION );
   
+  wp_enqueue_style( 'helpers.css', __DIR .'/libs/helpers.css/src/helpers'. $min .'.css', array(), '1.0.0' );
   // Main CSS
   wp_enqueue_style( 'talento-style', get_stylesheet_uri(), array(), _S_VERSION );
   wp_style_add_data( 'talento-style', 'rtl', 'replace' );

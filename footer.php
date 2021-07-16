@@ -89,7 +89,7 @@
 		</div>
 	</div>
 
-	<div class="attribution bg--blue-dark">
+	<div class="attribution bg--blue-darker">
 		<div class="row no-margin h-100 px-5 px-lg-0">	
 			<div class="col-12 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2">
 				<div class="row g-0 h-100">

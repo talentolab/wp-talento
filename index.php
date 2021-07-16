@@ -35,9 +35,9 @@ get_header();
             </h5>
   
             <p class="text-left wow fadeInUpSmall" data-wow-delay=".4s">
-              <a href="/contato" class="btn button-bg white-text shadow-3">
+              <a href="/contato" class="button bg--blue text--white shadow-3">
                 Solicitar um orçamento
-                <i class="fas fa-chevron-right right text-small"></i>
+                <i class="fas fa-chevron-right f-end text-smaller text-middle h-100"></i>
               </a>
             </p>
           </div>
@@ -65,20 +65,20 @@ get_header();
 
 
 
-  <div class="block primary-bg illustration-lines svg-animation padding-y-larger">
+  <div class="block bg--blue-dark illustration-lines svg-animation padding-y-larger">
     <div class="container-small">
       <div class="row">
         <h1 class="accent-color text-stronger text-center margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
           Soluções criativas
         </h1>
 
-        <p class="text-medium grey-text text-lighten-2 text-center wow fadeInUpSmall" data-wow-delay=".4s">
+        <p class="text-medium text--white text-center wow fadeInUpSmall" data-wow-delay=".4s">
           Descubra como inovar o seu negócio
         </p>
       </div>
 
       <div class="row">
-        <div class="col-6 col-sm-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".1s">
             <a href="#">
               <div class="card-content padding-small">
@@ -92,7 +92,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col-6 col-sm-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".2s">
             <a href="#">
               <div class="card-content padding-small">
@@ -106,7 +106,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col-6 col-sm-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".3s">
             <a href="#">
               <div class="card-content padding-small">
@@ -120,7 +120,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col-6 col-sm-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".2s">
             <a href="#">
               <div class="card-content padding-small">
@@ -134,7 +134,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col-6 col-sm-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".3s">
             <a href="#">
               <div class="card-content padding-small">
@@ -148,7 +148,7 @@ get_header();
           </div>
         </div>
 
-        <div class="col-6 col-sm-4 no-padding">
+        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".4s">
             <a href="#">
               <div class="card-content padding-small">
@@ -164,9 +164,9 @@ get_header();
         
       </div>
 
-      <div class="row">
+      <div class="row margin-top-medium">
         <div class="text-center">
-          <button class="btn button-bg white-text shadow-3">
+          <button class="bg--blue text--white shadow-3">
             Veja mais soluções
           </button>
         </div>
@@ -176,7 +176,7 @@ get_header();
 
 
 
-  <div class="block wave-bg--sine overlap-top-small light-purple-bg padding-bottom-large">
+  <div class="block wave-bg--sine overlap-top-small bg--light-purple padding-bottom-large">
     <div class="row g-0 px-4 px-lg-0">
       <div class="col-12 col-sm-4 col-md-5 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2">
         <div class="meet-talento-ilustration svg-animation wow fadeInLeftSmall" data-wow-delay=".2s"></div>
@@ -194,9 +194,9 @@ get_header();
             rhoncus dolor purus non enim praesent elementum facilisis
           </p>
 
-          <a href="/contato" class="btn button-bg white-text shadow-3">
+          <a href="/contato" class="button bg--blue text--white shadow-3">
             Saiba mais sobre nós
-            <i class="fas fa-chevron-right right text-small"></i>
+            <i class="fas fa-chevron-right f-end text-smaller text-middle h-100"></i>
           </a>
         </div>
       </div>
@@ -208,7 +208,7 @@ get_header();
 
 
 
-  <div class="block light-purple-bg wave-bg--4">
+  <div class="block bg--light-purple wave-bg--4">
     <section>
       <div class="row g-0 px-4 px-lg-0">
         <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2 px-2">
@@ -222,9 +222,9 @@ get_header();
             rhoncus dolor purus non enim praesent elementum facilisis
           </p>
 
-          <a href="/contato" class="btn button-bg white-text shadow-3 wow fadeInUpSmall" data-wow-delay=".5s">
+          <a href="/contato" class="button bg--blue text--white shadow-3 wow fadeInUpSmall" data-wow-delay=".5s">
             Mais trabalhos
-            <i class="fas fa-chevron-right right text-small"></i>
+            <i class="fas fa-chevron-right f-end text-smaller text-middle h-100"></i>
           </a>
         </div>
 
@@ -315,7 +315,7 @@ get_header();
           }
         </style>
         <!-- Slider main container -->
-        <div class="swiper-container white cursor-grab no-select no-shadow wow fadeInUpSmall" data-wow-delay=".1s" style="visibility: hidden;">
+        <div class="swiper-container bg--white cursor-grab no-select no-shadow wow fadeInUpSmall" data-wow-delay=".1s" style="visibility: hidden;">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <?php
@@ -334,8 +334,8 @@ get_header();
                     </div>
 
                     <div class="play-btn bottom-right">
-                      <a href="//www.youtube.com/watch?v=XSGBVzeBUbk" class="btn red white-text waves-effect waves-light" title="Assistir depoimento" data-lity>
-                        <i class="fas fa-play"></i>
+                      <a href="//www.youtube.com/watch?v=XSGBVzeBUbk" class="button red text--white waves-effect waves-light" title="Assistir depoimento" data-lity>
+                        <i class="fas fa-play text-middle"></i>
                       </a>
                     </div>
                   </div>
@@ -367,7 +367,7 @@ get_header();
   </div>
   
   <!-- Portfólio -->
-  <div class="block light-purple-bg wave-bg--6">
+  <div class="block bg--light-purple wave-bg--6">
     <div class="container-medium padding-y-large">
       <h2 class="accent-color text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
         Nosso portfólio
@@ -403,7 +403,7 @@ get_header();
                 <img src="<?= get_the_post_thumbnail_url(); ?>" alt="<?= the_title(); ?>" />
                 <?php endif; ?>
 
-                <button class="gallery-btn btn button-bg center no-click">
+                <button class="gallery-btn bg--blue text--white center no-click">
                   Ver projeto
                 </button>
 
@@ -421,7 +421,7 @@ get_header();
 
       <div class="row">
         <div class="text-center">
-          <a href="<?php bloginfo( 'url' ); ?>/portfolio" class="btn button-bg white-text">
+          <a href="<?php bloginfo( 'url' ); ?>/portfolio" class="button bg--blue text--white">
             Ver portfólio completo
           </a>
         </div>

@@ -120,7 +120,7 @@ document.addEventListener('resize', function() {
 
 
 function fixedLogo() {
-  if (globals.isHomePage() && logoSplash) {
+  if (globals.isHomePage() && logoSplash !== undefined) {
     const top = window.scrollY;
 
     if (top > 40) {
@@ -141,8 +141,13 @@ function fixedLogo() {
 
     if (top > 0) {
       navbar.classList.add('shadow-2')
-    } else {
+
+      navbar.classList.add('shadow-2', 'fixed-nav')
+    }
+    else {
       navbar.classList.remove('shadow-2')
+
+      navbar.classList.remove('shadow-2', 'fixed-nav')
     }
   }
 }
@@ -340,7 +345,7 @@ const overlay = document.querySelector('.modal--overlay');
 
   function loadPost(url) {
     overlay.innerHTML = `
-      <div class="center white padding-smaller shadow-2 circle text-middle">
+      <div class="center bg--white padding-smaller shadow-2 circle text-middle">
         <div class="preloader-wrapper active">
           <div class="spinner-layer spinner-blue-only">
             <div class="circle-clipper left">

@@ -36,9 +36,9 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <nav class="top-navbar px-4 px-lg-0 shadow-0 <?php if (!is_front_page()) echo 'fixed-nav'; ?>">
+  <nav class="top-navbar px-4 px-lg-0 shadow-0">
     <div class="row g-0 h-100">
-			<div class="col-sm-6 col-md-6 col-lg-2 col-xxl-2 offset-lg-1 offset-xxl-2 d-none d-sm-block h-100">
+			<div class="col-sm-6 col-md-6 col-lg-2 col-xxl-2 offset-lg-1 offset-xxl-2 h-100">
 				<a class="logo-link" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
 					<?php
 						$logo = get_theme_mod( 'custom_logo' );

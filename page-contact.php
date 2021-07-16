@@ -8,13 +8,11 @@ get_header();
 ?>
 
 <main class="margin-top-large">
-  <div class="block primary-bg wave-bg--sine-2">
-    <div class="padding-y-larger">
+  <div class="block bg--blue-dark wave-bg--sine-2">
+    <div class="padding-y-medium">
       <div class="no-padding-x">
-        <div class="row no-margin">
-          <div class="col-sm-12 col-md-1 col-lg-1 col-xl-2 d-none d-md-block"></div>
-
-          <div class="col-sm-12 col-lg-5 col-xl-5 padding-small budget--left-panel d-none d-lg-block">
+        <div class="row g-0 no-margin px-3 px-lg-0">
+          <div class="col-md-5 col-lg-6 col-xxl-5 budget--left-panel d-none d-md-block offset-lg-1 offset-xxl-2">
             <div class="contact-ilustration wow fadeInLeftSmall" data-wow-delay=".2s"></div>
 
             <div class="margin-top-larger text-center">
@@ -30,50 +28,37 @@ get_header();
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-10 col-lg-5 col-xl-4">
-            <div class="card contact-page--form padding-medium border-radius-large wow fadeInUpSmall low-shadow" data-wow-delay=".1s">
+          <div class="col-12 col-md-7 col-lg-4 col-xxl-3">
+            <div class="bg--white contact-page--form padding-medium border-radius-large wow fadeInUpSmall low-shadow" data-wow-delay=".1s">
               <div class="card-content no-padding">
 
-                <h2 class="accent-color">Mande um e-mail</h2>
+                <h3 class="accent-color no-margin">Mande um e-mail</h3>
 
-                <p class="text-medium subtitle-color margin-y-medium">
+                <p class="text-small subtitle-color margin-y-medium">
                   Use o formulário abaixo para solicitar um orçamento ou
                   enviar uma mensagem com críticas e sugestões.
                 </p>
 
                 <form>
-                  <div class="row margin-bottom-small wow fadeInUpSmall" data-wow-delay=".2s">
-                    <div class="input-field col-sm-12 no-margin">
-                      <input name="name" id="name" type="text" class="validate padding-y-smaller" required><br>
-                      <label for="name" class="text-medium">Nome</label>
+                  <div class="row g-0">
+                    <div class="col-lg-12 margin-right-small margin-bottom-small">
+                      <label for="name" class="form-label text-smaller">Seu nome</label>
+                      <input type="text" class="text-small browser-default form-control form-control-lg" id="name" name="name" placeholder="João Silva">
                     </div>
-                  </div>
 
-                  <div class="row margin-bottom-small wow fadeInUpSmall" data-wow-delay=".3s">
-                    <div class="input-field col-sm-12 no-margin">
-                      <input name="email" id="email" type="email" class="validate padding-y-smaller" required><br>
-                      <label for="email" class="text-medium">E-mail</label>
+                    <div class="col-lg-12 margin-bottom-small">
+                      <label for="email" class="form-label text-smaller">Seu e-mail</label>
+                      <input type="email" class="text-small browser-default form-control form-control-lg" id="email" name="email" placeholder="joao@exemplo.com">
                     </div>
-                  </div>
 
-                  <div class="row margin-bottom-small wow fadeInUpSmall" data-wow-delay=".4s">
-                    <div class="input-field col-sm-12 no-margin">
-                      <input name="phone" id="phone" type="text" class="validate padding-y-smaller" required><br>
-                      <label for="phone" class="text-medium">Telefone / Celular</label>
+                    <div class="col-lg-12 margin-bottom-medium">
+                      <label for="message" class="form-label text-smaller">Sua mensagem</label>
+                      <textarea class="text-small browser-default form-control form-control-lg" id="message" name="message"
+                      placeholder="Digite aqui sua mensagem..."></textarea>
                     </div>
-                  </div>
 
-                  <div class="row margin-bottom-small wow fadeInUpSmall" data-wow-delay=".5s">
-                    <div class="input-field col-sm-12 no-margin">
-                      <textarea name="message" id="message" class="materialize-textarea validate padding-y-smaller"
-                        required></textarea><br>
-                      <label for="message" class="text-medium">Sua mensagem</label>
-                    </div>
-                  </div>
-
-                  <div class="row no-margin">
-                    <div class="input-field col-sm-12 no-margin no-padding">
-                      <input type="submit" value="Enviar mensagem" class="btn primary-bg shadow-0">
+                    <div class="col-lg-12">
+                      <button type="submit" class="bg--blue text--white margin-right-medium margin-bottom-medium"><i class="fas fa-paper-plane margin-right-small text-middle h-100"></i> Enviar mensagem</button>
                     </div>
                   </div>
                 </form>

@@ -1,7 +1,7 @@
 @import '../styles/colors';
 
 footer {
-  background-color: $primary-bg;
+  background-color: $blue-dark;
   color: #fff;
   position: relative;
 
@@ -15,7 +15,7 @@ footer {
   }
 
   .attribution {
-    background-color: $bg--blue-dark;
+    background-color: $blue-darker;
 
     .talento-logo {
       width: 40px;

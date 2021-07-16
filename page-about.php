@@ -7,9 +7,9 @@
 get_header();
 ?>
 
-<header class="margin-top-large">
+<header class="bg--blue-light padding-top-large">
   <div class="block">
-    <div class="row no-padding valign-wrapper no-margin">
+    <div class="row no-padding text-middle no-margin">
       <div class="col-sm-12 col-md-8 col-lg-10 offset-lg-1 offset-xxl-2">
         <h1 class="padding-top-large padding-bottom-medium text-center no-margin wow fadeInUpSmall accent-color">
           Completa e inovadora
@@ -25,7 +25,7 @@ get_header();
 </header>
 
 <main>
-  <div class="block text-color padding-y-larger primary-bg wave-bg--sine-2">
+  <div class="block text-color padding-y-larger bg--blue-light wave-bg--sine-3">
     <div class="container-large row valign-wrapper flex-on-med-and-up">
       <div class="col-sm-12 col-md-4">
         <div class="card text-middle border-radius-large low-shadow">
@@ -93,7 +93,7 @@ get_header();
     </div>
   </div>
   
-  <div class="block primary-bg padding-y-large">
+  <div class="block bg--blue-darker padding-y-large">
     <div class="row valign-wrapper flex-on-med-and-up no-margin padding-x-medium">
       <div class="col-sm-12 col-md-1 col-lg-2"></div>
 
