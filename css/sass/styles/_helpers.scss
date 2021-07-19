@@ -21,15 +21,3 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-@media all and (max-width: 600px) {
-  .flex-on-med-and-up {
-    display: block;
-  }
-}
-
-@media all and (min-width: 601px) {
-  .flex-on-med-and-up {
-    display: flex;
-  }
-}
