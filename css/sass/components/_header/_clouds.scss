@@ -6,46 +6,48 @@
 }
 
 .clouds {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  
+  .cloud {
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: cloud;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    right: -120px;
+    width: 120px;
+    height: 70px;
+    z-index: 0;
+    
+    &.cloud--1 {
+      background-image: url(../img/clouds/cloud-1.svg);
+      animation-duration: 20s;
+      animation-delay: 1s;
+      top: 205px;
+    }
+    
+    &.cloud--2 {
+      background-image: url(../img/clouds/cloud-2.svg);
+      animation-duration: 35s;
+      animation-delay: 2s;
+      top: 379px;
+    }
+    
+    &.cloud--3 {
+      background-image: url(../img/clouds/cloud-3.svg);
+      animation-duration: 25s;
+      animation-delay: 5s;
+      top: 109px;
+    }
+  }
+  
 }
 
-.cloud {
-  background-position: 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  animation-name: cloud;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  position: absolute;
-  right: -120px;
-  width: 120px;
-  height: 70px;
-  z-index: 0;
-}
-
-.cloud--1 {
-  background-image: url(../img/clouds/cloud-1.svg);
-  animation-duration: 20s;
-  animation-delay: 1s;
-  top: 205px;
-}
-
-.cloud--2 {
-  background-image: url(../img/clouds/cloud-2.svg);
-  animation-duration: 35s;
-  animation-delay: 2s;
-  top: 379px;
-}
-
-.cloud--3 {
-  background-image: url(../img/clouds/cloud-3.svg);
-  animation-duration: 25s;
-  animation-delay: 5s;
-  top: 109px;
-}
 
 
 @keyframes cloud {
