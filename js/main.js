@@ -335,44 +335,44 @@ export default function updateTabs() {
 
 
 const overlay = document.querySelector('.modal--overlay');
-  const popUp = document.querySelector('.modal--content section.content');
+const popUp = document.querySelector('.modal--content section.content');
 
-  document.body.addEventListener('click', function(e) {
-    if (e.target.classList.contains('js-open-project-modal')) {
-      loadPost(e.target.getAttribute('data-url'))
-    }
-  })
+document.body.addEventListener('click', function(e) {
+  if (e.target.classList.contains('js-open-project-modal')) {
+    loadPost(e.target.getAttribute('data-url'))
+  }
+})
 
-  function loadPost(url) {
-    overlay.innerHTML = `
-      <div class="center bg--white padding-smaller shadow-2 circle text-middle">
-        <div class="preloader-wrapper active">
-          <div class="spinner-layer spinner-blue-only">
-            <div class="circle-clipper left">
-              <div class="circle"></div>
-            </div><div class="gap-patch">
-              <div class="circle"></div>
-            </div><div class="circle-clipper right">
-              <div class="circle"></div>
-            </div>
+function loadPost(url) {
+  overlay.innerHTML = `
+    <div class="center bg--white padding-smaller shadow-2 circle text-middle">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
           </div>
         </div>
       </div>
-    `;
+    </div>
+  `;
 
-    $.ajax({
-      url: url,
-      method: 'POST',
-      data: jQuery.param({url: location.host + location.pathname}),
-      success: (response) => {
-        overlay.innerHTML = '';
-        popUp.innerHTML = response;
+  $.ajax({
+    url: url,
+    method: 'POST',
+    data: jQuery.param({url: location.host + location.pathname}),
+    success: (response) => {
+      overlay.innerHTML = '';
+      popUp.innerHTML = response;
 
-        updateTabs();
-      },
+      updateTabs();
+    },
 
-      error: () => {
-        console.error('Error fetching post')
-      }
-    })
-  }
+    error: () => {
+      console.error('Error fetching post')
+    }
+  })
+}
