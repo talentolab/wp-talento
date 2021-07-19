@@ -22,7 +22,7 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
   <div class="block">
     <div class="row px-5 px-md-0 text-middle">
       <div class="col-sm-12 col-md-8 col-lg-6 col-xxl-6 offset-md-2 offset-lg-3 offset-xxl-3 px-0">
-        <h1 class="primary-color padding-top-large padding-bottom-medium text-stronger text-center no-margin wow fadeInUpSmall accent-color">
+        <h1 class="text--blue-dark padding-top-large padding-bottom-medium text-stronger text-center no-margin wow fadeInUpSmall text--green">
           Soluções criativas para o seu negócio
         </h1>
 
@@ -36,7 +36,7 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
 
 <main class="wow fadeInUpSmall" data-wow-delay=".6s" style="visibility: hidden">
   
-  <div class="block bg--light-purple wave-bg--convex-1 padding-top-large">
+  <div class="block bg--blue-lighter wave-bg--convex-1 padding-top-large">
     <div class="row g-0 px-5 px-lg-0 mb-0">
       <div class="col-12 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2">
         <div class="margin-y-medium wow fadeInUpSmall text-center" data-wow-delay=".6s">

@@ -35,7 +35,7 @@
               <div class="card padding-medium border-radius-large wow fadeInUpSmall low-shadow" data-wow-delay=".1s">
                 <div class="card-content no-padding">
 
-                  <h2 class="accent-color">Entre em contato</h2>
+                  <h2 class="text--green">Entre em contato</h2>
 
                   <p class="text-medium subtitle-color margin-y-medium">
                     Use o formulário abaixo para solicitar um orçamento ou

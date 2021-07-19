@@ -41,12 +41,12 @@
 
         <ul class="no-margin-x no-margin-bottom margin-top-medium">
           <li class="margin-bottom-small text-truncate">
-            <i class="fas fa-envelope-open margin-right-smaller accent-color"></i>
+            <i class="fas fa-envelope-open margin-right-smaller text--green"></i>
             contato@talentodesign.com.br
           </li>
 
           <li class="margin-bottom-small">
-            <i class="fas fa-phone-alt margin-right-smaller accent-color"></i>
+            <i class="fas fa-phone-alt margin-right-smaller text--green"></i>
             (91) 98885-3173
             <span class="grey-text margin-x-smaller">|</span>
             (91) 3248-3173

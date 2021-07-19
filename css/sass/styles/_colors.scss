@@ -1,94 +1,119 @@
 // Backgrounds
 $white: #FFF;
+$malibu: #66A1FA;
 $blue: #517fc3;
 $blue-hover: #6390d2;
-$blue-dark: #2b3661;
-$blue-darker: #182146;
+$blue-dark: #2C3F71;
+$blue-darker: #2b3661;
+$blue-darkest: #182146;
 $blue-light: #ebedff;
 $blue-lighter: #f4f5ff;
-$light-purple: #f4f5ff;
 $grey: #c0c0c0;
 $light-grey: #f9f9f9;
-$accent-bg: #a8cb63;
-$link-color: #4b8ff5;
+$green: #a8cb63;
 $gradient-bg: linear-gradient(180deg, #f5ffff 0, #fff 65.23vh);
 // Texts
 $text-color: rgba(0, 0, 0, 0.87);
 $text-color-hover: rgba(0, 0, 0, 0.5);
 $title-color: $blue-dark;
 $subtitle-color: rgba(0, 0, 0, 0.5);
-$primary-color: $blue-dark;
-$accent-color: $accent-bg;
+$accent-color: $green;
 
 /**
  * Background classes
  */
 
-.bg--blue-dark {
-  background-color: $blue-dark;
+a,
+button,
+input[type="button"] {
+  &.bg--blue {
+    &:hover {
+      background-color: $blue-hover;
+    }
+  }
 }
 
-.text--white {
-  color: $white;
-}
-
-.bg--blue-darker {
-  background-color: $blue-darker;
-}
-
-.accent-bg {
-  background-color: $accent-bg;
+.bg--malibu {
+  color: $malibu;
 }
 
 .bg--blue {
   background-color: $blue;
 }
 
+.bg--blue-lighter {
+  background-color: $blue-lighter;
+}
+
 .bg--blue-light {
   background-color: $blue-light;
 }
 
-.bg--blue-lighter {
-  background-color: $blue-lighter;
+.bg--blue-dark {
+  background-color: $blue-dark;
+}
+
+.bg--blue-darker {
+  background-color: $blue-darker;
+}
+
+.bg--blue-darkest {
+  background-color: $blue-darkest;
+}
+
+.bg--green {
+  background-color: $green;
+}
+
+.bg--green {
+  background-color: $green;
 }
 
 .bg--white {
   background-color: $white;
 }
 
-a.bg--blue:hover,
-button.bg--blue:hover,
-input[type="button"].bg--blue:hover {
-  background-color: $blue-hover;
-}
-
-.primary-color {
-  color: $primary-color;
-}
-
-.accent-color {
-  color: $accent-color;
-}
-
-.bg--light-purple {
-  background-color: $light-purple;
+.bg--grey {
+  background-color: $grey;
 }
 
 .bg--light-grey {
   background-color: $light-grey;
 }
 
-.bg--grey {
-  background-color: $grey;
+
+.text--white {
+  color: $white;
+}
+
+.text--blue-dark {
+  color: $blue-dark;
+}
+
+.text--blue-darker {
+  color: $blue-darker;
+}
+
+.text--blue {
+  color: $blue;
+}
+
+.text--blue {
+  color: $blue;
+}
+
+.text--green {
+  color: $green;
 }
 
 .text--grey {
   color: $grey;
 }
 
-.link-color {
-  color: $link-color;
+.text--malibu {
+  color: $malibu;
 }
+
 
 .text-color {
   color: $text-color;

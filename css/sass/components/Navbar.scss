@@ -83,7 +83,7 @@
 				transition: .3s ease-in-out;
 				
 				&:hover {
-					color: $link-color;
+					color: $malibu;
 					background-color: transparent;
 				}
 			}
@@ -98,7 +98,7 @@
   background-color: #fff;
 	
 	a {
-		color: $primary-color !important;
+		color: $blue-dark !important;
 	}
 	
 	.nav-btn {
@@ -186,7 +186,7 @@
   text-align: center;
   width: $nav-height;
   height: $nav-height;
-  color: $link-color;
+  color: $malibu;
   line-height: $nav-height;
   z-index: 10;
 }

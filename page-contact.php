@@ -32,7 +32,7 @@ get_header();
             <div class="bg--white contact-page--form padding-medium border-radius-large wow fadeInUpSmall low-shadow" data-wow-delay=".1s">
               <div class="card-content no-padding">
 
-                <h3 class="accent-color no-margin">Mande um e-mail</h3>
+                <h3 class="text--green no-margin">Mande um e-mail</h3>
 
                 <p class="text-small subtitle-color margin-y-medium">
                   Use o formulário abaixo para solicitar um orçamento ou

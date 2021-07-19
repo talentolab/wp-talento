@@ -26,7 +26,7 @@ get_header();
             <h1 class="splash-text-title text-largest margin-bottom-medium wow fadeInUpSmall js-splash-text" data-wow-delay=".2s">
             Transformamos<br>
             sonhos<br>
-            em <span class="link-color text-sine-wave position-relative">inovação</span>
+            em <span class="text--malibu text-sine-wave position-relative">inovação</span>
             </h1>
   
             <h5 class="splash-text-subtitle margin-bottom-medium wow fadeInUpSmall js-splash-text" data-wow-delay=".3s">
@@ -68,7 +68,7 @@ get_header();
   <div class="block bg--blue-dark illustration-lines svg-animation padding-y-larger">
     <div class="container-small">
       <div class="row">
-        <h1 class="accent-color text-stronger text-center margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
+        <h1 class="text--green text-stronger text-center margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
           Soluções criativas
         </h1>
 
@@ -176,7 +176,7 @@ get_header();
 
 
 
-  <div class="block wave-bg--sine overlap-top-small bg--light-purple padding-bottom-large">
+  <div class="block wave-bg--sine overlap-top-small bg--blue-lighter padding-bottom-large">
     <div class="row g-0 px-4 px-lg-0">
       <div class="col-12 col-sm-4 col-md-5 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2">
         <div class="meet-talento-ilustration svg-animation wow fadeInLeftSmall" data-wow-delay=".2s"></div>
@@ -184,7 +184,7 @@ get_header();
 
       <div class="col-12 col-sm-8 col-md-7 col-lg-5 col-xxl-4">
         <div class="padding-x-small">
-          <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+          <h2 class="text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
             Conheça a Talento Design
           </h2>
 
@@ -208,11 +208,11 @@ get_header();
 
 
 
-  <div class="block bg--light-purple wave-bg--4">
+  <div class="block bg--blue-lighter wave-bg--4">
     <section>
       <div class="row g-0 px-4 px-lg-0">
         <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2 px-2">
-          <h2 class="accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+          <h2 class="text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
             Social Media
           </h2>
 
@@ -244,7 +244,7 @@ get_header();
   <div class="block">
     <div class="row padding-top-larger">
       <div class="col-12 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2 no-padding">
-        <h2 class="text-center margin-top-larger padding-x-medium accent-color text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+        <h2 class="text-center margin-top-larger padding-x-medium text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
           Confiam na gente
         </h2>
         
@@ -367,9 +367,9 @@ get_header();
   </div>
   
   <!-- Portfólio -->
-  <div class="block bg--light-purple wave-bg--6">
+  <div class="block bg--blue-lighter wave-bg--6">
     <div class="container-medium padding-y-large">
-      <h2 class="accent-color text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
+      <h2 class="text--green text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
         Nosso portfólio
       </h2>
 
