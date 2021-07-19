@@ -7,11 +7,17 @@
 get_header();
 ?>
 
-<header class="bg--blue-light padding-top-large">
+<header class="about-header padding-top-large">
+  <div class="clouds">
+    <div class="cloud cloud--1" data-skip-lazy></div>
+    <div class="cloud cloud--2" data-skip-lazy></div>
+    <div class="cloud cloud--3" data-skip-lazy></div>
+  </div>
+
   <div class="block">
-    <div class="row no-padding text-middle no-margin">
-      <div class="col-sm-12 col-md-8 col-lg-10 offset-lg-1 offset-xxl-2">
-        <h1 class="padding-top-large padding-bottom-medium text-center no-margin wow fadeInUpSmall accent-color">
+    <div class="row g-0 no-padding text-middle no-margin">
+      <div class="col-sm-12 col-md-8 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2">
+        <h1 class="padding-top-large padding-bottom-medium text-center no-margin wow fadeInUpSmall text--green">
           Completa e inovadora
         </h1>
 
@@ -22,205 +28,71 @@ get_header();
       </div>
     </div>
   </div>
+  
+  <div class="block wave-bg--sine-3">
+    <div class="row no-margin">
+      <div class="col-12 col-lg-6 offset-lg-1">
+        <div class="about--header-image"></div>
+      </div>
+  
+      <div class="col-12 col-lg-4 text-middle">
+        <div class="about-card">
+          <h3 class="text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+            13 anos de mercado
+          </h3>
+
+          <p class="wow fadeInUpSmall" data-wow-delay=".3s">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor 
+            rhoncus dolor purus non enim praesent elementum facilisis
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
 <main>
-  <div class="block text-color padding-y-larger bg--blue-light wave-bg--sine-3">
-    <div class="container-large row valign-wrapper flex-on-med-and-up">
-      <div class="col-sm-12 col-md-4">
-        <div class="card text-middle border-radius-large low-shadow">
-          <div class="card-content padding-large">
-            <ul class="no-margin">
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-map-marked-alt margin-right-small accent-color"></i> Conheça a nossa empresa
-              </li>
+  <div class="block bg--blue-darker">
+    <div class="row no-margin padding-y-larger">  
+      <div class="col-12 col-lg-4 offset-lg-1 offset-xxl-2 text-middle">
+        <div class="about-card text--white bg--blue-dark">
+          <h3 class="text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+            Conheça a Talento Design
+          </h3>
 
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-check-double margin-right-small accent-color"></i> Encontre soluções
-              </li>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat, 
+            vestibulum semper eget duis malesuada in facilisis rutrum massa. Risus 
+            et amet sit pellentesque morbi felis sollicitudin nunc accumsan. 
+            Ullamcorper a scelerisque sit nunc.
+          </p>
 
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-pen-nib margin-right-small accent-color"></i> Veja outros trabalhos
-              </li>
+          <p>
+            Arcu egestas amet ullamcorper rutrum ut facilisis morbi. Nulla in morbi 
+            natoque quis tristique nibh est, purus. Venenatis, nisl faucibus tristique 
+            ut. Eu pellentesque morbi at bibendum.
+          </p>
 
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-compass margin-right-small accent-color"></i> Tenha referências
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+          <p>
+            Lobortis aliquam aliquam enim feugiat elit, arcu id 
+            nullam. Diam tempor faucibus nunc consequat.
+          </p>
 
-      <div class="col-sm-12 col-md-4">
-        <div class="card text-middle border-radius-large low-shadow">
-          <div class="card-content padding-large">
-            <h2 class="no-margin-top">Design Empresarial</h2>
-            <ul class="no-margin">
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-star margin-right-small accent-color"></i> Aumente a visibilidade de sua marca
-              </li>
-
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-star margin-right-small accent-color"></i> Aumente suas vendas através de seu site
-              </li>
-
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-star margin-right-small accent-color"></i> Torne sua empresa funcional
-              </li>
-
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-star margin-right-small accent-color"></i> Acerte na propaganda
-              </li>
-
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-star margin-right-small accent-color"></i> Torne sua empresa mais dinâmica
-              </li>
-
-              <li class="margin-bottom-small display-flex">
-                <i class="fas fa-star margin-right-small accent-color"></i> Conheça e se relacione com o seu público
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-md-4">
-        <div class="card padding-large text-middle border-radius-large low-shadow">
-          <p>Ao longo desses anos, foram muitos desafios. Participamos de grandes 
-            eventos e premiações de marcas que nos dão muito orgulho.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="block bg--blue-darker padding-y-large">
-    <div class="row valign-wrapper flex-on-med-and-up no-margin padding-x-medium">
-      <div class="col-sm-12 col-md-1 col-lg-2"></div>
-
-      <div class="col-sm-12 col-md-6 col-lg-3 text-middle no-padding">
-        <div>
-          <h2 class="white-text">Anos de mercado</h2>
-            <p class="white-text">Atuamos no mercado há <strong>treze anos</strong> oferecendo e implantando projetos que valorizam o design e a inovação.</p>
-            
-            <a href="#" class="btn button-bg right">
-              Alguma ação
-              <i class="fas fa-arrow-right text-small"></i>
+          <p class="text-left wow fadeInUpSmall" data-wow-delay=".4s">
+            <a href="/contato" class="button bg--blue text--white shadow-3">
+              Conheça nossa equipe
+              <i class="fas fa-chevron-right f-end text-smaller text-middle h-100"></i>
             </a>
+          </p>
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-9 padding-medium">
-        <div class="card no-padding text-middle hoverable border-radius-larger">
-          <div class="video-container">
-            <iframe width="853" height="460" src="//www.youtube.com/embed/6Mn3gaHr_Fc?rel=0" frameborder="0"
-              allowfullscreen></iframe>
-          </div>
-        </div>
+      <div class="col-12 col-lg-6">
+        <div class="about--illustration position-sticky" style="top: 72px;"></div>
       </div>
     </div>
   </div>
-
-  <div class="block light-purple-bg padding-top-large wave-bg--sine text-color" style="z-index: 1;">
-    <div class="row valign-wrapper flex-on-med-and-up no-margin">
-      <div class="col-sm-12 col-md-1 col-lg-2"></div>
-
-      <div class="col-sm-12 col-md-5 col-lg-4 padding-x-medium">
-        <div class="card text-middle border-radius-large low-shadow">
-          <div class="card-content padding-medium">
-            <h2 class="primary-color">Reconhecimento</h2>
-            <p>Ao longo desses anos, foram muitos desafios. Participamos de grandes 
-              eventos e premiações de marcas que nos dão muito orgulho.</p>
-
-            <div class="divider margin-top-medium margin-bottom-small"></div>
-            
-            <a href="#" class="btn button-bg right">
-              Alguma ação
-              <i class="fas fa-arrow-right text-small margin-left-small"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-md-5 col-lg-4">
-        <div class="meet-talento-ilustration wow fadeInLeftSmall overlap-bottom-larger d-none d-lg-block" data-wow-delay=".2s"></div>
-      </div>
-
-      <div class="col-sm-12 col-md-1 col-lg-2"></div>
-    </div>
-  </div>
-
-
-
-  <div class="block light-purple-bg padding-y-large wave-bg--8">
-    <div class="row valign-wrapper flex-on-med-and-up">
-      <div class="col-sm-12 col-md-1 col-lg-2"></div>
-
-      <div class="col-sm-12 col-md-5 col-lg-4">
-        <div class="meet-talento-ilustration wow fadeInLeftSmall" data-wow-delay=".2s"></div>
-      </div>
-
-      <div class="col-sm-12 col-md-5 col-lg-4 padding-x-medium">
-        <div class="card text-middle border-radius-large low-shadow">
-          <div class="card-content padding-medium">
-            <h2 class="primary-color">Das micro às grandes</h2>
-
-            <p>
-              Buscamos por desafios para transformá-los em inovação. Por isso, projetamos para pequenas, 
-              médias e grandes empresas com sensibilidade e responsabilidade.
-            </p>
-
-            <div class="divider margin-top-medium margin-bottom-small"></div>
-            
-            <a href="#" class="btn button-bg right">
-              Alguma ação
-              <i class="fas fa-arrow-right text-small margin-left-small"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-md-1 col-lg-2"></div>
-    </div>
-  </div>
-
-
-
-
-  <div class="block">
-    <div class="row">
-      <div class="col-sm-12 col-md-1 col-lg-2 col-xl-3"></div>
-
-      <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
-        <h2 class="primary-color text-stronger text-center margin-y-larger wow fadeInUpSmall" data-wow-delay=".2s">
-          Conheça nossa equipe
-        </h2>
-
-        <div class="row">
-          <?php
-            for ($i = 0; $i < 9; $i++) :
-          ?>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="padding-y-medium padding-x-small">
-              <div class="team-pic centered" style="background-image: url(<?= __DIR; ?>/img/sample/clients/1.webp);"></div>
-
-              <h3 class="text-center">Fulando de Tal</h3>
-              <div class="text-center grey-text">Diretor comercial</div>
-            </div>
-          </div>
-          <?php
-            endfor;
-          ?>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-md-1 col-lg-2 col-xl-3"></div>
-    </div>
-  </div>
-
-
-
-
-  
 </main>
 
 <?php
