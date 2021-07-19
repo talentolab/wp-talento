@@ -20,7 +20,14 @@
   position: relative;
   transition: .2s ease-in-out;
   pointer-events: none;
+  
+  &.fixed-logo {
+    opacity: 0;
+    transform: translate(0%, 69%);
+    transform-origin: 0% 70%;
+  }
 }
+
 
 @media all and (max-width: 480px) {
   .home-logo {
@@ -56,12 +63,6 @@
     width: 100%;
     height: 90px;
   }
-}
-
-.home-logo.fixed-logo {
-  opacity: 0;
-  transform: translate(0%, 69%);
-  transform-origin: 0% 70%;
 }
 
 @media all and (min-width: 1601px) {

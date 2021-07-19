@@ -21,9 +21,10 @@
 }
 
 .wave-bg--sine-3 {
-  background-position: 100% 0;
-  background-size: 100% 100%;
+  background-position: 100% 100%;
+  background-size: 100% 70%;
   background-image: url(../img/waves/wave-sine-3.svg), url(../img/waves/wave-sine-4.svg);
+  background-repeat: no-repeat;
 }
 
 .wave-bg--parabolic {
