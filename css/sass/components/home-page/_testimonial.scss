@@ -1,0 +1,93 @@
+.testimonial {
+	.testimonial-card-wrapper {
+		.testimonial-card {
+			position: relative;
+			transition: .2s ease-in-out;
+
+			&::before {
+				content: "";
+				width: 50px;
+				height: 50px;
+				background-image: url(../img/ui/icons/quote.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: 50%;
+				position: absolute;
+				top: 24px;
+				left: 0;
+				transform: translateX(-50%);
+			}
+
+			.client-picture {
+				background-image: url(../img/samples/client.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: 50%;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					animation-name: pulsing;
+					animation-duration: 2s;
+					animation-iteration-count: infinite;
+					animation-timing-function: ease-in-out;
+				}
+			}
+
+			@media screen and (max-width: 575px) {
+				.client-picture {
+					width: 80px;
+					height: 80px;
+					margin-top: 2.4rem;
+					margin-bottom: 4.2rem;
+				}
+
+				.testimonial__text {
+					padding: 0;
+				}
+			}
+
+			@media screen and (min-width: 576px) {
+				.client-picture {
+					width: 120px;
+					height: 120px;
+				}
+
+				.testimonial__text {
+					padding-left: 3.2rem;
+					padding-right: 2.4rem;
+				}
+			}
+		}
+	}
+
+	.--background {
+		min-height: 300px;
+		background-image: url(../img/ui/illustrations/hexagons.png);
+		background-size: contain;
+    background-position: 106% 50%;
+    background-repeat: no-repeat;
+	}
+}
+
+
+@keyframes pulsing {
+	0% {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.2);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+}

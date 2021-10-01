@@ -89,18 +89,21 @@
     min-height: 98vh;
     margin: 0;
     
-    @media all and (max-width: 480px) {
-      .splash-image,
-      .site-splash__decoration--window {
-        display: none;
-      }
-  
-      .project-cover {
-        height: 80px;
-      }
+    .splash-image,
+    .site-splash__decoration--window {
+      display: none;
+    }
+
+    .project-cover {
+      height: 80px;
     }
   
-    @media all and (min-width: 481px) and (max-width: 782px) {
+    @media all and (min-width: 576px) {
+      .splash-image,
+      .site-splash__decoration--window {
+        display: block;
+      }
+
       .site-splash__decoration--window {
         height: 120px;
         width: 120px;
@@ -114,7 +117,7 @@
       }
     }
   
-    @media all and (min-width: 783px) and (max-width: 992px) {
+    @media all and (min-width: 768px) {
       .splash-image {
         height: 100%;
         transform: scale(1) translate(0%, 1%);
@@ -132,7 +135,7 @@
       }
     }
   
-    @media all and (min-width: 993px) and (max-width: 1365px) {
+    @media all and (min-width: 992px) {
       .splash-image {
         height: 100%;
         transform: translate(0%, 1%);
@@ -150,7 +153,7 @@
       }
     }
   
-    @media all and (min-width: 1366px) and (max-width: 1600px) {
+    @media all and (min-width: 1200px) {
       .splash-image {
         height: 100%;
         transform: translate(0%, 1%);
@@ -168,7 +171,7 @@
       }
     }
   
-    @media all and (min-width: 1601px) {
+    @media all and (min-width: 1400px) {
       .splash-image {
         height: 100%;
         transform: translate(0%, 1%);
@@ -247,6 +250,42 @@
     }
   }
 
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    .site-splash__wrapper {
+      min-height: 98vh;
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .site-splash__wrapper {
+      min-height: 98vh;
+    }
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .site-splash__wrapper {
+      min-height: 75vh;
+    }
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .site-splash__wrapper {
+      min-height: 70vh;
+    }
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    .site-splash__wrapper {
+      min-height: 75vh;
+    }
+  }
+
 }
 
 
@@ -308,6 +347,7 @@
 
 .project-cover {
   width: 100%;
+  height: 250px;
   position: relative;
   background-color: #d4d4d4;
   background-size: cover;

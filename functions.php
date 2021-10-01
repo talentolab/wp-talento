@@ -27,6 +27,30 @@ if ( ! defined( '__MODULES' ) ) {
 	define( '__MODULES', get_template_directory_uri() .'/node_modules' );
 }
 
+
+
+
+function my_cfs_options_screens( $screens ) {
+  // Parent
+  $screens[] = array(
+    'name'         => 'Opções',
+    'field_groups' => array( 'Home' ),
+  );
+
+  // Child
+  $screens[] = array(
+    'name'         => 'Home',
+    'parent'       => 'Opções',
+    'field_groups' => array( 'Home' ),
+  );
+
+  return $screens;
+}
+
+add_filter( 'cfs_options_screens', 'my_cfs_options_screens' );
+
+
+
 if ( ! function_exists( 'talento_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -188,6 +212,7 @@ function talento_scripts() {
   wp_enqueue_style( 'materialize-custom', __DIR .'/css/custom/materialize.custom'. $min .'.css', array(), _S_VERSION );
   wp_enqueue_style( 'bootstrap-grid', __MODULES .'/bootstrap/dist/css/bootstrap-grid'. $min .'.css', array(), _S_VERSION );
   wp_enqueue_style( 'bootstrap-utilities', __MODULES .'/bootstrap/dist/css/bootstrap-utilities'. $min .'.css', array(), _S_VERSION );
+  wp_enqueue_style( 'swiper', __MODULES .'/swiper/swiper-bundle.css', array(), _S_VERSION );
   // wp_enqueue_style( 'bootstrap', __MODULES .'/bootstrap/dist/css/bootstrap'. $min .'.css', array(), _S_VERSION );
   
   wp_enqueue_style( 'helpers.css', __DIR .'/libs/helpers.css/src/helpers'. $min .'.css', array(), '1.0.0' );
@@ -217,6 +242,7 @@ function add_this_script_footer() {
   // Footer JS Libraries
 	wp_enqueue_script( 'materialize', __DIR . '/libs/materialize-src/js/bin/materialize.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'wow-js', __DIR . '/libs/wow.js/dist/wow.min.js', array(), '1.3.0', true );
+	wp_enqueue_script( 'swiper',  __MODULES .'/swiper/swiper-bundle.js', array(), _S_VERSION, true );
   
   // Main JS
 	wp_enqueue_script( 'talento-navigation', __DIR . '/js/navigation.js', array(), _S_VERSION, true );
@@ -232,9 +258,9 @@ function add_type_attribute($tag, $handle, $src) {
 	if ( 'talento-main' !== $handle ) {
 			return $tag;
 	}
-	// change the script tag by adding type="module" and return it.
-	$tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
-	return $tag;
+  // change the script tag by adding type="module" and return it.
+  $tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
+  return $tag;
 }
 
 

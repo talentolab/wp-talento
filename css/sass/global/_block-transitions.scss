@@ -1,0 +1,148 @@
+.wave-bg {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  &.wave--1 {
+    background-position: 0 0;
+    background-size: calc(100% + 200px) 100%;
+    background-image: url(../img/waves/wave-1.svg);
+  }
+
+  &.wave--2 {
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-image: url(../img/waves/wave-2.svg);
+  }
+
+  &.wave--3 {
+    background-position: 100% 100%;
+    background-size: 100% 70%;
+    background-image: url(../img/waves/wave-3.svg), url(../img/waves/wave-4.svg);
+    background-repeat: no-repeat;
+  }
+
+  .wave-bg--parabolic {
+    background-image: url(../img/waves/wave-parabolic.svg);
+    background-position: bottom;
+  }
+
+  .wave-bg--4 {
+    background-position: 0 100%;
+    background-size: 100% 40%;
+    background-image: url(../img/waves/wave-5.svg);
+  }
+
+  .wave-bg--small-sigmoid {
+    background-position: 0 101%;
+    background-size: 100% 42px;
+    background-image: url(../img/waves/wave-small-sigmoid.svg);
+  }
+
+  .wave-bg--convex-1 {
+    background-position: 0 0;
+    background-size: 100% 40px;
+    background-image: url(../img/waves/wave-convex-1.svg);
+  }
+
+  .wave-bg--6 {
+    background-position: 50% -1px;
+    background-size: 100% auto;
+    background-repeat: repeat-x;
+    background-image: url(../img/waves/wave-6.svg);
+  }
+
+  .wave-bg--7 {
+    background-position: 0 100%;
+    background-size: 100% 100px;
+    background-repeat: repeat-x;
+    background-image: url(../img/waves/wave-7.svg);
+  }
+
+  .wave-bg--8 {
+    background-position: 0 100%;
+    background-size: 100% 300px;
+    background-repeat: repeat-x;
+    background-image: url(../img/waves/wave-8.svg);
+  }
+
+  &.wave--10 {
+    background-position: 0 100%;
+    background-size: 100% 300px;
+    background-repeat: repeat-x;
+    background-image: url(../img/waves/wave-10.svg);
+  }
+
+  &.wave--11 {
+    background-position: 0 120%;
+    background-size: 100% 200px;
+    background-repeat: repeat-x;
+    background-image: url(../img/waves/wave-11.svg);
+  }
+
+
+  &.wave--12 {
+    background-position: 0 100%;
+    background-size: 100% 300px;
+    background-repeat: repeat-x;
+    background-image: url(../img/waves/wave-12.svg);
+  }
+
+  &.wave--13 {
+    background-position: 0 0;
+    background-size: 100% 80px;
+    background-repeat: repeat-x;
+    background-image: url(../img/waves/wave-13.svg);
+  }
+
+
+
+  @media all and (max-width: 480px) {
+    .wave-bg--sine {
+      background-size: auto;
+      color: #000;
+    }
+  }
+
+  @media all and (min-width: 481px) and (max-width: 575px) {
+    .wave-bg--sine {
+      background-size: contain;
+    }
+  }
+
+  @media all and (min-width: 576px) and (max-width: 767px) {
+    .wave-bg--sine {
+      background-size: 1280px 100%;
+      background-position: 40% 0;
+      color: #fff;
+    }
+  }
+
+  @media all and (min-width: 768px) and (max-width: 992px) {
+    .wave-bg--sine {
+      background-size: 130% 100%;
+      background-position: 66% 0;
+      color: #fff;
+    }
+  }
+
+  @media all and (min-width: 993px) and (max-width: 1365px) {
+    .wave-bg--sine {
+      color: #fff;
+    }
+  }
+
+  @media all and (min-width: 1366px) {
+    .wave-bg--sine {
+      color: #fff;
+    }
+  }
+}
+
+.rect-bg {
+  &.--purple-light {
+    background-image: url(../img/waves/purple-light-bg.svg);
+    background-position: 100% 100%;
+    background-size: 100% 45%;
+    background-repeat: no-repeat;
+  }
+}

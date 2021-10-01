@@ -18,6 +18,130 @@ body {
   scroll-behavior: smooth;
 }
 
+.wave-bg {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.wave-bg.wave--1 {
+  background-position: 0 0;
+  background-size: calc(100% + 200px) 100%;
+  background-image: url(../img/waves/wave-1.svg);
+}
+.wave-bg.wave--2 {
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-image: url(../img/waves/wave-2.svg);
+}
+.wave-bg.wave--3 {
+  background-position: 100% 100%;
+  background-size: 100% 70%;
+  background-image: url(../img/waves/wave-3.svg), url(../img/waves/wave-4.svg);
+  background-repeat: no-repeat;
+}
+.wave-bg .wave-bg--parabolic {
+  background-image: url(../img/waves/wave-parabolic.svg);
+  background-position: bottom;
+}
+.wave-bg .wave-bg--4 {
+  background-position: 0 100%;
+  background-size: 100% 40%;
+  background-image: url(../img/waves/wave-5.svg);
+}
+.wave-bg .wave-bg--small-sigmoid {
+  background-position: 0 101%;
+  background-size: 100% 42px;
+  background-image: url(../img/waves/wave-small-sigmoid.svg);
+}
+.wave-bg .wave-bg--convex-1 {
+  background-position: 0 0;
+  background-size: 100% 40px;
+  background-image: url(../img/waves/wave-convex-1.svg);
+}
+.wave-bg .wave-bg--6 {
+  background-position: 50% -1px;
+  background-size: 100% auto;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-6.svg);
+}
+.wave-bg .wave-bg--7 {
+  background-position: 0 100%;
+  background-size: 100% 100px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-7.svg);
+}
+.wave-bg .wave-bg--8 {
+  background-position: 0 100%;
+  background-size: 100% 300px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-8.svg);
+}
+.wave-bg.wave--10 {
+  background-position: 0 100%;
+  background-size: 100% 300px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-10.svg);
+}
+.wave-bg.wave--11 {
+  background-position: 0 120%;
+  background-size: 100% 200px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-11.svg);
+}
+.wave-bg.wave--12 {
+  background-position: 0 100%;
+  background-size: 100% 300px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-12.svg);
+}
+.wave-bg.wave--13 {
+  background-position: 0 0;
+  background-size: 100% 80px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-13.svg);
+}
+@media all and (max-width: 480px) {
+  .wave-bg .wave-bg--sine {
+    background-size: auto;
+    color: #000;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 575px) {
+  .wave-bg .wave-bg--sine {
+    background-size: contain;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+  .wave-bg .wave-bg--sine {
+    background-size: 1280px 100%;
+    background-position: 40% 0;
+    color: #fff;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .wave-bg .wave-bg--sine {
+    background-size: 130% 100%;
+    background-position: 66% 0;
+    color: #fff;
+  }
+}
+@media all and (min-width: 993px) and (max-width: 1365px) {
+  .wave-bg .wave-bg--sine {
+    color: #fff;
+  }
+}
+@media all and (min-width: 1366px) {
+  .wave-bg .wave-bg--sine {
+    color: #fff;
+  }
+}
+
+.rect-bg.--purple-light {
+  background-image: url(../img/waves/purple-light-bg.svg);
+  background-position: 100% 100%;
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
+}
+
 /**
  * Background classes
  */
@@ -908,16 +1032,18 @@ input[type=button].bg--blue:hover {
    * Header Text
   ** ---------------------------------- */
 }
-@media all and (max-width: 480px) {
+.site-splash .site-splash__wrapper .splash-image,
+.site-splash .site-splash__wrapper .site-splash__decoration--window {
+  display: none;
+}
+.site-splash .site-splash__wrapper .project-cover {
+  height: 80px;
+}
+@media all and (min-width: 576px) {
   .site-splash .site-splash__wrapper .splash-image,
 .site-splash .site-splash__wrapper .site-splash__decoration--window {
-    display: none;
+    display: block;
   }
-  .site-splash .site-splash__wrapper .project-cover {
-    height: 80px;
-  }
-}
-@media all and (min-width: 481px) and (max-width: 782px) {
   .site-splash .site-splash__wrapper .site-splash__decoration--window {
     height: 120px;
     width: 120px;
@@ -929,7 +1055,7 @@ input[type=button].bg--blue:hover {
     height: 100px;
   }
 }
-@media all and (min-width: 783px) and (max-width: 992px) {
+@media all and (min-width: 768px) {
   .site-splash .site-splash__wrapper .splash-image {
     height: 100%;
     transform: scale(1) translate(0%, 1%);
@@ -944,7 +1070,7 @@ input[type=button].bg--blue:hover {
     height: 150px;
   }
 }
-@media all and (min-width: 993px) and (max-width: 1365px) {
+@media all and (min-width: 992px) {
   .site-splash .site-splash__wrapper .splash-image {
     height: 100%;
     transform: translate(0%, 1%);
@@ -959,7 +1085,7 @@ input[type=button].bg--blue:hover {
     height: 190px;
   }
 }
-@media all and (min-width: 1366px) and (max-width: 1600px) {
+@media all and (min-width: 1200px) {
   .site-splash .site-splash__wrapper .splash-image {
     height: 100%;
     transform: translate(0%, 1%);
@@ -974,7 +1100,7 @@ input[type=button].bg--blue:hover {
     height: 180px;
   }
 }
-@media all and (min-width: 1601px) {
+@media all and (min-width: 1400px) {
   .site-splash .site-splash__wrapper .splash-image {
     height: 100%;
     transform: translate(0%, 1%);
@@ -1034,6 +1160,31 @@ input[type=button].bg--blue:hover {
     text-align: left;
   }
 }
+@media (min-width: 576px) {
+  .site-splash .site-splash__wrapper {
+    min-height: 98vh;
+  }
+}
+@media (min-width: 768px) {
+  .site-splash .site-splash__wrapper {
+    min-height: 98vh;
+  }
+}
+@media (min-width: 992px) {
+  .site-splash .site-splash__wrapper {
+    min-height: 75vh;
+  }
+}
+@media (min-width: 1200px) {
+  .site-splash .site-splash__wrapper {
+    min-height: 70vh;
+  }
+}
+@media (min-width: 1400px) {
+  .site-splash .site-splash__wrapper {
+    min-height: 75vh;
+  }
+}
 
 .splash-image {
   background-repeat: no-repeat;
@@ -1080,6 +1231,7 @@ input[type=button].bg--blue:hover {
 
 .project-cover {
   width: 100%;
+  height: 250px;
   position: relative;
   background-color: #d4d4d4;
   background-size: cover;
@@ -1478,11 +1630,11 @@ input[type=button].bg--blue:hover {
 }
 
 .about--header-image {
-  min-height: 400px;
+  padding-top: 53%;
   background-image: url(../img/pics/about-1.jpg);
-  background-position: 50%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 117% auto;
   border-radius: 30px;
 }
 
@@ -1491,6 +1643,44 @@ input[type=button].bg--blue:hover {
   box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.03);
   border-radius: 24px;
   padding: 16px 24px;
+}
+
+.about-team .team-card {
+  background-color: #2B3661;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.about-team .team-card .--image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: luminosity;
+}
+
+.about-team .team-card .--title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.about-team .team-card .--title .__name {
+  color: #fff;
+  font-weight: bold;
+}
+
+.about-team .team-card .--title .__roll {
+  color: #90CC61;
 }
 
 /**
@@ -1652,12 +1842,28 @@ input[type=button].bg--blue:hover {
   }
 }
 .about--illustration {
-  min-height: 400px;
-  background-image: url(../img/illustrations/walt-disney-full.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 30px;
+}
+
+.about--illustration.--walt-disney-full {
+  padding-top: 80%;
+  background-image: url(../img/illustrations/walt-disney-full.svg);
+}
+
+.about--illustration.--camila-bia {
+  padding-top: 70%;
+  background-image: url(../img/illustrations/camila-bia.svg);
+}
+
+.about-pic--2 {
+  background-image: url(../img/pics/about-2-resized-tiny.webp);
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
 }
 
 label {
@@ -1690,10 +1896,11 @@ button i.f-end, input[type=button] i.f-end, a.button i.f-end {
 input,
 textarea {
   background-color: rgba(0, 0, 0, 0.05);
-  color: #fff;
   border: none;
   padding: 10px 16px;
   border-radius: 8px;
+  outline: none;
+  width: 100%;
 }
 
 textarea {
@@ -1778,17 +1985,36 @@ code {
 
 .social-media-phone {
   width: 214px;
-  height: 440px;
+  padding-top: 100%;
   background-image: url(../img/mockups/smartphone.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50%;
   position: relative;
-  transform: scale(1.3);
+  margin-top: -100px;
   transition: 0.2s ease-in-out;
 }
-.social-media-phone:hover {
-  transform: scale(1.4);
+
+.webdev-mockup {
+  width: 214px;
+  padding-top: 70%;
+  background-image: url(../img/mockups/web.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+.id-visual-sketch {
+  width: 214px;
+  padding-top: 60%;
+  background-image: url(../img/illustrations/id-visual.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  position: relative;
+  transition: 0.2s ease-in-out;
 }
 
 .phone-screen {
@@ -1880,7 +2106,6 @@ code {
   position: relative;
   transition: 0.15s ease-in-out;
   overflow: visible;
-  cursor: pointer;
 }
 .home-services-card:hover {
   transform: scale(1.08) rotate(0deg);
@@ -2447,7 +2672,7 @@ footer .info-section .footer-menu ul li a:last-of-type {
 }
 .meet-talento-ilustration {
   width: 100%;
-  height: 400px;
+  padding-top: 100%;
   background-image: url(../img/illustrations/meet-talento-illustration.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2517,6 +2742,129 @@ footer .info-section .footer-menu ul li a:last-of-type {
     background-size: auto 90%, auto 74%;
     background-position: 5% 50%, 95% 50%;
   }
+}
+.wave-bg {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.wave-bg.wave--1 {
+  background-position: 0 0;
+  background-size: calc(100% + 200px) 100%;
+  background-image: url(../img/waves/wave-1.svg);
+}
+.wave-bg.wave--2 {
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-image: url(../img/waves/wave-2.svg);
+}
+.wave-bg.wave--3 {
+  background-position: 100% 100%;
+  background-size: 100% 70%;
+  background-image: url(../img/waves/wave-3.svg), url(../img/waves/wave-4.svg);
+  background-repeat: no-repeat;
+}
+.wave-bg .wave-bg--parabolic {
+  background-image: url(../img/waves/wave-parabolic.svg);
+  background-position: bottom;
+}
+.wave-bg .wave-bg--4 {
+  background-position: 0 100%;
+  background-size: 100% 40%;
+  background-image: url(../img/waves/wave-5.svg);
+}
+.wave-bg .wave-bg--small-sigmoid {
+  background-position: 0 101%;
+  background-size: 100% 42px;
+  background-image: url(../img/waves/wave-small-sigmoid.svg);
+}
+.wave-bg .wave-bg--convex-1 {
+  background-position: 0 0;
+  background-size: 100% 40px;
+  background-image: url(../img/waves/wave-convex-1.svg);
+}
+.wave-bg .wave-bg--6 {
+  background-position: 50% -1px;
+  background-size: 100% auto;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-6.svg);
+}
+.wave-bg .wave-bg--7 {
+  background-position: 0 100%;
+  background-size: 100% 100px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-7.svg);
+}
+.wave-bg .wave-bg--8 {
+  background-position: 0 100%;
+  background-size: 100% 300px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-8.svg);
+}
+.wave-bg.wave--10 {
+  background-position: 0 100%;
+  background-size: 100% 300px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-10.svg);
+}
+.wave-bg.wave--11 {
+  background-position: 0 120%;
+  background-size: 100% 200px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-11.svg);
+}
+.wave-bg.wave--12 {
+  background-position: 0 100%;
+  background-size: 100% 300px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-12.svg);
+}
+.wave-bg.wave--13 {
+  background-position: 0 0;
+  background-size: 100% 80px;
+  background-repeat: repeat-x;
+  background-image: url(../img/waves/wave-13.svg);
+}
+@media all and (max-width: 480px) {
+  .wave-bg .wave-bg--sine {
+    background-size: auto;
+    color: #000;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 575px) {
+  .wave-bg .wave-bg--sine {
+    background-size: contain;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+  .wave-bg .wave-bg--sine {
+    background-size: 1280px 100%;
+    background-position: 40% 0;
+    color: #fff;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .wave-bg .wave-bg--sine {
+    background-size: 130% 100%;
+    background-position: 66% 0;
+    color: #fff;
+  }
+}
+@media all and (min-width: 993px) and (max-width: 1365px) {
+  .wave-bg .wave-bg--sine {
+    color: #fff;
+  }
+}
+@media all and (min-width: 1366px) {
+  .wave-bg .wave-bg--sine {
+    color: #fff;
+  }
+}
+
+.rect-bg.--purple-light {
+  background-image: url(../img/waves/purple-light-bg.svg);
+  background-position: 100% 100%;
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */

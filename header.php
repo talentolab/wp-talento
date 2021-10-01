@@ -40,12 +40,6 @@
     <div class="row g-0 h-100">
 			<div class="col-sm-6 col-md-6 col-lg-2 col-xxl-2 offset-lg-1 offset-xxl-2 h-100">
 				<a class="logo-link" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
-					<?php
-						$logo = get_theme_mod( 'custom_logo' );
-						$image = wp_get_attachment_image_src( $logo , 'full' );
-						$image_url = $image[0];
-					?>
-
 					<div class="nav-logo float-left <?php if ( !is_front_page() ) echo 'fixed-logo'; ?>"></div>
 				</a>
 			</div>
@@ -64,28 +58,20 @@
 						<a href="<?php bloginfo( 'url' ); ?>/sobre" class="js-splash-text text-middle text-center">Quem somos</a>
 					</li>
 
-					<li class="nav-link">
-						<a href="<?php bloginfo( 'url' ); ?>/contato" class="js-splash-text text-middle text-center">Contato</a>
-					</li>
-
 					<li class="nav-btn">
-						<a href="#/orcamento/" class="dropdown-trigger js-splash-text text-middle text-center white-text" data-target="main-menu-dropdown">Fazer orçamento</a>
+						<a href="<?php bloginfo( 'url' ); ?>/contato" class="js-splash-text text-middle text-center white-text">Fazer orçamento</a>
 					</li>
 
 					<li class="display-flex margin-left-medium">
-						<a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Facebook">
+						<a href="https://facebook.com/talentodesignmarketing" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Facebook">
 							<i class="fab fa-facebook"></i>
 						</a>
 
-						<a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Instagram">
+						<a href="https://instagram.com/talentodesignmkt" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Instagram">
 							<i class="fab fa-instagram"></i>
 						</a>
 
-						<a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="LinkedIn">
-							<i class="fab fa-linkedin"></i>
-						</a>
-
-						<a href="#" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Behance">
+						<a href="https://behance.net/talentodesign" class="js-splash-text text-center padding-x-smaller text-medium tooltipped" data-tooltip="Behance">
 							<i class="fab fa-behance"></i>
 						</a>
 					</li>
@@ -94,23 +80,6 @@
     </div>
   </nav>
 
-
-  <!-- Dropdown Structure -->
-  <div class="js-main-menu-dropdown">
-    <ul id="main-menu-dropdown" class="dropdown-content margin-top-smaller">
-      <li>
-        <a href="#!">Design de marca</a>
-      </li>
-      
-      <li>
-        <a href="#!">Criação de site</a>
-      </li>
-      
-      <li>
-        <a href="#!">Social media</a>
-      </li>
-    </ul>
-  </div>
 
 
   <ul id="slide-out" class="sidenav">
@@ -126,28 +95,20 @@
       <a href="<?php bloginfo( 'url' ); ?>/sobre" class="text-middle">Quem somos</a>
     </li>
 
-    <li>
-      <a href="<?php bloginfo( 'url' ); ?>/contato" class="text-middle">Contato</a>
-    </li>
-
     <li class="button-bg">
-      <a href="#/orcamento/" class="dropdown-trigger text-middle white-text" data-target="main-menu-dropdown">Faça um orçamento</a>
+      <a href="<?php bloginfo( 'url' ); ?>/contato" class="text-middle white-text">Faça um orçamento</a>
     </li>
 
     <li class="display-flex">
-      <a href="#" class="white text-center margin-right-smaller padding-right-smaller text-large tooltipped" data-tooltip="Facebook">
+      <a href="https://facebook.com/talentodesignmarketing/" class="white text-center margin-right-smaller padding-right-smaller text-large tooltipped" data-tooltip="Facebook">
         <i class="fab fa-facebook no-margin"></i>
       </a>
 
-      <a href="#" class="white text-center margin-right-smaller no-padding-left padding-right-smaller text-large tooltipped" data-tooltip="Instagram">
+      <a href="https://instagram.com/talentodesignmkt/" class="white text-center margin-right-smaller no-padding-left padding-right-smaller text-large tooltipped" data-tooltip="Instagram">
         <i class="fab fa-instagram no-margin"></i>
       </a>
 
-      <a href="#" class="white text-center margin-right-smaller no-padding-left padding-right-smaller text-large tooltipped" data-tooltip="LinkedIn">
-        <i class="fab fa-linkedin no-margin"></i>
-      </a>
-
-      <a href="#" class="white text-center margin-right-smaller no-padding-left text-large tooltipped" data-tooltip="Behance">
+      <a href="https://behance.net/talentodesign" class="white text-center margin-right-smaller no-padding-left text-large tooltipped" data-tooltip="Behance">
         <i class="fab fa-behance no-margin"></i>
       </a>
     </li>
@@ -163,7 +124,7 @@
       <div class="center padding-medium text-center">
         Esse site requer o JavaScript habilitado para funcionar.
         <br>
-        <a href="https://www.enable-javascript.com/pt/" target="_blank" rel="nofollow noreferrer">Como habilitar?</a>
+        <a href="https://enable-javascript.com/pt/" target="_blank" rel="nofollow noreferrer">Como habilitar?</a>
       </div>
     </div>
     <script>

@@ -21,7 +21,8 @@ body {
   scroll-behavior: smooth
 }
 
-
+// Global
+@import './global/global';
 // Fonts
 @import './styles/fonts';
 // Helpers
@@ -36,3 +37,4 @@ body {
 @import './components/Footer';
 // Animations
 @import './styles/animations';
+@import './global/global';

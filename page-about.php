@@ -15,13 +15,13 @@ get_header();
   </div>
 
   <div class="block">
-    <div class="row g-0 no-padding text-middle no-margin">
-      <div class="col-sm-12 col-md-8 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2">
+    <div class="row g-0 text-middle px-5 px-lg-0">
+      <div class="col-12 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2">
         <h1 class="padding-top-large padding-bottom-medium text-center no-margin wow fadeInUpSmall text--green">
           Completa e inovadora
         </h1>
 
-        <div class="grey-text text-center padding-bottom-large wow fadeInUpSmall" data-wow-delay=".2s">
+        <div class="grey-text text-center wow fadeInUpSmall" data-wow-delay=".2s">
           A TALENTO desperta
           a sua motivação e criatividade!
         </div>
@@ -29,22 +29,21 @@ get_header();
     </div>
   </div>
   
-  <div class="block wave-bg--sine-3">
-    <div class="row no-margin">
-      <div class="col-12 col-lg-6 offset-lg-1">
+  <div class="block wave-bg wave--3">
+    <div class="row g-5 padding-y-large px-5 px-lg-0">
+      <div class="col-12 col-md-6 col-lg-5 col-xxl-5 offset-lg-1 offset-xxl-2">
         <div class="about--header-image"></div>
       </div>
   
-      <div class="col-12 col-lg-4 text-middle">
+      <div class="col-12 col-md-6 col-lg-5 col-xxl-3 text-middle">
         <div class="about-card">
           <h3 class="text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
             13 anos de mercado
           </h3>
 
           <p class="wow fadeInUpSmall" data-wow-delay=".3s">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
-            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor 
-            rhoncus dolor purus non enim praesent elementum facilisis
+            Durante nossa jornada até aqui, tivermos oportunidades únicas de utilizarmos nossos conhecimentos não só 
+            na área de Design e Marketing, como também ministrando palestras e cursos Brasil à fora.
           </p>
         </div>
       </div>
@@ -54,33 +53,25 @@ get_header();
 
 <main>
   <div class="block bg--blue-darker">
-    <div class="row no-margin padding-y-larger">  
-      <div class="col-12 col-lg-4 offset-lg-1 offset-xxl-2 text-middle">
+    <div class="row g-5 no-margin-bottom padding-y-larger px-5 px-lg-0">  
+      <div class="col-12 col-md-6 col-lg-6 col-xxl-4 offset-lg-1 offset-xxl-2 text-middle">
         <div class="about-card text--white bg--blue-dark">
-          <h3 class="text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+          <h3 class="text--green text-stronger">
             Conheça a Talento Design
           </h3>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat, 
-            vestibulum semper eget duis malesuada in facilisis rutrum massa. Risus 
-            et amet sit pellentesque morbi felis sollicitudin nunc accumsan. 
-            Ullamcorper a scelerisque sit nunc.
+            Atuando no mercado há 13 anos, nosso maior compromisso é continuar a oferecer projetos que valorizam o 
+            design e a essência de cada negócio. Estreitar a comunicação entre marca e consumidor.
           </p>
 
-          <p>
-            Arcu egestas amet ullamcorper rutrum ut facilisis morbi. Nulla in morbi 
-            natoque quis tristique nibh est, purus. Venenatis, nisl faucibus tristique 
-            ut. Eu pellentesque morbi at bibendum.
+          <p>Seja para pequenas, médias ou grandes empresas, projetamos com sensibilidade e responsabilidade olhando 
+            sempre à frente.
           </p>
 
-          <p>
-            Lobortis aliquam aliquam enim feugiat elit, arcu id 
-            nullam. Diam tempor faucibus nunc consequat.
-          </p>
 
           <p class="text-left wow fadeInUpSmall" data-wow-delay=".4s">
-            <a href="/contato" class="button bg--blue text--white shadow-3">
+            <a href="/sobre/#equipe" class="button bg--blue text--white shadow-3">
               Conheça nossa equipe
               <i class="fas fa-chevron-right f-end text-smaller text-middle h-100"></i>
             </a>
@@ -88,12 +79,222 @@ get_header();
         </div>
       </div>
 
-      <div class="col-12 col-lg-6">
-        <div class="about--illustration position-sticky" style="top: 72px;"></div>
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-4 text-middle">
+        <div class="about--illustration --walt-disney-full position-sticky" style="top: 72px;"></div>
       </div>
     </div>
   </div>
+
+
+
+
+
+  <div class="block bg--blue-darker rect-bg --purple-light">
+    <div class="row no-margin padding-y-medium px-5 px-lg-0">
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-4 offset-lg-1 offset-xxl-2 text-middle">
+        <div class="about--illustration --camila-bia position-sticky" style="top: 72px;"></div>
+      </div>
+
+      
+      <div class="col-12 col-md-6 col-lg-6 col-xxl-4 text-middle">
+        <div class="about-card text--white bg--blue-dark">
+          <h3 class="text--green text-stronger">
+            Reconhecimento
+          </h3>
+
+          <p>
+            Desde o primeiro ano de empresa, em 2008 com o Prêmio CREA/PA, a Talento vem tendo seu valor reconhecido 
+            por onde passa, mantendo presença nos maiores eventos e registrando seu trabalho em todo o Brasil.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="block">
+    <div class="about-pic--2"></div>
+  </div>
+
+
+
+  <div class="block about-team bg--blue-lighter wave-bg wave--10" id="equipe">
+    <div class="row no-padding no-margin">
+      <div class="col-12 col-md-10 col-xxl-8 offset-md-1 offset-xxl-2">
+        <h2 class="padding-top-large padding-bottom-medium text-center no-margin wow fadeInUpSmall text--green">
+          Nossa equipe talentosa
+        </h2>
+
+        <div class="grey-text text-center padding-bottom-large wow fadeInUpSmall" data-wow-delay=".2s">
+          Veja quem é a Talento
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-8 col-xxl-6 offset-lg-2 offset-xxl-3">
+
+        <div class="row g-3 px-5 px-lg-0">
+          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+            <div class="team-card">
+              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/1.jpg'; ?>)"></div>
+
+              <div class="--title padding-small text-center">
+                <div class="__name">
+                  Thyago Maia
+                </div>
+  
+                <div class="__roll">
+                  Fundador | CEO
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+            <div class="team-card">
+              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/2.jpg'; ?>)"></div>
+
+              <div class="--title padding-small text-center">
+                <div class="__name">
+                  Aida Monteiro
+                </div>
+  
+                <div class="__roll">
+                  Gerente de projetos
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+            <div class="team-card">
+              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/3.jpg'; ?>)"></div>
+
+              <div class="--title padding-small text-center">
+                <div class="__name">
+                  Daniella Nunes
+                </div>
+  
+                <div class="__roll">
+                  Designer Pleno
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+            <div class="team-card">
+              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/4.jpg'; ?>)"></div>
+
+              <div class="--title padding-small text-center">
+                <div class="__name">
+                  Mayra Sarges
+                </div>
+  
+                <div class="__roll">
+                  Designer / Social Media
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+            <div class="team-card">
+              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/5.jpg'; ?>)"></div>
+
+              <div class="--title padding-small text-center">
+                <div class="__name">
+                  Beatriz Pontes
+                </div>
+  
+                <div class="__roll">
+                  Comercial
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+            <div class="team-card">
+              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/6.jpg'; ?>)"></div>
+
+              <div class="--title padding-small text-center">
+                <div class="__name">
+                  Camila Alves
+                </div>
+  
+                <div class="__roll">
+                  Administrativo
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+            <div class="team-card">
+              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/8.jpg'; ?>)"></div>
+
+              <div class="--title padding-small text-center">
+                <div class="__name">
+                  Giovanni Pantoja
+                </div>
+  
+                <div class="__roll">
+                  Publicitário
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+            <div class="team-card">
+              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/8.jpg'; ?>)"></div>
+
+              <div class="--title padding-small text-center">
+                <div class="__name">
+                  Fernando
+                </div>
+  
+                <div class="__roll">
+                  Publicitário
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+            <div class="team-card">
+              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/8.jpg'; ?>)"></div>
+
+              <div class="--title padding-small text-center">
+                <div class="__name">
+                  Yuri
+                </div>
+  
+                <div class="__roll">
+                  Publicitário
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="block padding-y-larger bg--white"></div>
 </main>
+
 
 <?php
 get_footer();
+?>

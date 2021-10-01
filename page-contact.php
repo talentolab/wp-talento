@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <main class="margin-top-large">
-  <div class="block bg--blue-dark wave-bg--sine-2">
+  <div class="block bg--blue-dark wave-bg wave--2">
     <div class="padding-y-medium">
       <div class="no-padding-x">
         <div class="row g-0 no-margin px-3 px-lg-0">
@@ -16,12 +16,12 @@ get_header();
             <div class="contact-ilustration wow fadeInLeftSmall" data-wow-delay=".2s"></div>
 
             <div class="margin-top-larger text-center">
-              <a href="#" class="btn green">
+              <a href="//wa.me/559188853173" class="btn green" target="_blank">
                 <i class="fab fa-whatsapp left"></i>
                 Chama no WhatsApp
               </a>
 
-              <a href="#" class="btn margin-left-smaller">
+              <a href="tel:559132483173" class="btn margin-left-smaller">
                 <i class="fas fa-phone-alt left"></i>
                 Ligar
               </a>
@@ -39,9 +39,9 @@ get_header();
                   enviar uma mensagem com críticas e sugestões.
                 </p>
 
-                <form>
-                  <div class="row g-0">
-                    <div class="col-lg-12 margin-right-small margin-bottom-small">
+                <form id="contact-page-form">
+                  <div class="row g-0 no-margin-y">
+                    <div class="col-lg-12 margin-right-small">
                       <label for="name" class="form-label text-smaller">Seu nome</label>
                       <input type="text" class="text-small browser-default form-control form-control-lg" id="name" name="name" placeholder="João Silva">
                     </div>
@@ -73,8 +73,6 @@ get_header();
   </div>
 
 </main>
-
-<script src="//code.tidio.co/68d50pwhxax1kvt2fqq5nzqqikx6hq19.js" async></script>
 
 
 <?php

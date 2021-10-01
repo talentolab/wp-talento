@@ -9,7 +9,7 @@ get_header();
 
 <main id="primary">
   <div class="block site-splash">
-    <div class="site-splash__decoration wave-bg--small-sigmoid wow fadeInUp" data-wow-delay=".4s">
+    <div class="site-splash__decoration">
       <div class="clouds">
         <div class="cloud cloud--1" data-skip-lazy></div>
         <div class="cloud cloud--2" data-skip-lazy></div>
@@ -30,8 +30,7 @@ get_header();
             </h1>
   
             <h5 class="splash-text-subtitle margin-bottom-medium wow fadeInUpSmall js-splash-text" data-wow-delay=".3s">
-              Sit sagittis in mi ut habitasse at massa viverra et
-              sodales consequat volutpat lacus vel
+              Há 13 anos oferecendo e implantando projetos de valor.
             </h5>
   
             <p class="text-left wow fadeInUpSmall" data-wow-delay=".4s">
@@ -65,7 +64,7 @@ get_header();
 
 
 
-  <div class="block bg--blue-dark illustration-lines svg-animation padding-y-larger">
+  <div class="block bg--blue-darker illustration-lines svg-animation padding-y-larger">
     <div class="container-small">
       <div class="row">
         <h1 class="text--green text-stronger text-center margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
@@ -80,119 +79,113 @@ get_header();
       <div class="row">
         <div class="col-6 col-sm-4 no-padding margin-bottom-small">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".1s">
-            <a href="#">
-              <div class="card-content padding-small">
-                <div class="card-icon valor"></div>
+            <div class="card-content padding-small">
+              <div class="card-icon valor"></div>
 
-                <div class="title-color text-center margin-y-small">
-                  Marcas<br>de Valor
-                </div>
+              <div class="title-color text-center margin-y-small">
+                Marcas<br>de Valor
               </div>
-            </a>
+            </div>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 no-padding margin-bottom-small">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".2s">
-            <a href="#">
-              <div class="card-content padding-small">
-                <div class="card-icon web"></div>
+            <div class="card-content padding-small">
+              <div class="card-icon redes-sociais"></div>
 
-                <div class="title-color text-center margin-y-small">
-                  Soluções<br>em web
-                </div>
+              <div class="title-color text-center margin-y-small">
+                Marketing Digital
               </div>
-            </a>
+            </div>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 no-padding margin-bottom-small">
           <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".3s">
-            <a href="#">
-              <div class="card-content padding-small">
-                <div class="card-icon ambientacao"></div>
-
-                <div class="title-color text-center margin-y-small">
-                  Ambientação<br>Funcional
-                </div>
+            <div class="card-content padding-small">
+              <div class="card-icon marketing"></div>
+              
+              <div class="title-color text-center margin-y-small">
+                Multimídia
               </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
-          <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".2s">
-            <a href="#">
-              <div class="card-content padding-small">
-                <div class="card-icon design"></div>
-
-                <div class="title-color text-center margin-y-small">
-                  Design<br>Promocional
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
-          <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".3s">
-            <a href="#">
-              <div class="card-content padding-small">
-                <div class="card-icon marketing"></div>
-
-                <div class="title-color text-center margin-y-small">
-                  Marketing<br>& Multimídia
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
-          <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".4s">
-            <a href="#">
-              <div class="card-content padding-small">
-                <div class="card-icon redes-sociais"></div>
-
-                <div class="title-color text-center margin-y-small">
-                  Redes<br>Sociais
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
         
+        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
+          <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".4s">
+            <div class="card-content padding-small">
+              <div class="card-icon design"></div>
+              
+              <div class="title-color text-center margin-y-small">
+                Embalagem
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
+          <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".3s">
+            <div class="card-content padding-small">
+              <div class="card-icon ambientacao"></div>
+
+              <div class="title-color text-center margin-y-small">
+                Ambientação<br>Funcional
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-6 col-sm-4 no-padding margin-bottom-small">
+          <div class="card fixed-height-1 home-services-card low-shadow margin-x-smaller border-radius-large wow fadeInUpSmall" data-wow-delay=".2s">
+            <div class="card-content padding-small">
+              <div class="card-icon web"></div>
+
+              <div class="title-color text-center margin-y-small">
+                Soluções<br>Web
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="row margin-top-medium">
+      <!--div class="row margin-top-medium">
         <div class="text-center">
+          <a href="/#"></a>
           <button class="bg--blue text--white shadow-3">
             Veja mais soluções
           </button>
         </div>
-      </div>
+      </div-->
     </div>
   </div>
 
 
 
-  <div class="block wave-bg--sine overlap-top-small bg--blue-lighter padding-bottom-large">
-    <div class="row g-0 px-4 px-lg-0">
-      <div class="col-12 col-sm-4 col-md-5 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2">
+  <div class="block overlap-top-small bg--blue-darker padding-bottom-medium">
+    <div class="row g-5 px-5 px-lg-0">
+      <div class="col-12 col-sm-4 col-md-5 col-lg-5 col-xxl-3 offset-lg-1 offset-xxl-2 text-middle">
         <div class="meet-talento-ilustration svg-animation wow fadeInLeftSmall" data-wow-delay=".2s"></div>
       </div>
 
-      <div class="col-12 col-sm-8 col-md-7 col-lg-5 col-xxl-4">
-        <div class="padding-x-small">
-          <h2 class="text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
+      <div class="col-12 col-sm-8 col-md-7 col-lg-5 col-xxl-5">
+        <div class="padding-large bg--blue-dark border-radius-larger">
+          <h2 class="text--green text-stronger no-margin-top wow fadeInUpSmall" data-wow-delay=".2s">
             Conheça a Talento Design
           </h2>
 
-          <p class="wow fadeInUpSmall" data-wow-delay=".4s">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
-            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor 
-            rhoncus dolor purus non enim praesent elementum facilisis
-          </p>
+          <section class="text--white wow fadeInUpSmall" data-wow-delay=".4s">
+            <p>
+              Atuando no mercado há 13 anos, nosso maior compromisso é continuar a oferecer projetos que valorizam 
+              o design e a essência de cada negócio. Estreitar a comunicação entre marca e consumidor.</p>
+  
+            <p>
+              Seja para pequenas, médias ou grandes empresas, projetamos com sensibilidade e responsabilidade 
+              olhando sempre à frente.
+            </p>
+          </section>
+
 
           <a href="/contato" class="button bg--blue text--white shadow-3">
             Saiba mais sobre nós
@@ -208,27 +201,27 @@ get_header();
 
 
 
-  <div class="block bg--blue-lighter wave-bg--4">
+  <!--div class="block bg--blue-lighter wave-bg wave--12">
     <section>
-      <div class="row g-0 px-4 px-lg-0">
-        <div class="col-8 col-sm-8 col-md-8 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2 px-2">
-          <h2 class="text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
-            Social Media
-          </h2>
-
-          <p class="wow fadeInUpSmall" data-wow-delay=".3s">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
-            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor 
-            rhoncus dolor purus non enim praesent elementum facilisis
-          </p>
-
-          <a href="/contato" class="button bg--blue text--white shadow-3 wow fadeInUpSmall" data-wow-delay=".5s">
-            Mais trabalhos
-            <i class="fas fa-chevron-right f-end text-smaller text-middle h-100"></i>
-          </a>
+      <div class="row g-0 px-4 px-lg-0 no-margin-bottom">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2 px-2">
+          <div class="padding-large bg--white border-radius-larger">
+            <h2 class="text--green text-stronger no-margin-top wow fadeInUpSmall" data-wow-delay=".2s">
+              Social Media
+            </h2>
+  
+            <p class="wow fadeInUpSmall" data-wow-delay=".3s">
+              Gerenciamento dos maiores canais de engajamento comercial estratégico.
+            </p>
+  
+            <a href="/contato" class="button bg--blue text--white shadow-3 wow fadeInUpSmall" data-wow-delay=".5s">
+              Mais trabalhos
+              <i class="fas fa-chevron-right f-end text-smaller text-middle h-100"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xxl-4">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-5 col-xxl-4 no-click text-middle">
           <div class="wow fadeInUpSmall" data-wow-delay="1s">
             <div class="social-media-phone margin-left-medium align-center w-100"></div>
           </div>
@@ -239,10 +232,74 @@ get_header();
 
 
 
+  <div class="block bg--blue-light wave-bg wave--11">
+    <section>
+      <div class="row g-0 px-4 px-lg-0 no-margin-bottom padding-y-larger">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2 no-margin-top text-middle">
+          <div class="wow fadeInUpSmall" data-wow-delay="1s">
+            <div class="webdev-mockup w-100"></div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xxl-4 text-middle">
+          <div class="padding-large bg--white border-radius-larger">
+            <h2 class="text--green text-stronger no-margin-top wow fadeInUpSmall" data-wow-delay=".2s">
+              Criação de sites
+            </h2>
+  
+            <p class="wow fadeInUpSmall" data-wow-delay=".3s">
+              Para que o seu negócio tenha visibilidade na web e obtenha resultados mensuráveis.
+            </p>
+  
+            <a href="/contato" class="button bg--blue text--white shadow-3 wow fadeInUpSmall" data-wow-delay=".5s">
+              Mais trabalhos
+              <i class="fas fa-chevron-right f-end text-smaller text-middle h-100"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div-->
+
+
+
+
+  <div class="block bg--blue-darker">
+    <section>
+      <div class="row g-0 px-4 px-lg-0 no-margin-bottom padding-bottom-larger">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xxl-4 offset-lg-1 offset-xxl-2 px-2 text-middle">
+          <div class="padding-large bg--blue-dark border-radius-larger">
+            <h2 class="text--green text-stronger no-margin-top wow fadeInUpSmall" data-wow-delay=".2s">
+              Identidade visual
+            </h2>
+  
+            <p class="text--white wow fadeInUpSmall" data-wow-delay=".3s">
+              Há mais de 13 anos criando marcas de valores para pequenos, médios e grandes negócios
+            </p>
+  
+            <a href="/contato" class="button bg--blue text--white shadow-3 wow fadeInUpSmall" data-wow-delay=".5s">
+              Mais trabalhos
+              <i class="fas fa-chevron-right f-end text-smaller text-middle h-100"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4 col-md-4 col-lg-5 col-xxl-4 no-click text-middle">
+          <div class="wow fadeInUpSmall" data-wow-delay="1s">
+            <div class="id-visual-sketch margin-left-medium align-center w-100"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
   
   
   <div class="block">
-    <div class="row padding-top-larger">
+    <div class="row padding-top-large">
       <div class="col-12 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2 no-padding">
         <h2 class="text-center margin-top-larger padding-x-medium text--green text-stronger wow fadeInUpSmall" data-wow-delay=".2s">
           Confiam na gente
@@ -318,14 +375,11 @@ get_header();
         <div class="swiper-container bg--white cursor-grab no-select no-shadow wow fadeInUpSmall" data-wow-delay=".1s" style="visibility: hidden;">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <?php
-              for ($i = 0; $i < 3; $i++) :
-            ?>
-            <!-- Slides -->
+            <!-- Slide -->
             <div class="swiper-slide" data-slide-id="<?= $i; ?>">
               <div class="row full-height valign-wrapper">
                 <div class="col-sm-12 col-md-5 full-height position-relative d-none d-md-block">
-                  <div class="client-pic center" style="background-image: url(<?= get_template_directory_uri(); ?>/img/sample/clients/1.webp);">
+                  <div class="client-pic center" style="background-image: url(<?= get_template_directory_uri(); ?>/img/pics/taketomi.png);">
                     <div class="bubbles">
                       <div class="bubble"></div>
                       <div class="bubble"></div>
@@ -334,7 +388,46 @@ get_header();
                     </div>
 
                     <div class="play-btn bottom-right">
-                      <a href="//www.youtube.com/watch?v=XSGBVzeBUbk" class="button red text--white waves-effect waves-light" title="Assistir depoimento" data-lity>
+                      <a href="//www.youtube.com/watch?v=9osfq2OW37U" class="button red text--white waves-effect waves-light" title="Assistir depoimento" data-lity>
+                        <i class="fas fa-play text-middle"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-7">
+                  <div class="padding-medium padding-right-large">
+                    <p class="quote">
+                      Empresa séria e competente, que realizou um grande sonho de uma nova marca para minha empresa.
+                    </p>
+    
+                    <p class="text-right grey-text">
+                      — Paulo Taketomi | Tomi Sushi Express
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <!-- Slide -->
+            <div class="swiper-slide" data-slide-id="<?= $i; ?>">
+              <div class="row full-height valign-wrapper">
+                <div class="col-sm-12 col-md-5 full-height position-relative d-none d-md-block">
+                  <div class="client-pic center" style="background-image: url(<?= get_template_directory_uri(); ?>/img/pics/prieto.png);">
+                    <div class="bubbles">
+                      <div class="bubble"></div>
+                      <div class="bubble"></div>
+                      <div class="bubble"></div>
+                      <div class="bubble"></div>
+                    </div>
+
+                    <div class="play-btn bottom-right">
+                      <a href="//www.youtube.com/watch?v=YV1Ffr8ZIj4" class="button red text--white waves-effect waves-light" title="Assistir depoimento" data-lity>
                         <i class="fas fa-play text-middle"></i>
                       </a>
                     </div>
@@ -350,15 +443,12 @@ get_header();
                     </p>
     
                     <p class="text-right grey-text">
-                      — Mariana di Paula | Lojas Darmand
+                      — Félix Prieto | Castilla Idiomas
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
-
-            <?php endfor; ?>
 
           </div>
         </div>
@@ -367,7 +457,7 @@ get_header();
   </div>
   
   <!-- Portfólio -->
-  <div class="block bg--blue-lighter wave-bg--6">
+  <div class="block bg--blue-lighter">
     <div class="container-medium padding-y-large">
       <h2 class="text--green text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
         Nosso portfólio
@@ -395,7 +485,7 @@ get_header();
           while ( $loop->have_posts() ) :
             $loop->the_post(); 
           ?>
-            <div class="gallery-item--wrapper col-sm-6 col-md-6 col-lg-4 no-padding no-margin">
+            <div class="gallery-item--wrapper col-6 col-md-6 col-lg-4 no-padding no-margin">
               <div class="gallery-item js-open-project-modal js-open-modal no-select" data-url="<?= get_post_permalink(); ?>" data-post-id="<?= get_the_ID(); ?>">
                 <?php
                 if (has_post_thumbnail()) :

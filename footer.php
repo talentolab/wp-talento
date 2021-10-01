@@ -21,19 +21,15 @@
           <li class="margin-bottom-small">Siga a Talento</li>
 
           <li class="display-flex">
-            <a href="#" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="Facebook">
+            <a href="https://facebook.com/talentodesignmarketing" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="Facebook">
               <i class="fab fa-facebook"></i>
             </a>
 
-            <a href="#" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="Instagram">
+            <a href="https://instagram.com/talentodesignmkt" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
 
-            <a href="#" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-
-            <a href="#" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="Behance">
+            <a href="https://behance.net/talentodesign" class="js-splash-text text-center padding-right-small text-large tooltipped" data-tooltip="Behance">
               <i class="fab fa-behance"></i>
             </a>
           </li>
@@ -70,7 +66,8 @@
 						<?php
 							wp_nav_menu(
 								array(
-									'menu' => 'Main Menu',
+                  'container' => 'ul',
+									'menu' => 'main-menu',
 									'container_class' => '',
 									'menu_class' => 'd-md-flex',
 								)
@@ -157,6 +154,8 @@ wow.init();
   }
 
 </script>
+
+<script src="//code.tidio.co/68d50pwhxax1kvt2fqq5nzqqikx6hq19.js" async></script>
 
 </body>
 

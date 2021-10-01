@@ -25,7 +25,7 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
 
 <main class="padding-bottom-large <?= $background; ?> animated fadeIn">
   <div class="row g-0 no-padding flex-on-med-and-up animated fadeInLeftSmall js-close-modal">
-    <div class="col-sm-12 col-md-1 d-none d-lg-block no-margin no-padding js-close-modal">
+    <div class="col-md-1 d-none d-md-block js-close-modal">
       <div class="return-to-portfolio--wrapper position-sticky" onclick="<?= $returnAction; ?>">
         <div class="return-to-portfolio-btn js-close-modal" title="Voltar">
           <i class="fas fa-chevron-left center grey-text lighten-5"></i>
@@ -33,7 +33,7 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
       </div>
     </div>
 
-    <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 js-close-modal">
+    <div class="col-12 col-md-5 col-lg-4 col-xl-3 js-close-modal">
       <aside class="overlap-top-larger position-sticky no-padding-x margin-bottom-small right" style="top: 72px;">
         <div class="padding-x-medium">
           <div class="card low-shadow portfolio-content--card border-radius-larger animated fadeInUpSmall">
@@ -136,7 +136,7 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
       </aside>
     </div>
 
-    <div class="col-sm-12 col-md-7 col-lg-8 col-xl-6 no-margin-x js-close-modal">
+    <div class="col-12 col-md-7 col-lg-7 col-xxl-6 js-close-modal">
       <div class="margin-top-small no-padding position-sticky">
         <div class="no-padding-x">
           <div class="card low-shadow border-radius-large no-padding animated fadeInUpSmall">
