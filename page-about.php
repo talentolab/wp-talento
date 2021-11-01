@@ -134,152 +134,31 @@ get_header();
       <div class="col-12 col-lg-8 col-xxl-6 offset-lg-2 offset-xxl-3">
 
         <div class="row g-3 px-5 px-lg-0">
-          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-            <div class="team-card">
-              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/1.jpg'; ?>)"></div>
+          <?php
+            $loop = CFS()->get( 'team_loop' );
+            foreach ( $loop as $row ) :
+          ?>
 
-              <div class="--title padding-small text-center">
-                <div class="__name">
-                  Thyago Maia
-                </div>
-  
-                <div class="__roll">
-                  Fundador | CEO
-                </div>
-              </div>
+            <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
+              <div class="team-card">
+                <div class="--image" style="background-image: url(<?= $row['member_pic']; ?>)"></div>
 
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-            <div class="team-card">
-              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/2.jpg'; ?>)"></div>
-
-              <div class="--title padding-small text-center">
-                <div class="__name">
-                  Aida Monteiro
+                <div class="--title padding-small text-center">
+                  <div class="__name">
+                    <?= $row['member_name']; ?>
+                  </div>
+    
+                  <div class="__roll">
+                    <?= $row['member_roll']; ?>
+                  </div>
                 </div>
-  
-                <div class="__roll">
-                  Gerente de projetos
-                </div>
+
               </div>
             </div>
-          </div>
 
-          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-            <div class="team-card">
-              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/3.jpg'; ?>)"></div>
-
-              <div class="--title padding-small text-center">
-                <div class="__name">
-                  Daniella Nunes
-                </div>
-  
-                <div class="__roll">
-                  Designer Pleno
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-            <div class="team-card">
-              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/4.jpg'; ?>)"></div>
-
-              <div class="--title padding-small text-center">
-                <div class="__name">
-                  Mayra Sarges
-                </div>
-  
-                <div class="__roll">
-                  Designer / Social Media
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-            <div class="team-card">
-              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/5.jpg'; ?>)"></div>
-
-              <div class="--title padding-small text-center">
-                <div class="__name">
-                  Beatriz Pontes
-                </div>
-  
-                <div class="__roll">
-                  Comercial
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-            <div class="team-card">
-              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/6.jpg'; ?>)"></div>
-
-              <div class="--title padding-small text-center">
-                <div class="__name">
-                  Camila Alves
-                </div>
-  
-                <div class="__roll">
-                  Administrativo
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-            <div class="team-card">
-              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/8.jpg'; ?>)"></div>
-
-              <div class="--title padding-small text-center">
-                <div class="__name">
-                  Giovanni Pantoja
-                </div>
-  
-                <div class="__roll">
-                  Publicitário
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-            <div class="team-card">
-              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/8.jpg'; ?>)"></div>
-
-              <div class="--title padding-small text-center">
-                <div class="__name">
-                  Fernando
-                </div>
-  
-                <div class="__roll">
-                  Publicitário
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-xxl-3">
-            <div class="team-card">
-              <div class="--image" style="background-image: url(<?= __DIR .'/img/sample/team/8.jpg'; ?>)"></div>
-
-              <div class="--title padding-small text-center">
-                <div class="__name">
-                  Yuri
-                </div>
-  
-                <div class="__roll">
-                  Publicitário
-                </div>
-              </div>
-            </div>
-          </div>
+          <?php
+            endforeach;
+          ?>
 
         </div>
 
