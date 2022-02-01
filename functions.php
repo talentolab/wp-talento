@@ -13,18 +13,18 @@ $CURRENT_COMMIT = 'd3adbe4';
 
 
 if ( ! defined( '_S_VERSION' ) ) {
-	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', $CURRENT_COMMIT );
+    // Replace the version number of the theme on each release.
+    define( '_S_VERSION', $CURRENT_COMMIT );
 }
 
 if ( ! defined( '__DIR' ) ) {
-	// Replace the version number of the theme on each release.
-	define( '__DIR', get_template_directory_uri() );
+    // Replace the version number of the theme on each release.
+    define( '__DIR', get_template_directory_uri() );
 }
 
 if ( ! defined( '__MODULES' ) ) {
-	// Replace the version number of the theme on each release.
-	define( '__MODULES', get_template_directory_uri() .'/node_modules' );
+    // Replace the version number of the theme on each release.
+    define( '__MODULES', get_template_directory_uri() .'/node_modules' );
 }
 
 
@@ -52,94 +52,94 @@ add_filter( 'cfs_options_screens', 'my_cfs_options_screens' );
 
 
 if ( ! function_exists( 'talento_setup' ) ) :
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
-	 */
-	function talento_setup() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on talento, use a find and replace
-		 * to change 'talento' to the name of your theme in all the template files.
-		 */
-		load_theme_textdomain( 'talento', get_template_directory() . '/languages' );
+    /**
+     * Sets up theme defaults and registers support for various WordPress features.
+     *
+     * Note that this function is hooked into the after_setup_theme hook, which
+     * runs before the init hook. The init hook is too late for some features, such
+     * as indicating support for post thumbnails.
+     */
+    function talento_setup() {
+        /*
+         * Make theme available for translation.
+         * Translations can be filed in the /languages/ directory.
+         * If you're building a theme based on talento, use a find and replace
+         * to change 'talento' to the name of your theme in all the template files.
+         */
+        load_theme_textdomain( 'talento', get_template_directory() . '/languages' );
 
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+        // Add default posts and comments RSS feed links to head.
+        add_theme_support( 'automatic-feed-links' );
 
-		/*
-		 * Let WordPress manage the document title.
-		 * By adding theme support, we declare that this theme does not use a
-		 * hard-coded <title> tag in the document head, and expect WordPress to
-		 * provide it for us.
-		 */
-		add_theme_support( 'title-tag' );
+        /*
+         * Let WordPress manage the document title.
+         * By adding theme support, we declare that this theme does not use a
+         * hard-coded <title> tag in the document head, and expect WordPress to
+         * provide it for us.
+         */
+        add_theme_support( 'title-tag' );
 
-		/*
-		 * Enable support for Post Thumbnails on posts and pages.
-		 *
-		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		 */
-		add_theme_support( 'post-thumbnails' );
+        /*
+         * Enable support for Post Thumbnails on posts and pages.
+         *
+         * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+         */
+        add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus(
-			array(
-				'menu-1' => esc_html__( 'Primary', 'talento' ),
-			)
-		);
+        // This theme uses wp_nav_menu() in one location.
+        register_nav_menus(
+            array(
+                'menu-1' => esc_html__( 'Primary', 'talento' ),
+            )
+        );
 
-		/*
-		 * Switch default core markup for search form, comment form, and comments
-		 * to output valid HTML5.
-		 */
-		add_theme_support(
-			'html5',
-			array(
-				'search-form',
-				'comment-form',
-				'comment-list',
-				'gallery',
-				'caption',
-				'style',
-				'script',
-			)
-		);
+        /*
+         * Switch default core markup for search form, comment form, and comments
+         * to output valid HTML5.
+         */
+        add_theme_support(
+            'html5',
+            array(
+                'search-form',
+                'comment-form',
+                'comment-list',
+                'gallery',
+                'caption',
+                'style',
+                'script',
+            )
+        );
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support(
-			'custom-background',
-			apply_filters(
-				'talento_custom_background_args',
-				array(
-					'default-color' => 'ffffff',
-					'default-image' => '',
-				)
-			)
-		);
+        // Set up the WordPress core custom background feature.
+        add_theme_support(
+            'custom-background',
+            apply_filters(
+                'talento_custom_background_args',
+                array(
+                    'default-color' => 'ffffff',
+                    'default-image' => '',
+                )
+            )
+        );
 
-		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
+        // Add theme support for selective refresh for widgets.
+        add_theme_support( 'customize-selective-refresh-widgets' );
 
-		/**
-		 * Add support for core custom logo.
-		 *
-		 * @link https://codex.wordpress.org/Theme_Logo
-		 */
-		add_theme_support(
-			'custom-logo',
-			array(
-				'height'      => 250,
-				'width'       => 250,
-				'flex-width'  => true,
-				'flex-height' => true,
-			)
-		);
-	}
+        /**
+         * Add support for core custom logo.
+         *
+         * @link https://codex.wordpress.org/Theme_Logo
+         */
+        add_theme_support(
+            'custom-logo',
+            array(
+                'height'      => 250,
+                'width'       => 250,
+                'flex-width'  => true,
+                'flex-height' => true,
+            )
+        );
+    }
 endif;
 add_action( 'after_setup_theme', 'talento_setup' );
 
@@ -151,10 +151,10 @@ add_action( 'after_setup_theme', 'talento_setup' );
  * @global int $content_width
  */
 function talento_content_width() {
-	// This variable is intended to be overruled from themes.
-	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
-	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'talento_content_width', 640 );
+    // This variable is intended to be overruled from themes.
+    // Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
+    // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+    $GLOBALS['content_width'] = apply_filters( 'talento_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'talento_content_width', 0 );
 
@@ -164,17 +164,17 @@ add_action( 'after_setup_theme', 'talento_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function talento_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'talento' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'talento' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Sidebar', 'talento' ),
+            'id'            => 'sidebar-1',
+            'description'   => esc_html__( 'Add widgets here.', 'talento' ),
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>',
+        )
+    );
 }
 add_action( 'widgets_init', 'talento_widgets_init' );
 
@@ -223,12 +223,12 @@ function talento_scripts() {
 
   
   // Head JS Libraries
-	wp_enqueue_script( 'jquery', __DIR . '/libs/jquery/3.4.1/jquery.min.js', array(), '3.4.1', true );
-	
+    wp_enqueue_script( 'jquery', __DIR . '/libs/jquery/3.4.1/jquery.min.js', array(), '3.4.1', true );
+    
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'talento_scripts' );
 
@@ -240,13 +240,13 @@ function add_this_script_footer() {
   $min = !$dev_mode ? '.min' : '';
 
   // Footer JS Libraries
-	wp_enqueue_script( 'materialize', __DIR . '/libs/materialize-src/js/bin/materialize.min.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'wow-js', __DIR . '/libs/wow.js/dist/wow.min.js', array(), '1.3.0', true );
-	wp_enqueue_script( 'swiper',  __MODULES .'/swiper/swiper-bundle.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'materialize', __DIR . '/libs/materialize-src/js/bin/materialize.min.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'wow-js', __DIR . '/libs/wow.js/dist/wow.min.js', array(), '1.3.0', true );
+    wp_enqueue_script( 'swiper',  __MODULES .'/swiper/swiper-bundle.js', array(), _S_VERSION, true );
   
   // Main JS
-	wp_enqueue_script( 'talento-navigation', __DIR . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'talento-main', __DIR . '/js/main'. $min .'.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'talento-navigation', __DIR . '/js/navigation.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'talento-main', __DIR . '/js/main'. $min .'.js', array(), _S_VERSION, true );
 }  
 add_action('wp_footer', 'add_this_script_footer');
 
@@ -254,10 +254,10 @@ add_action('wp_footer', 'add_this_script_footer');
 
 add_filter('script_loader_tag', 'add_type_attribute' , 10, 3);
 function add_type_attribute($tag, $handle, $src) {
-	// if not your script, do nothing and return original $tag
-	if ( 'talento-main' !== $handle ) {
-			return $tag;
-	}
+    // if not your script, do nothing and return original $tag
+    if ( 'talento-main' !== $handle ) {
+            return $tag;
+    }
   // change the script tag by adding type="module" and return it.
   $tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
   return $tag;
@@ -265,10 +265,10 @@ function add_type_attribute($tag, $handle, $src) {
 
 
 function my_class_names($classes) {
-	// add 'class-name' to the $classes array
-	$classes[] = '';
-	// return the $classes array
-	return $classes;
+    // add 'class-name' to the $classes array
+    $classes[] = '';
+    // return the $classes array
+    return $classes;
 }
 add_filter('body_class','my_class_names');
   
@@ -297,7 +297,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+    require get_template_directory() . '/inc/jetpack.php';
 }
 
 
@@ -310,13 +310,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 // Default: Viewing {post_count} of {total_posts} results.
 add_filter('alm_display_results', function(){
-	return 'Exibindo {post_count} de {total_posts} projetos';
+    return 'Exibindo {post_count} de {total_posts} projetos';
 });
 
 
 // Default: No results found.
 add_filter('alm_no_results_text', function(){
-	return 'Não há nada aqui. :(';
+    return 'Não há nada aqui. :(';
 });
 
 
@@ -325,15 +325,15 @@ add_filter('alm_no_results_text', function(){
 require_once get_template_directory() .'/php-libs/class-tgm-plugin-activation.php';
 
 function talento_register_required_plugins() {
-	global $dev_mode;
+    global $dev_mode;
 
     /*
      * Array of plugin arrays. Required keys are name and slug.
      * If the source is NOT from the .org repo, then source is also required.
      */
     $plugins = array(
-		// Essenciais
-		array(
+        // Essenciais
+        array(
             'name'      => 'Ajax Load More',
             'slug'      => 'ajax-load-more',
             'required'  => true
@@ -345,44 +345,44 @@ function talento_register_required_plugins() {
             'required'  => true
         ),
 
-		array(
+        array(
             'name'      => 'Custom Field Suite',
             'slug'      => 'custom-field-suite',
             'required'  => true
         ),
 
-		array(
+        array(
             'name'      => 'Custom Post Type UI',
             'slug'      => 'custom-post-type-ui',
             'required'  => true
         ),
 
-		array(
+        array(
             'name'      => 'Font Awesome',
             'slug'      => 'font-awesome',
             'required'  => true
         ),
 
-		array(
+        array(
             'name'      => 'Safe SVG',
             'slug'      => 'safe-svg',
             'required'  => true
         ),
 
-		array(
+        array(
             'name'      => 'WP Cerber',
             'slug'      => 'wp-cerber',
             'required'  => true,
-			// Force activation on production
-			'force_activation' => $dev_mode ? false : true
+            // Force activation on production
+            'force_activation' => $dev_mode ? false : true
         ),
 
-		array(
+        array(
             'name'      => 'Wordfence',
             'slug'      => 'wordfence',
             'required'  => true,
-			// Force activation on production
-			'force_activation' => $dev_mode == true ? false : true
+            // Force activation on production
+            'force_activation' => $dev_mode == true ? false : true
         ),
 
         array(
@@ -397,25 +397,39 @@ function talento_register_required_plugins() {
             'required'  => true,
         ),
 
-		// Opcionais
+        // Opcionais
         array(
             'name'      => 'EWWW Image Optimizer',
             'slug'      => 'ewww-image-optimizer',
-            'required'  => false,
+            'required'  => true,
         ),
 
-		array(
+        array(
             'name'      => 'File Renaming on Upload',
             'slug'      => 'file-renaming-on-upload',
+            'required'  => true,
+        ),
+
+        array(
+            'name'      => 'Perfect Images + Retina',
+            'slug'      => 'wp-retina-2x',
+            'required'  => true,
+        ),
+
+        array(
+            'name'      => 'CMP Coming Soon Maintenance',
+            'slug'      => 'cmp-coming-soon-maintenance',
             'required'  => false,
         ),
 
-		array(
-            'name'      => 'Perfect Images + Retina',
-            'slug'      => 'wp-retina-2x',
-            'required'  => false,
-        )
+        array(
+            'source'             => get_template_directory() . '/php-libs/plugins/custom-field-suite-video.zip',
+            'name'      => 'Custom Field Suite Video',
+            'slug'      => 'custom-field-suite-video',
+            'required'  => true,
+        ),
     );
+
 
 
     $config = array(
