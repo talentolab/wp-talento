@@ -165,7 +165,7 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
               </div>
             </div>
 
-            <div class="card-action padding-medium valign-wrapper">
+            <!--div class="card-action padding-medium valign-wrapper">
               <a href="" class="btn button-bg margin-right-medium" style="background-color: <?= $feat_color; ?>;">
                 Website
               </a>
@@ -182,7 +182,7 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
                 <i class="fab fa-twitter"></i>
               </a>
 
-            </div>
+            </div-->
           </div>
         </div>
         
