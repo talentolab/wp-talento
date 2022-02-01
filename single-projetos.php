@@ -52,6 +52,7 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
                 $signaling_images = CFS()->get( 'signaling_images' ) ?? [];
                 $web_images = CFS()->get( 'web_images' ) ?? [];
                 $videos = CFS()->get( 'videos' ) ?? [];
+                $photos = CFS()->get( 'photo_images' ) ?? [];
                 $slogan_icon = CFS()->get( 'slogan_icon' ) ?? [];
                 $slogan = CFS()->get( 'slogan' ) ?? [];
 
@@ -92,8 +93,14 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
                 $videos_chip->name = 'Vídeos';
                 $videos_chip->slug = 'videos';
 
+                $photos_chip = new Chip();
+                $photos_chip->counter = sizeof($photos);
+                $photos_chip->icon = 'camera';
+                $photos_chip->name = 'Fotografias';
+                $photos_chip->slug = 'photos';
+
                 $chips = array(
-                  $branding_chip, $package_chip, $signaling_chip, $web_chip, $videos_chip
+                  $branding_chip, $package_chip, $signaling_chip, $web_chip, $videos_chip, $photos_chip
                 );
 
                 foreach ( $chips as $chip ) :
@@ -126,7 +133,7 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
             </div>
 
             <div class="card-action padding-small">
-              <a href="#" class="btn button-bg white-text full-width waves-effect waves-light" style="background-color: <?= $feat_color; ?>;">
+              <a href="/contato" class="btn button-bg white-text full-width waves-effect waves-light" style="background-color: <?= $feat_color; ?>;">
                 <i class="fas fa-check left"></i>
                 Fazer um orçamento
               </a>
