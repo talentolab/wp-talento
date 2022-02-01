@@ -78,10 +78,15 @@ get_header();
             <i class="fas fa-store-alt margin-right-smaller text-medium text-middle"></i>
             <span class="text-middle text-small">Sinalização</span>
           </a>
+
+          <a href="?tag=arquitetura" class="category-filter-btn <?= active( 'arquitetura' ); ?>">
+            <i class="fas fa-pencil-ruler margin-right-smaller text-medium text-middle"></i>
+            <span class="text-middle text-small">Arquitetura</span>
+          </a>
   
-          <a href="?tag=web" class="category-filter-btn <?= active( 'web' ); ?>">
+          <a href="?tag=digital" class="category-filter-btn <?= active( 'digital' ); ?>">
             <i class="fas fa-code margin-right-smaller text-medium text-middle"></i>
-            <span class="text-middle text-small">Web</span>
+            <span class="text-middle text-small">Digital</span>
           </a>
   
           <a href="?tag=videos" class="category-filter-btn <?= active( 'videos' ); ?>">
