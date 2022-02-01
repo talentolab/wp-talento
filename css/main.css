@@ -2232,8 +2232,9 @@ code {
 }
 
 .gallery-item {
-  padding-top: 100%;
-  height: 0;
+  aspect-ratio: 1;
+  height: 100%;
+  width: 100%;
   transition: 0.2s ease-in-out;
   position: relative;
   cursor: pointer;
@@ -2270,7 +2271,8 @@ code {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: 0.2s ease-in-out;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
