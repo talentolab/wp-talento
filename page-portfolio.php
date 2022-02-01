@@ -127,7 +127,7 @@ get_header();
                         while ( $loop->have_posts() ) : 
                           $loop->the_post();
                       ?>
-                          "<?= get_the_title(); ?>":"<?= get_the_post_thumbnail_url(); ?>",
+                          "<?= get_the_title(); ?>":"<?= CFS()->get('client_logo', get_the_ID()); ?>",
                       <?php endwhile; ?>
                     }
                   </script>
