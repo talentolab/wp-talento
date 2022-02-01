@@ -275,6 +275,17 @@ $feat_color = CFS()->get( 'feat_color' ) ?? [];
             </div>
           </div>
 
+          <div id="photos">
+            <div class="portfolio-content--images">
+              <?php
+                $loop = CFS()->get( 'photo_images' ) ?? [];
+                foreach ( $loop as $row ) {
+                  echo '<img src="'. $row['photo_image'] .'" alt="Portfólio '. get_the_title() .'" />';
+                }
+              ?>
+            </div>
+          </div>
+
           <div class="card low-shadow portfolio-content--related no-margin border-radius-large">
             <div class="card-content">
               
