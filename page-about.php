@@ -161,9 +161,6 @@ get_header();
           ?>
 
         </div>
-
-
-
       </div>
     </div>
   </div>
@@ -171,6 +168,55 @@ get_header();
 
 
   <div class="block padding-y-larger bg--white"></div>
+
+
+
+  <div class="block bg--blue-lighter">
+    <div class="container-medium padding-y-large">
+      <h2 class="text--green text-stronger margin-bottom-medium wow fadeInUpSmall" data-wow-delay=".2s">
+        Nossos parceiros
+      </h2>
+		
+
+      <div class="row gallery-wrapper margin-top-large">
+        <?php
+          $args = array(  
+            'post_type' => 'parceiros',
+            'post_status' => 'publish',
+            'posts_per_page' => -1, 
+            'orderby' => 'title', 
+            'order' => 'ASC', 
+          );
+
+          $loop = new WP_Query( $args ); 
+              
+          while ( $loop->have_posts() ) :
+            $loop->the_post(); 
+          ?>
+            <div class="gallery-item--wrapper col-6 col-md-6 col-lg-4 no-padding no-margin">
+              <a href="<?= CFS()->get('link', $loop->get_the_ID()); ?>" target="_blank" rel="nofollow noreferrer">
+                <div class="gallery-item no-select">
+                  
+                  <img src="<?= CFS()->get('logo', $loop->get_the_ID()); ?>" />
+  
+                  <button class="gallery-btn bg--blue text--white center no-click">
+                    Visitar
+                  </button>
+  
+                  <div class="gallery-item--title text-center text-middle text-stronger padding-small no-click">
+                  <?= the_title(); ?>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <?php
+          endwhile;
+
+          wp_reset_postdata(); 
+        ?>
+      </div>
+    </div>
+  </div>
 </main>
 
 
