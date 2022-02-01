@@ -28,6 +28,12 @@ if ( ! defined( '__MODULES' ) ) {
 }
 
 
+function add_query_vars_filter( $vars ) {
+  $vars[] = "tag";
+  $vars[] = "q";
+  return $vars;
+}
+add_filter('query_vars', 'add_query_vars_filter');
 
 
 function my_cfs_options_screens( $screens ) {

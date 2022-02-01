@@ -5,9 +5,6 @@
  */
 
 get_header();
-
-$tag = isset( $_GET[ 'tag' ] ) ?? $_GET[ 'tag' ];
-$search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
 ?>
 
 
@@ -41,12 +38,26 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
       <div class="col-12 col-lg-10 col-xxl-8 offset-lg-1 offset-xxl-2">
         <div class="margin-y-medium wow fadeInUpSmall text-center" data-wow-delay=".6s">
           <?php
-            function active ( $button ) {
+            $tag = null;
+            $search = null;
+
+            if (get_query_var('q')) {
+              $search = get_query_var('q');
+            }
+
+            if (get_query_var('tag')) {
+              $tag = get_query_var('tag');
+            }
+
+            function active( $button ) {
               global $tag;
-              
-              return $tag == $button ? 'active' : '';
+
+              if ($tag == $button) {
+                return 'active';
+              }
             }
           ?>
+
   
           <a href="/portfolio/" class="category-filter-btn <?= active( '' ); ?>">
             <i class="fas fa-th margin-right-smaller text-medium text-middle"></i>
