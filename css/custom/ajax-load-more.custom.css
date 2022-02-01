@@ -132,6 +132,11 @@
   */
 .alm-listing .alm-reveal {
   outline: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 
 .alm-listing .alm-reveal:after {

@@ -150,6 +150,12 @@ $search = isset($_GET[ 'q' ]) ?? $_GET[ 'q' ];
             button_label="Carregar mais"
             button_done_label="Isso é tudo :)"
           ]'); ?>
+
+          <script>
+            window.almComplete = function(alm){
+              document.querySelector('.alm-reveal').classList.add('row','m-0')
+            }
+          </script>
   
         </div>
       </div>
